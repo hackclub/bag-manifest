@@ -1,0 +1,397 @@
+# Items with no listed tag have their tag inferred from the name.
+# Frequency indicates the basic probability of this item appearing in standard drops, such as the initial "Mysterious Old Man" drops for new bag users.
+# Items with no listed frequency have a frequency of 0.
+- name: gp
+  tag: -gp
+  artist: 'Eleeza'
+  description: Gold pieces? Game points? Nobody knows what it stands for. But it's money.
+  frequency: 1
+- name: Socks
+  tag: -socks
+  artist: Jeijii
+  description: A warm, fuzzy pair of socks. You bury your nose in them. They smell… feetishly divine."
+- name: Carrot
+  tag: -carrot
+  artist: Acon
+  description: They don't actually improve your vision, but you should eat them anyway.
+  frequency: 1
+- name: Wool
+  tag: -wool
+  artist: Jeijii
+  description: '"Wooly" would be an accurate but maybe unhelpful description.'
+- name: Iron
+  tag: -iron
+  artist: Eleeza
+  description: Smelted iron, ready to be worked.
+  frequency: 0.4
+- name: Lumber
+  tag: -lumber
+  artist: Jeijii
+  description: Good strong boards, ready for all your lumbrous needs.
+  frequency: 0.6
+- name: Stick
+  tag: -wood-stick
+  artist: Eleeza
+  description: A solid-looking stick, the kind that makes you just wanna hit stuff.
+  frequency: 0.9
+- name: Rock
+  tag: -rock
+  artist: Eleeza
+  description: It's a rock.
+  frequency: 1
+- name: Shears
+  tag: -shears
+  artist: Acon
+  description: Do your sheep occupy too much volumetric space? You need shears!
+- name: Sockmeister Challenge Coin
+  tag: -sockmeister-challenge-coin
+  artist: Jeijii
+  description:
+    The socks embossed on this challenge coin are a poetic complement to
+    the piece of lint stuck to it from your pocket.
+  Transferable: 'No'
+- name: Knitting Needles
+  tag: -knitting-needles
+  artist: Eleeza
+  description: Pokey-pokey making sticks.
+- name: Knife
+  artist: Acon
+  description:
+    The blade of this knife gleams in the sun like a gleaming knife blade
+    in sunlight.
+  frequency: 0.5
+  tag: -knife
+- name: Axe
+  artist: Acon
+  description: Be careful with this, don't have an axe-ident.
+  frequency: 0.5
+  tag: -axe
+- name: Dinoisseur Challenge Coin
+  artist: Acon
+  description: Congratulations, now you know how to make a pull request!
+  tag: -dinoisseur-challenge-coin
+  Transferable: 'No'
+- name: Apple
+  artist: Eleeza
+  description:
+    According to legend, eating one of these daily is supposed to ward
+    off medical professionals
+  frequency: 1
+  tag: -apple
+- name: Orange
+  artist: Jeijii
+  description: Believe it or not, the color is named for the fruit—not the other way around.
+  frequency: 0.8
+  tag: -orange
+- name: Banana
+  artist: Jeijii
+  description:
+    How are these so cheap? They don't even grow locally. Economies of
+    scale are freaky.
+  frequency: 0.9
+  tag: -banana
+- name: Coconut
+  artist: Jeijii
+  description: Look out below!!
+  frequency: 0.7
+  tag: -coconut
+- name: Wheat Seeds
+  artist: Acon
+  description: Looking to grow some wheat? Start with these.
+  frequency: 0.6
+  tag: -wheat-seeds
+- name: Grass Seeds
+  artist: Acon
+  description: Any good lawn begins with these things.
+  frequency: 0.6
+  tag: -grass-seeds
+- name: Log
+  artist: Acon
+  description: A good thick log. What more could you want from a tree?
+  frequency: 0.9
+  tag: -log
+- name: Saw
+  artist: Eleeza
+  description: For those times when a knife just won't cut it
+  frequency: 0.5
+  tag: -saw
+- name: Raw Diamond
+  artist: Acon
+  description: A diamond, in the rough. Literally.
+  frequency: 0.1
+  tag: -raw-diamond
+- name: Diamond
+  artist: Elena
+  description: Sparkly, clear, and ready for wide-scale market manipulation.
+  frequency: 0.02
+  tag: -diamond
+- name: Raw Sapphire
+  artist: Acon
+  description: Somewhere in here is a beautiful sparkly blue thing.
+  frequency: 0.2
+  tag: -raw-sapphire
+- name: Sapphire
+  artist: Elena
+  description: Who knew that aluminum oxide could look so good?
+  frequency: 0.05
+  tag: -sapphire
+- name: Raw Emerald
+  artist: Acon
+  description: It may look sour-apple flavored, but it's not. Trust me.
+  frequency: 0.08
+  tag: -raw-emerald
+- name: Emerald
+  artist: Eleeza
+  description: This green gemstone is notable mostly for its use as currency in Minecraft.
+  frequency: 0.01
+  tag: -emerald
+- name: Raw Ruby
+  artist: Elena
+  description: "Is it just me or does this ugly rock look kind of\u2026 angry?"
+  frequency: 0.2
+  tag: -raw-ruby
+- name: Ruby
+  artist: Eleeza
+  description:
+    The gemstone of choice for people who are weirdly obsessed with the
+    color red.
+  frequency: 0.05
+  tag: -ruby
+- name: Raw Tanzanite
+  artist: Elena
+  description:
+    Once thought to be found only in Tanzania, a rich deposit was recently
+    found in the Hack Club Slack.
+  frequency: 0.06
+  tag: -raw-tanzanite
+- name: Tanzanite
+  artist: Jeijii
+  description: Is it blue? Is it purple? That all depends on your perspective.
+  tag: -tanzanite
+- name: Mushroom
+  artist: Elena
+  description: Anyone who makes the "fun guy" joke will be summarily fired.
+  frequency: 0.9
+  tag: -mushroom
+- name: Kiwi
+  artist: Jeijii
+  description: You should really eat the skin, it's the most nutritious part.
+  frequency: 0.7
+  tag: -kiwi
+- name: Shirt
+  artist: Acon
+  description: Just your basic shirt.
+  frequency: 0.8
+  tag: -shirt
+- name: Pants
+  artist: Acon
+  description: One pant per leg.
+  frequency: 0.8
+  tag: -pants
+- name: Fashionable Shirt
+  artist: Acon
+  description: It says SURPEEM on the front in big, expensive-looking letters.
+  frequency: 0.4
+  tag: -fashionable-shirt
+- name: Fancy Pants
+  artist: Acon
+  description: For those times when your legs need an ego boost.
+  frequency: 0.4
+  tag: -fancy-pants
+- name: Shoes
+  artist: Elena
+  description: Don't worry feet, you're safe in here.
+  frequency: 0.8
+  tag: -shoes
+- name: Cool Shoes
+  artist: Elena
+  description: Wearing these is like having a tiny pair of sunglasses for each toe.
+  frequency: 0.4
+  tag: -cool-shoes
+- name: Hammer
+  artist: 'Unkown'
+  description: Famed for its ability to hit things.
+  frequency: 0.5
+  tag: -hammer
+- name: Top Hat
+  artist: 'Unknown'
+  description: Popularized by Abraham Lincoln and the Deepwater Horizon.
+  frequency: 0.4
+  tag: -top-hat
+- name: Hat
+  artist: Acon
+  description: Your humble servant, protecting your head from the sun.
+  frequency: 0.7
+  tag: -hat
+- name: Fish Hat
+  artist: Jeijii
+  description: A fashion brought to you by Orcas.
+  frequency: 0.2
+  tag: -fish-hat
+- name: Shurt
+  artist: Elena
+  description: "It's a shirt alright, but it's a just a little\u2026 weird."
+  frequency: 0.2
+  tag: -shurt
+- name: Fish
+  artist: Jeijii
+  description: This highly-edible creature is literally born to swim.
+  frequency: 0.6
+  tag: -fish
+- name: Anvil
+  artist: Acon
+  description: Used since antiquity to forge metal and grievously injure cartoon characters.
+  frequency: 0.3
+  tag: -anvil
+- name: Coal
+  artist: Acon
+  description: Seriously, we need to stop burning this stuff.
+  frequency: 0.8
+  tag: -coal
+- name: Furnace
+  artist: Acon
+  description: This fashionable appliance is great for producing sick burns.
+  frequency: 0.3
+  tag: -furnace
+- name: 1982 Wurlitzer Jukebox
+  artist: Elena
+  description: Alec Watson could probably tell you a lot about this object.
+  frequency: 0.01
+  tag: -wurlitzer-jukebox
+- name: MASH Season 1
+  artist: Elena
+  description: Korea, 1950 (a hundred years ago)
+  frequency: 0.1
+  tag: -mash-season-1
+- name: MASH Season 2
+  artist: Elena
+  description: Includes essential classics like "5 O'Clock Charlie" and "George".
+  frequency: 0.1
+  tag: -mash-season-2
+- name: MASH Season 3
+  artist: Elena
+  description: Abyssinia, Henry.
+  frequency: 0.1
+  tag: -mash-season-3
+- name: MASH Season 4
+  artist: Elena
+  description: Now Trapper's gone too?? That's it. I'm out.
+  frequency: 0.1
+  tag: -mash-season-4
+- name: MASH Season 5
+  artist: Elena
+  description: The last season with Larry Linville.
+  frequency: 0.1
+  tag: -mash-season-5
+- name: MASH Season 6
+  artist: Elena
+  description: Well, at least Winchester is sort of ok. Kinda.
+  frequency: 0.1
+  tag: -mash-season-6
+- name: MASH Season 7
+  artist: Elena
+  description:
+    '"Point of View" is a remarkably innovative episode in an otherwise
+    unremarkable season.'
+  frequency: 0.1
+  tag: -mash-season-7
+- name: MASH Season 8
+  artist: Elena
+  description: Radar is gone, Klinger wears normal uniforms, the show drags on.
+  frequency: 0.1
+  tag: -mash-season-8
+- name: MASH Season 9
+  artist: Elena
+  description: Some truly heart-wrenching moments stick out in th
+  frequency: 0.1
+  tag: -mash-season-9
+- name: MASH Season 10
+  artist: Elena
+  description:
+    "Laurence Fishburne makes an appearance, so\u2026 that's something\
+    \ I guess."
+  frequency: 0.1
+  tag: -mash-season-10
+- name: MASH Season 11
+  artist: Elena
+  description: Goodbye, farewell, amen.
+  frequency: 0.1
+  tag: -mash-season-11
+- name: MASH The Good Seasons
+  artist: Elena
+  description: "Sorry BJ, sorry Colonel Potter\u2026 Henry and Trapper were better."
+  frequency: 0.05
+  tag: -mash-good-seasons
+- name: MASH The Complete Series
+  artist: Jeijii
+  description:
+    You really only need the first three seasons, but it's nice to have
+    a full set.
+  frequency: 0.01
+  tag: -mash-complete-series
+- name: AfterMASH Season 1
+  artist: Jeijii
+  description: "Why do you own this? It is\u2026 not good."
+  frequency: 0.05
+  tag: -aftermash-season-1
+- name: AfterMASH Season 2
+  artist: Jeijii
+  description: Seriously, how did this get renewed for a second season.
+  frequency: 0.05
+  tag: -aftermash-season-2
+- name: AfterMASH The Complete Series
+  artist: Jeijii
+  description: A series better left incomplete. But hey, you did it anyway!
+  frequency: 0.01
+  tag: -aftermash-complete-series
+- name: MASH The Movie
+  artist: Jeijii
+  description: This film has not aged well. It was a different time.
+  frequency: 0.1
+  tag: -mash-movie
+- name: MASH The Original Novel
+  artist: Jeijii
+  description: An unusual book from an unusual time, with a puzzling number of spin-offs.
+  frequency: 0.1
+  tag: -mash-book
+- name: MASH The Ultimate Collection
+  artist: Jeijii
+  description: Wow. You did it! Alan Alda salutes your efforts. And as you know, he doesn't salute very often.
+  tag: -mash-ultimate-collection
+- name: Iron Ore
+  artist: Jeijii
+  description:
+    This stuff will be a lot more useful if you can find a way to refine
+    it.
+  frequency: 0.8
+  tag: -iron-ore
+- name: Gold Ore
+  artist: Elena
+  description: Somewhere in this lump there's a bunch of shiny expensive yellow stuff.
+  frequency: 0.1
+  tag: -gold-ore
+- name: Gold
+  artist: Elena
+  description: Shiny expensive yellow stuff!
+  frequency: 0.05
+  tag: -gold
+- name: Aluminum Ore
+  artist: Acon
+  description: The technical term is "bauxite", apparently.
+  frequency: 0.8
+  tag: -aluminum-ore
+- name: Aluminum
+  artist: Acon
+  description: It's light. It's bright. Its oxide is white.
+  frequency: 0.4
+  tag: -aluminum
+- name: Bonsai
+  artist: Jeijii
+  description: An itsy-bitsy teeny-weeny woody-growy leafy-greeny.
+  frequency: 0.1
+  tag: -bonsai
+- name: Kamina's Shades
+  artist: Jeijii
+  description: Believe in the Orpheus that believes in you!
+  frequency: 0.05
+  tag: -kamina-shades
