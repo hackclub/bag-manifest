@@ -19,6 +19,10 @@
   tag: -wool
   artist: Jeijii
   description: '"Wooly" would be an accurate but maybe unhelpful description.'
+- name: Yarn
+  tag: -yarn
+  artist: None
+  description: The preferred plaything of cats and grandmothers everywhere.
 - name: Iron
   tag: -iron
   artist: Eleeza

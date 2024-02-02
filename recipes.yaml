@@ -1,0 +1,11 @@
+- outputs: [Socks]
+  inputs: [Yarn]
+  tools: [Knitting Needles]
+  description: You furiously knit up a storm, and poof! Socks appear.
+- outputs: [Hammer]
+  inputs: [Stick, Iron]
+  description: You join the iron and stick in holy matrimony to create the ultimate smacking solution.
+- outputs: [Knife]
+  inputs: [Stick, Iron]
+  tools: [Hammer, Anvil]
+  description: You hammer the iron into a blade and fasten it to a wooden handle. Don't cut yourself.
