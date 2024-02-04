@@ -6,6 +6,9 @@
   const items = jsyaml.load(itemsYaml, 'utf8')
   const recipes = jsyaml.load(recipesYaml, 'utf8')
 
+  console.log('Items:', items)
+  console.log('Recipes:', recipes)
+
   // Combine items and recipes into a single array
   const nodes = [...items, ...recipes]
 
@@ -279,9 +282,9 @@
         .distance(100)
         .strength(0.1)
     )
-    .force('charge', d3.forceManyBody().strength(-100))
-    .force('x', d3.forceX(canvasWidth / 2).strength(0.01))
-    .force('y', d3.forceY(canvasHeight / 2).strength(0.01))
+    .force('charge', d3.forceManyBody().strength(-500))
+    .force('x', d3.forceX(canvasWidth / 2).strength(0.05))
+    .force('y', d3.forceY(canvasHeight / 2).strength(0.05))
     .on('tick', tick)
 
   // Start the simulation

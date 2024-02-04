@@ -399,3 +399,72 @@
   description: Believe in the Orpheus that believes in you!
   frequency: 0.05
   tag: -kamina-shades
+- name: Diamond Dust
+  artist: ---
+  description: Something expensive was obliterated to create this.
+  frequency: 0.1
+  tag: -diamond-dust
+- name: Emerald Dust
+  artist: ---
+  description: Nope, still doesn't taste like green apple.
+  frequency: 0.12
+  tag: -emerald-dust
+- name: Sapphire Dust
+  artist: ---
+  description: Still aluminum oxide, but in powder form.
+  frequency: 0.12
+  tag: -sapphire-dust
+- name: Ruby Dust
+  artist: ---
+  description: It's coarse and red and valuable and it gets everywhere.
+  frequency: 0.12
+  tag: -ruby-dust
+- name: Tanzanite Dust
+  artist: ---
+  description: I really hope you didn't smash a cut stone to make this.
+  frequency: 0.08
+  tag: -tanzanite-dust
+- name: Lapidary Wheel
+  artist: ---
+  description: Harness the power of rotation to turn ugly rocks into pretty rocks.
+  tag: -lapidary-wheel
+- name: Glue
+  artist: ---
+  description: Ewwww it's all sticky… pretty useful though.
+  tag: -glue
+- name: Wheel
+  artist: ---
+  description: It seems to be locked in an endless competion with Sliced Bread for the title of Greatest Invention Ever.
+  tag: -wheel
+- name: Spinning Wheel
+  artist: ---
+  description: This thing turns 3-dimensional fluff into 1-dimensional fluff.
+  tag: -spinning-wheel
+- name: Bone
+  artist: ---
+  description: You already have 206 of these. Do you really need more?
+  tag: -bone
+- name: Bone Dust
+  artist: ---
+  description: Just think, this stuff used to be part of a skeleton.
+  tag: -bone-dust
+- name: Pot
+  artist: ---
+  description: Just imagine all the boiling you can do with this!!
+  tag: -pot
+- name: Sand
+  artist: ---
+  description: It's coarse and rough and irritating and it gets everywhere.
+  tag: -sand
+- name: Glass
+  artist: ---
+  description: Don't build a house out of this. Except the windows. Those are ok.
+  tag: -glass
+- name: Chisel
+  artist: ---
+  description: Seriously, don't attempt to enhance your jaw with this thing.
+  tag: -chisel
+- name: Blahaj
+  artist: ---
+  description: Duh-dum… duh-dum duh-dum… duhdumduhdumduhdumduhdum
+  tag: -blahaj

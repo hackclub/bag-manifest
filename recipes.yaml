@@ -1,7 +1,7 @@
 - outputs: [Socks]
   inputs: [Yarn]
   tools: [Knitting Needles]
-  description: You furiously knit up a storm, and poof! Socks appear.
+  description: You furiously knit up a storm, and shazam! Socks appear.
 - outputs: [Hammer]
   inputs: [Stick, Iron]
   description: You join the iron and stick in holy matrimony to create the ultimate smacking solution.
@@ -9,3 +9,129 @@
   inputs: [Stick, Iron]
   tools: [Hammer, Anvil]
   description: You hammer the iron into a blade and fasten it to a wooden handle. Don't cut yourself.
+- outputs: [Diamond Dust]
+  inputs: [Raw Diamond]
+  tools: [Hammer]
+  description: You smash that expensive rock into a million little pieces. What have you done??
+- outputs: [Diamond Dust]
+  inputs: [Diamond]
+  tools: [Hammer]
+  description: You could have used a raw diamond for this… but you do you, boo.
+- outputs: [Sapphire Dust]
+  inputs: [Raw Sapphire]
+  tools: [Hammer]
+  description: You pulverize the raw sapphire into… uh… pulverized sapphire.
+- outputs: [Sapphire Dust]
+  inputs: [Sapphire]
+  tools: [Hammer]
+  description: You could have used a raw sapphire for this… but you do you, boo.
+- outputs: [Emerald Dust]
+  inputs: [Raw Emerald]
+  tools: [Hammer]
+  description: When the hammer falls, you feel a disturbance… as if millions of villagers cried out at once.
+- outputs: [Emerald Dust]
+  inputs: [Emerald]
+  tools: [Hammer]
+  description: You could have used a raw emerald for this… but you do you, boo.
+- outputs: [Ruby Dust]
+  inputs: [Raw Ruby]
+  tools: [Hammer]
+  description: When you think about it, it's kind of like now you have millions of teeny-tiny rubies.
+- outputs: [Ruby Dust]
+  inputs: [Ruby]
+  tools: [Hammer]
+  description: You could have used a raw ruby for this… but you do you, boo.
+- outputs: [Tanzanite Dust]
+  inputs: [Raw Tanzanite]
+  tools: [Hammer]
+  description: You smash the raw tanzanite. Well, at least you have some cool indigo powder now.
+- outputs: [Tanzanite Dust]
+  inputs: [Tanzanite]
+  tools: [Hammer]
+  description: You could have used a raw tanzanite for this… but you do you, boo.
+- outputs: [Spinning Wheel]
+  inputs: [Lumber, Wheel, Glue]
+  tools: [Saw, Hammer]
+  description: After hours of sawing, gluing, and hammering, you give your creation an oh-so-satisfying spin.
+- outputs: [Lapidary Wheel]
+  inputs: [Spinning Wheel, Diamond Dust, Glue]
+  description: You bling out your spinning wheel, Giving it a new life as a tool of the jewel.
+- outputs: [Yarn]
+  inputs: [Wool]
+  tools: [Spinning Wheel]
+  description: Poof! The floof is now floooooooooooooooof.
+- outputs: [Sapphire]
+  inputs: [Raw Sapphire]
+  tools: [Lapidary Wheel]
+  description: You painstakingly grind facets into the raw blue stone until it looks sufficiently expensive.
+- outputs: [Emerald]
+  inputs: [Raw Emerald]
+  tools: [Lapidary Wheel]
+  description: As the wheel does its work, you hear the unmistakable "hmmm" sounds of minecraft villagers outside.
+- outputs: [Ruby]
+  inputs: [Raw Ruby]
+  tools: [Lapidary Wheel]
+  description: You made a ruby! And it's not even Tuesday. Or maybe it is.
+- outputs: [Diamond]
+  inputs: [Raw Diamond]
+  tools: [Lapidary Wheel]
+  description: When the work is done you get a call from DeBeers. They want to talk. They don't sound happy.
+- outputs: [Tanzanite]
+  inputs: [Raw Tanzanite]
+  tools: [Lapidary Wheel]
+  description: Eons of geology get eaten away to reveal a gorgeous pleochroic stone. Plee-oh-crow-ick. That's a good word.
+- outputs: [Knitting Needles]
+  inputs: [Stick, Stick]
+  tools: [Knife]
+  description: You use those whittling skills you learned at summer camp to turn two sticks into smaller, pointier sticks.
+- outputs: [Iron]
+  inputs: [Iron Ore, Coal]
+  tools: [Furnace]
+  description: You smelt the iron ore into an ingot. And you know what they say, whoever smelt it… nevermind.
+- outputs: [Aluminum]
+  inputs: [Aluminum Ore, Coal]
+  tools: [Furnace]
+  description: As if by magic, you turn that ore into pure aluminum. Metallurgy is cool!
+- outputs: [Gold]
+  inputs: [Gold Ore, Coal]
+  tools: [Furnace]
+  description: You melt down the gold ore into a shiny yellow brick, ready to be sold on infomercials worldwide.
+- outputs: [Lumber]
+  inputs: [Log]
+  tools: [Saw]
+  description: The sound of sawing logs brings you back to your childhood, before your dad got treatment for sleep apnea.
+- outputs: [Lumber]
+  inputs: [Log]
+  tools: [Saw]
+  description: The sound of sawing logs brings you back to your childhood, before your dad got treatment for sleep apnea.
+- outputs: [Fashionable Shirt]
+  inputs: [Shirt, Ruby Dust, Glue]
+  description: You mix the ruby dust and glue, and smear it onto the shirt in a fashionable way.
+- outputs: [Fancy Pants]
+  inputs: [Pants, Emerald Dust, Glue]
+  description: You glue the emerald dust all over the pants, upping their fanciness by 200%.
+- outputs: [Cool Shoes]
+  inputs: [Shoes, Sapphire Dust, Glue]
+  description: You roll the shoes in glue and sapphire dust, which makes them cool. Deal with it.
+- outputs: [Axe]
+  inputs: [Stick, Iron]
+  tools: [Hammer, Anvil]
+  description: You beat the iron into a chonky blade and attach it to a sturdy stick (don't axe me how).
+- outputs: [Shears]
+  inputs: [Knife, Knife]
+  description: You reconfigure a pair of knives in a pinchy way.
+- outputs: [Wheel]
+  inputs: [Stick, Stick, Stick, Lumber]
+  description: Look, I don't know how exactly wheels are made, but you make one. Okay?
+- outputs: [Glass]
+  inputs: [Sand, Coal]
+  tools: [Furnace]
+  description: You melt the sand, and… where did it go?? Oh, oh… it's just transparent now.
+- outputs: [Pot]
+  inputs: [Iron]
+  tools: [Hammer, Anvil]
+  description: Yeah, you show that iron who's boss! It's a pot now.
+- outputs: [Chisel]
+  inputs: [Iron]
+  tools: [Hammer, Anvil]
+  description: You hammer the iron into a pointy rod thing. How neat!
