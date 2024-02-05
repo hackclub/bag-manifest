@@ -468,3 +468,55 @@
   artist: ---
   description: Duh-dum… duh-dum duh-dum… duhdumduhdumduhdumduhdum
   tag: -blahaj
+- name: Water
+  artist: ---
+  description: I can't believe how wet this stuff is!
+  tag: -water
+- name: Bread
+  artist: ---
+  description: The best thing since sliced… well… um… hmm.
+  tag: -bread
+- name: Wheat
+  artist: ---
+  description: Mmmmm, gluten!
+  tag: -wheat
+- name: Flour
+  artist: ---
+  description: Surprisingly, it's not actually made from flowers.
+  tag: -flour
+- name: Brick
+  artist: ---
+  description: The natural enemy of windows.
+  tag: -brick
+- name: Clay
+  artist: ---
+  description: Like mud, but better!
+  tag: -clay
+- name: Range
+  artist: ---
+  description: It didn't make sense to split "Stove" and "Oven" into separate items.
+  tag: -range
+- name: Salt
+  artist: ---
+  description: Best to avoid this stuff if you happen to be a slug.
+  tag: -salt
+- name: Egg
+  artist: ---
+  description: An essential ingredient for creating chickens.
+  tag: -egg
+- name: Sugar
+  artist: ---
+  description: Glucose, sucrose, fructose… feelgross.
+  tag: -sugar
+- name: Firewood
+  artist: ---
+  description: It burns, it burns!! That's a good thing in this case.
+  tag: -firewood
+- name: Sugarcane
+  artist: ---
+  description: Despite the name, it doesn't work great as a cane.
+  tag: -sugarcane
+- name: Cake
+  artist: ---
+  description: Without this, the entire birthday economy would collapse.
+  tag: -cake

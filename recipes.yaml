@@ -135,3 +135,27 @@
   inputs: [Iron]
   tools: [Hammer, Anvil]
   description: You hammer the iron into a pointy rod thing. How neat!
+- outputs: [Bread]
+  inputs: [Water, Flour, Salt, Firewood]
+  tools: [Range]
+  description: Stop loafing around! Ha ha ha *sigh*… you got bread now.
+- outputs: [Cake]
+  inputs: [Water, Flour, Sugar, Salt, Egg, Firewood]
+  tools: [Range]
+  description: You bake a delicious cake. Maybe Marie Antoinette had it right all along.
+- outputs: [Glue]
+  inputs: [Water, Bone Dust, Firewood]
+  tools: [Pot, Range]
+  description: You extract a sticky paste from the bone dust. This stuff is gross, it better be useful.
+- outputs: [Firewood, Firewood, Firewood]
+  inputs: [Log]
+  tools: [Axe]
+  description: You chop the log into little pieces, dreaming of toasted marshmallows.
+- outputs: [Stick, Stick, Stick]
+  inputs: [Log]
+  tools: [Saw]
+  description: You saw the log up into sticks. Which, when you think about it, are really just little mini-logs.
+- outputs: [Sugar]
+  inputs: [Water, Sugarcane]
+  tools: [Pot, Range]
+  description: You boil the cane down until all you have is raw sugar… how sweet!
