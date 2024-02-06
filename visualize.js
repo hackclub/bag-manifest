@@ -22,10 +22,24 @@
   const toolColor = 'blue'
   const outputColor = 'green'
 
+  // Define a deterministic random number generator function
+  function seededRandom(seed) {
+    var x = Math.sin(seed) * 10000
+    return x - Math.floor(x)
+  }
+
+  // Update the position initialization loop to use seeded random numbers
   _.each(nodes, (v, i) => {
+    // Clone the item into itself to create the tooltip info
     v.tooltip = _.cloneDeep(v)
-    v.x = Math.random() * canvasWidth
-    v.y = Math.random() * canvasHeight
+
+    // Use the node's index as the seed
+    const seed = i
+    const randX = seededRandom(seed) * canvasWidth
+    const randY = seededRandom(seed + 1) * canvasHeight
+    v.x = randX
+    v.y = randY
+
     v.index = i
   })
 
