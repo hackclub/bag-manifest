@@ -23,6 +23,7 @@
   const outputColor = 'green'
 
   _.each(nodes, (v, i) => {
+    v.tooltip = _.cloneDeep(v)
     v.x = Math.random() * canvasWidth
     v.y = Math.random() * canvasHeight
     v.index = i
@@ -218,6 +219,37 @@
     .attr('dy', itemImageSize) // Adjust the distance below the image
     .text((d) => d.name) // Assuming each item has a 'name' field
 
+  // Add text labels below each image for items
+  itemNodes
+    .append('text')
+    .attr('text-anchor', 'middle')
+    .attr('dy', itemImageSize / 2 + 15) // Adjust the distance below the image
+    .text((d) => d.name)
+
+  // Tooltip
+  const tooltip = d3
+    .select('body')
+    .append('div')
+    .style('position', 'absolute')
+    .style('background', 'lightsteelblue')
+    .style('top', '5px')
+    .style('left', '5px')
+    .style('padding', '5px')
+    .style('border', '1px solid black')
+    .style('border-radius', '5px')
+    .style('visibility', 'hidden')
+    .style('pointer-events', 'none')
+
+  // Add mouseover and mouseout event listeners to item nodes
+  itemNodes
+    .on('mouseover', function (event, d) {
+      tooltip.style('visibility', 'visible')
+      tooltip.html(`<pre>${jsyaml.dump(d.tooltip)}</pre>`)
+    })
+    .on('mouseout', function () {
+      tooltip.style('visibility', 'hidden')
+    })
+
   // Create nodes for recipes
   const recipeNodes = svg
     .selectAll('.recipe')
@@ -246,6 +278,16 @@
     .attr('height', recipeImageSize)
     .attr('x', (d, i, data) => (i - data.length / 2) * recipeImageSize)
     .attr('y', (d) => -recipeImageSize / 2)
+
+  // Add mouseover and mouseout event listeners to recipe nodes
+  recipeNodes
+    .on('mouseover', function (event, d) {
+      tooltip.style('visibility', 'visible')
+      tooltip.html(`<pre>${jsyaml.dump(d.tooltip)}</pre>`)
+    })
+    .on('mouseout', function () {
+      tooltip.style('visibility', 'hidden')
+    })
 
   // Update node and link positions on each tick
   function tick() {
