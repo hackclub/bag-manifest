@@ -338,7 +338,7 @@
         .distance(100)
         .strength(0.1)
     )
-    .force('charge', d3.forceManyBody().strength(-500))
+    .force('charge', d3.forceManyBody().strength(-700))
     .force('x', d3.forceX(canvasWidth / 2).strength(0.05))
     .force('y', d3.forceY(canvasHeight / 2).strength(0.05))
     .on('tick', tick)
