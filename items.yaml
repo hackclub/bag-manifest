@@ -3,7 +3,7 @@
 # Items with no listed frequency have a frequency of 0.
 - name: gp
   tag: -gp
-  artist: 'Eleeza'
+  artist: Jagex
   description: Gold pieces? Game points? Nobody knows what it stands for. But it's money.
   frequency: 1
 - name: Socks
@@ -34,7 +34,7 @@
   description: Good strong boards, ready for all your lumbrous needs.
   frequency: 0.6
 - name: Stick
-  tag: -wood-stick
+  tag: -stick
   artist: Eleeza
   description: A solid-looking stick, the kind that makes you just wanna hit stuff.
   frequency: 0.9
@@ -554,13 +554,25 @@
   tag: -carrot-cake
 - name: Banana Bread
   artist: ---
-  description: This loaf of banana bread smells like bananas, and also bread. Shocking!
+  description: This loaf of banana bread smells like bananas, and also bread. Incredible!
   tag: -banana-bread
 - name: Stone Mill
   artist: ---
-  description: You wouldn't believe what you can grind up with this thing! Or maybe you would. It's not like, *that* surprising.
+  description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, *that* surprising.
   tag: -stone-mill
 - name: Cloth
   artist: ---
   description: Literally the fabric of the universe… or at least the parts of the universe made from fabric.
   tag: -cloth
+- name: Loom
+  artist: ---
+  description: Something something problems looming on the horizon. Also, it makes cloth.
+  tag: -loom
+- name: Vessel
+  artist: ---
+  description: Dissapointingly, this is just the kind of vessel that holds stuff. Not a boat.
+  tag: -vessel
+- name: Pottery Wheel
+  artist: ---
+  description: You spin me right round baby right round, like a vessel baby right round round round.
+  tag: -pottery-wheel

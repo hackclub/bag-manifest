@@ -5,6 +5,10 @@
 - outputs: [Hammer]
   inputs: [Stick, Iron]
   description: You join the iron and stick in holy matrimony to create the ultimate smacking solution.
+- outputs: [Anvil]
+  inputs: [Iron, Iron, Iron, Clay, Coal]
+  tools: [Furnace]
+  description: You melt the iron and pour it into a ceramic mould. An anvil is born. Mazel tov!
 - outputs: [Knife]
   inputs: [Stick, Iron]
   tools: [Hammer, Anvil]
@@ -135,19 +139,19 @@
   inputs: [Iron]
   tools: [Hammer, Anvil]
   description: You hammer the iron into a pointy rod thing. How neat!
-- outputs: [Bread]
+- outputs: [Bread, Vessel]
   inputs: [Water, Flour, Salt, Firewood]
   tools: [Range]
   description: Stop loafing around! Ha ha ha *sigh*… you got bread now.
-- outputs: [Banana Bread]
+- outputs: [Banana Bread, Vessel]
   inputs: [Water, Flour, Salt, Firewood, Banana]
   tools: [Range]
   description: You take that mushy old banana and give it a new life as bread. It seems… overjoyed? Bananas can be hard to read.
-- outputs: [Cake]
+- outputs: [Cake, Vessel]
   inputs: [Water, Flour, Sugar, Salt, Egg, Firewood]
   tools: [Range]
   description: You bake a delicious cake. Maybe Marie Antoinette had it right all along.
-- outputs: [Carrot Cake]
+- outputs: [Carrot Cake, Vessel]
   inputs: [Water, Flour, Sugar, Salt, Egg, Firewood, Carrot]
   tools: [Range]
   description: You bake a delicious cake and throw in some carrots. That makes it healthy, right?
@@ -155,7 +159,7 @@
   inputs: [Bone]
   tools: [Hammer]
   description: You pound the bone until that whole "Ashes to ashes, dust to dust" thing starts to make a lot more sense.
-- outputs: [Glue]
+- outputs: [Glue, Vessel]
   inputs: [Water, Bone Dust, Firewood]
   tools: [Pot, Range]
   description: You extract a sticky paste from the bone dust. This stuff is gross, it better be useful.
@@ -167,7 +171,7 @@
   inputs: [Log]
   tools: [Saw]
   description: You saw the log up into sticks. Which, when you think about it, are really just little mini-logs.
-- outputs: [Sugar]
+- outputs: [Sugar, Vessel]
   inputs: [Water, Sugarcane]
   tools: [Pot, Range]
   description: You boil the cane down until all you have is raw sugar… how sweet!
@@ -209,4 +213,20 @@
 - outputs: [Bone Dust, Bone Dust]
   inputs: [Bone]
   tools: [Stone Mill]
-  description: You pulverize the bones beneath your mighty stone wheels, feeling mildly amused that "stone" rhymes with "bone". Heh.
+  description: You grind the bones beneath your mighty stone wheels, feeling mildly amused that "stone" rhymes with "bone". Heh.
+- outputs: [Cloth]
+  inputs: [Thread, Thread, Thread]
+  tools: [Loom]
+  description: You take the thread on a spiritual journey into the second dimension, until eventually it is reborn as cloth.
+- outputs: [Loom]
+  inputs: [Lumber, Stick, Glue]
+  tools: [Saw]
+  description: Wow, that was simpler than expected. A basic loom is really just a wooden square with a stick, huh?
+- outputs: [Pottery Wheel]
+  inputs: [Wheel, Aluminum, Lumber, Stick, Glue]
+  tools: [Saw, Hammer, Anvil]
+  description: You flatten the aluminum, put it on top of the wheel, and put it on a wooden frame. Let's take this baby for a spin!
+- outputs: [Vessel]
+  inputs: [Clay]
+  tools: [Pottery Wheel, Furnace]
+  description: You flatten the aluminum, put it on top of the wheel, and put it on a wooden frame. Let's take this baby for a spin!
