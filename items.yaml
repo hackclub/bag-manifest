@@ -520,3 +520,47 @@
   artist: ---
   description: Without this, the entire birthday economy would collapse.
   tag: -cake
+- name: Cotton
+  artist: ---
+  description: The terrestrial cousin of clouds.
+  tag: -cotton
+- name: Thread
+  artist: ---
+  description: A useful material supposedly invented in the far-off land of Reddite.
+  tag: -thread
+- name: Needle
+  artist: ---
+  description: Its sharpness is matched only by its pokiness.
+  tag: -needle
+- name: Fishhook
+  artist: ---
+  description: After all these years, you would think the fish would have learned not to fall for these.
+  tag: -fishhook
+- name: Fishing Rod
+  artist: ---
+  description: Go ye to the river, wave this special wand, and ye shall summon thyself a fishee. Magic!
+  tag: -fishing-rod
+- name: Pickaxe
+  artist: ---
+  description: Great for solving miner problems, not so much for majer ones.
+  tag: -pickaxe
+- name: Mandrel
+  artist: ---
+  description: It's really just a glorified rod. But sometimes that's what you need.
+  tag: -mandrel
+- name: Carrot Cake
+  artist: ---
+  description: This delicious-looking cake has 0.04% more dietary fiber than regular cake.
+  tag: -carrot-cake
+- name: Banana Bread
+  artist: ---
+  description: This loaf of banana bread smells like bananas, and also bread. Shocking!
+  tag: -banana-bread
+- name: Stone Mill
+  artist: ---
+  description: You wouldn't believe what you can grind up with this thing! Or maybe you would. It's not like, *that* surprising.
+  tag: -stone-mill
+- name: Cloth
+  artist: ---
+  description: Literally the fabric of the universe… or at least the parts of the universe made from fabric.
+  tag: -cloth
