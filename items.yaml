@@ -234,7 +234,7 @@
   tag: -fish-hat
 - name: Shurt
   artist: Elena
-  description: "It's a shirt alright, but it's a just a little\u2026 weird."
+  description: "It's a shirt alright, but it's a just a little… weird."
   frequency: 0.2
   tag: -shurt
 - name: Fish
@@ -311,8 +311,7 @@
   tag: -mash-season-9
 - name: MASH Season 10
   artist: Elena
-  description:
-    "Laurence Fishburne makes an appearance, so\u2026 that's something\
+  description: "Laurence Fishburne makes an appearance, so… that's something\
     \ I guess."
   frequency: 0.1
   tag: -mash-season-10
@@ -323,7 +322,7 @@
   tag: -mash-season-11
 - name: MASH The Good Seasons
   artist: Elena
-  description: "Sorry BJ, sorry Colonel Potter\u2026 Henry and Trapper were better."
+  description: 'Sorry BJ, sorry Colonel Potter… Henry and Trapper were better.'
   frequency: 0.05
   tag: -mash-good-seasons
 - name: MASH The Complete Series
@@ -335,7 +334,7 @@
   tag: -mash-complete-series
 - name: AfterMASH Season 1
   artist: Jeijii
-  description: "Why do you own this? It is\u2026 not good."
+  description: 'Why do you own this? It is… not good.'
   frequency: 0.05
   tag: -aftermash-season-1
 - name: AfterMASH Season 2
