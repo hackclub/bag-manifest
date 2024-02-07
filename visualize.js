@@ -28,13 +28,22 @@
     return x - Math.floor(x)
   }
 
+  // Deterministically calculate an integer from a string
+  function seedFromString(string) {
+    return _.reduce(string.split(''), (a, b) => a + b.charCodeAt(0), 0)
+  }
+
   // Update the position initialization loop to use seeded random numbers
   _.each(nodes, (v, i) => {
     // Clone the item into itself to create the tooltip info
     v.tooltip = _.cloneDeep(v)
 
-    // Use the node's index as the seed
-    const seed = i
+    // Generate a pseudorandom value from a seed
+    const seedString =
+      v.name ?? _.join(_.concat(v.outputs, v.inputs || [], v.tools || []))
+    const seed = seedFromString(seedString)
+    console.log(`Seed for ${seedString} is ${seed}`)
+
     const randX = seededRandom(seed) * canvasWidth
     const randY = seededRandom(seed + 1) * canvasHeight
     v.x = randX
