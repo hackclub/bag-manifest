@@ -151,7 +151,7 @@
   tag: -emerald
 - name: Raw Ruby
   artist: Elena
-  description: "Is it just me or does this ugly rock look kind of\u2026 angry?"
+  description: 'Is it just me or does this ugly rock look kind of… angry?'
   frequency: 0.2
   tag: -raw-ruby
 - name: Ruby
