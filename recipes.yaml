@@ -13,45 +13,49 @@
   inputs: [Stick, Iron]
   tools: [Hammer, Anvil]
   description: You hammer the iron into a blade and fasten it to a wooden handle. Don't cut yourself.
+- outputs: [Coal Dust]
+  inputs: [Coal]
+  tools: [Stone Mill]
+  description: You break the coal down into little specks of dust. Hayao Miyazaki looks on with horror.
 - outputs: [Diamond Dust]
   inputs: [Raw Diamond]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You smash that expensive rock into a million little pieces. What have you done??
 - outputs: [Diamond Dust]
   inputs: [Diamond]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You could have used a raw diamond for this… but you do you, boo.
 - outputs: [Sapphire Dust]
   inputs: [Raw Sapphire]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You pulverize the raw sapphire into… uh… pulverized sapphire.
 - outputs: [Sapphire Dust]
   inputs: [Sapphire]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You could have used a raw sapphire for this… but you do you, boo.
 - outputs: [Emerald Dust]
   inputs: [Raw Emerald]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: When the hammer falls, you feel a disturbance… as if millions of villagers cried out at once.
 - outputs: [Emerald Dust]
   inputs: [Emerald]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You could have used a raw emerald for this… but you do you, boo.
 - outputs: [Ruby Dust]
   inputs: [Raw Ruby]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: When you think about it, it's kind of like now you have millions of teeny-tiny rubies.
 - outputs: [Ruby Dust]
   inputs: [Ruby]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You could have used a raw ruby for this… but you do you, boo.
 - outputs: [Tanzanite Dust]
   inputs: [Raw Tanzanite]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You smash the raw tanzanite. Well, at least you have some cool indigo powder now.
 - outputs: [Tanzanite Dust]
   inputs: [Tanzanite]
-  tools: [Hammer]
+  tools: [Stone Mill]
   description: You could have used a raw tanzanite for this… but you do you, boo.
 - outputs: [Spinning Wheel]
   inputs: [Lumber, Wheel, Glue]
@@ -125,7 +129,8 @@
   inputs: [Knife, Knife]
   description: You reconfigure a pair of knives in a pinchy way.
 - outputs: [Wheel]
-  inputs: [Stick, Stick, Stick, Lumber]
+  inputs: [Stick, Stick, Stick, Lumber, Glue]
+  tools: [Saw]
   description: Look, I don't know how exactly wheels are made, but you make one. Okay?
 - outputs: [Glass]
   inputs: [Sand, Coal]
@@ -142,7 +147,7 @@
 - outputs: [Bread, Vessel]
   inputs: [Water, Flour, Salt, Firewood]
   tools: [Range]
-  description: Stop loafing around! Ha ha ha *sigh*… you got bread now.
+  description: Stop loafing around! Ha ha ha _sigh_… you got bread now.
 - outputs: [Banana Bread, Vessel]
   inputs: [Water, Flour, Salt, Firewood, Banana]
   tools: [Range]
@@ -167,7 +172,7 @@
   inputs: [Log]
   tools: [Axe]
   description: You chop the log into little pieces, dreaming of toasted marshmallows.
-- outputs: [Stick, Stick, Stick]
+- outputs: [Stick, Stick, Stick, Stick]
   inputs: [Log]
   tools: [Saw]
   description: You saw the log up into sticks. Which, when you think about it, are really just little mini-logs.
@@ -180,9 +185,9 @@
   tools: [Furnace]
   description: The windows around you watch nervously as you fire the clay into the shape of a brick.
 - outputs: [Needle, Needle, Needle, Needle, Needle]
-  inputs: [Iron]
-  tools: [Hammer, Anvil]
-  description: You painstakingly shape the iron into tinier, sharper bits of iron. All this work better have a point.
+  inputs: [Iron Wire]
+  tools: [Hammer, Anvil, Chisel]
+  description: You painstakingly turn the iron wire into tinier, sharper bits of iron wire. All this work better have a point.
 - outputs: [Fishhook]
   inputs: [Needle]
   tools: [Hammer, Mandrel]
@@ -206,11 +211,11 @@
   inputs: [Rock, Rock, Lumber]
   tools: [Hammer, Chisel]
   description: You lovingly chisel the rocks into a pair of wheels and give them a lil table to call home. Don't get too comfortable, wheels. Now the grind begins.
-- outputs: [Flour, Flour]
+- outputs: [Flour]
   inputs: [Wheat]
   tools: [Stone Mill]
   description: You crush the wheat grains beneath the stone wheels of the mill, cackling at their little wheaty screams.
-- outputs: [Bone Dust, Bone Dust]
+- outputs: [Bone Dust]
   inputs: [Bone]
   tools: [Stone Mill]
   description: You grind the bones beneath your mighty stone wheels, feeling mildly amused that "stone" rhymes with "bone". Heh.
@@ -225,7 +230,7 @@
 - outputs: [Pottery Wheel]
   inputs: [Wheel, Aluminum, Lumber, Stick, Glue]
   tools: [Saw, Hammer, Anvil]
-  description: You flatten the aluminum, put it on top of the wheel, and put it on a wooden frame. Let's take this baby for a spin!
+  description: You flatten the aluminum, attach it to the top of the wheel, and put it on a wooden frame. Let's take this baby for a spin!
 - outputs: [Vessel]
   inputs: [Clay]
   tools: [Pottery Wheel, Furnace]
@@ -242,3 +247,27 @@
   inputs: [Yarn]
   tools: [Knitting Needles]
   description: You knit together a neat lil cap for yourself. How satisfying!
+- outputs: [Shurt]
+  inputs: [Cloth, Cloth, Thread, Thread, Yarn, Glue, Tanzanite Dust]
+  tools: [Knitting Needles, Needle]
+  description: They don't understand your genius. But they'll see… now they'll ALL see… your SHURT!!! HAHAHAHAHA!!!!
+- outputs: [Rolling Mill]
+  inputs: [Iron, Iron, Iron]
+  tools: [Hammer, Anvil, Chisel]
+  description: You forge and chisel two hardened round dies, and put them into a frame. You're ready to roll.
+- outputs: [Iron Wire]
+  inputs: [Iron]
+  tools: [Rolling Mill]
+  description: You roll the iron out into its very best impression of spaghetti. It's trying so hard! Are you proud of it??
+- outputs: [Gold Wire]
+  inputs: [Iron]
+  tools: [Rolling Mill]
+  description: You roll the gold out into its very best impression of spaghetti. It's getting a lot closer than iron does. The yellowness helps.
+- outputs: [Top Hat]
+  inputs: [Wool, Tanzanite Dust, Coal Dust, Glue]
+  tools: [Needle]
+  description: You felt the wool into a lovely top hat, with coal and tanzanite dust for color. Fancy!
+- outputs: [Fruit Salad]
+  inputs: [Apple, Banana, Kiwi, Orange]
+  tools: [Knife]
+  description: You cut up a bunch of fruit and mix it all together. The Wiggles would be so proud!

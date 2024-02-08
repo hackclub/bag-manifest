@@ -557,7 +557,7 @@
   tag: -banana-bread
 - name: Stone Mill
   artist: ---
-  description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, *that* surprising.
+  description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, _that_ surprising.
   tag: -stone-mill
 - name: Cloth
   artist: ---
@@ -575,3 +575,31 @@
   artist: ---
   description: You spin me right round baby right round, like a vessel baby right round round round.
   tag: -pottery-wheel
+- name: Hairball
+  artist: ---
+  description: _cough cough… blllech… bllleeeechhh… rourughROURouughhRUUUGH splat_
+  tag: -hairball
+- name: Cat Hat
+  artist: ---
+  description: Meow! /ᐠ｡ꞈ｡ᐟ\
+  tag: -cat-hat
+- name: Rolling Mill
+  artist: ---
+  description: Great for when you want to reduce 3 dimensions back down to 1.
+  tag: -rolling-mill
+- name: Iron Wire
+  artist: ---
+  description: It's iron. It's wire. It's iron wire!
+  tag: -iron-wire
+- name: Gold Wire
+  artist: ---
+  description: For those times when regular wire just isn't fancy enough.
+  tag: -gold-wire
+- name: Coal Dust
+  artist: ---
+  description: Careful, this stuff stains your clothes.
+  tag: -coal-dust
+- name: Fruit Salad
+  artist: ---
+  description: Yummy yummy.
+  tag: -fruit-salad
