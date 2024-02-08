@@ -230,3 +230,15 @@
   inputs: [Clay]
   tools: [Pottery Wheel, Furnace]
   description: You flatten the aluminum, put it on top of the wheel, and put it on a wooden frame. Let's take this baby for a spin!
+- outputs: [Shirt]
+  inputs: [Cloth, Cloth, Thread]
+  tools: [Shears, Needle]
+  description: You snip the cloth into a shirty shape and shirt it all up with a needle and thread. Shirt!
+- outputs: [Pants]
+  inputs: [Cloth, Cloth, Cloth, Thread]
+  tools: [Shears, Needle]
+  description: You pantsify that cloth with your sicknasty sewing skills.
+- outputs: [Hat]
+  inputs: [Yarn]
+  tools: [Knitting Needles]
+  description: You knit together a neat lil cap for yourself. How satisfying!
