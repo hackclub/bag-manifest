@@ -42,7 +42,6 @@
     const seedString =
       v.name ?? _.join(_.concat(v.outputs, v.inputs || [], v.tools || []))
     const seed = seedFromString(seedString)
-    console.log(`Seed for ${seedString} is ${seed}`)
 
     const randX = seededRandom(seed) * canvasWidth
     const randY = seededRandom(seed + 1) * canvasHeight
