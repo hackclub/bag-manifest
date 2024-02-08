@@ -3,7 +3,7 @@
 # Items with no listed frequency have a frequency of 0.
 - name: gp
   tag: -gp
-  artist: 'Eleeza'
+  artist: Jagex
   description: Gold pieces? Game points? Nobody knows what it stands for. But it's money.
   frequency: 1
 - name: Socks
@@ -34,7 +34,7 @@
   description: Good strong boards, ready for all your lumbrous needs.
   frequency: 0.6
 - name: Stick
-  tag: -wood-stick
+  tag: -stick
   artist: Eleeza
   description: A solid-looking stick, the kind that makes you just wanna hit stuff.
   frequency: 0.9
@@ -46,7 +46,7 @@
 - name: Shears
   tag: -shears
   artist: Acon
-  description: Do your sheep occupy too much volumetric space? You need shears!
+  description: They make a satisfying snippy sound when you squeeze them closed. Schhhnip!
 - name: Sockmeister Challenge Coin
   tag: -sockmeister-challenge-coin
   artist: Jeijii
@@ -151,7 +151,7 @@
   tag: -emerald
 - name: Raw Ruby
   artist: Elena
-  description: "Is it just me or does this ugly rock look kind of\u2026 angry?"
+  description: 'Is it just me or does this ugly rock look kind of… angry?'
   frequency: 0.2
   tag: -raw-ruby
 - name: Ruby
@@ -234,7 +234,7 @@
   tag: -fish-hat
 - name: Shurt
   artist: Elena
-  description: "It's a shirt alright, but it's a just a little\u2026 weird."
+  description: "It's a shirt alright, but it's a just a little… weird."
   frequency: 0.2
   tag: -shurt
 - name: Fish
@@ -311,8 +311,7 @@
   tag: -mash-season-9
 - name: MASH Season 10
   artist: Elena
-  description:
-    "Laurence Fishburne makes an appearance, so\u2026 that's something\
+  description: "Laurence Fishburne makes an appearance, so… that's something\
     \ I guess."
   frequency: 0.1
   tag: -mash-season-10
@@ -323,7 +322,7 @@
   tag: -mash-season-11
 - name: MASH The Good Seasons
   artist: Elena
-  description: "Sorry BJ, sorry Colonel Potter\u2026 Henry and Trapper were better."
+  description: 'Sorry BJ, sorry Colonel Potter… Henry and Trapper were better.'
   frequency: 0.05
   tag: -mash-good-seasons
 - name: MASH The Complete Series
@@ -335,7 +334,7 @@
   tag: -mash-complete-series
 - name: AfterMASH Season 1
   artist: Jeijii
-  description: "Why do you own this? It is\u2026 not good."
+  description: 'Why do you own this? It is… not good.'
   frequency: 0.05
   tag: -aftermash-season-1
 - name: AfterMASH Season 2
@@ -520,3 +519,87 @@
   artist: ---
   description: Without this, the entire birthday economy would collapse.
   tag: -cake
+- name: Cotton
+  artist: ---
+  description: The terrestrial cousin of clouds.
+  tag: -cotton
+- name: Thread
+  artist: ---
+  description: A useful material supposedly invented in the far-off land of Reddite.
+  tag: -thread
+- name: Needle
+  artist: ---
+  description: Its sharpness is matched only by its pokiness.
+  tag: -needle
+- name: Fishhook
+  artist: ---
+  description: After all these years, you would think the fish would have learned not to fall for these.
+  tag: -fishhook
+- name: Fishing Rod
+  artist: ---
+  description: Go ye to the river, wave this special wand, and ye shall summon thyself a fishee. Magic!
+  tag: -fishing-rod
+- name: Pickaxe
+  artist: ---
+  description: Great for solving miner problems, not so much for majer ones.
+  tag: -pickaxe
+- name: Mandrel
+  artist: ---
+  description: It's really just a glorified rod. But sometimes that's what you need.
+  tag: -mandrel
+- name: Carrot Cake
+  artist: ---
+  description: This delicious-looking cake has 0.04% more dietary fiber than regular cake.
+  tag: -carrot-cake
+- name: Banana Bread
+  artist: ---
+  description: This loaf of banana bread smells like bananas, and also bread. Incredible!
+  tag: -banana-bread
+- name: Stone Mill
+  artist: ---
+  description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, _that_ surprising.
+  tag: -stone-mill
+- name: Cloth
+  artist: ---
+  description: Literally the fabric of the universe… or at least the parts of the universe made from fabric.
+  tag: -cloth
+- name: Loom
+  artist: ---
+  description: Something something problems looming on the horizon. Also, it makes cloth.
+  tag: -loom
+- name: Vessel
+  artist: ---
+  description: Dissapointingly, this is just the kind of vessel that holds stuff. Not a boat.
+  tag: -vessel
+- name: Pottery Wheel
+  artist: ---
+  description: You spin me right round baby right round, like a vessel baby right round round round.
+  tag: -pottery-wheel
+- name: Hairball
+  artist: ---
+  description: _cough cough… blllech… bllleeeechhh… rourughROURouughhRUUUGH splat_
+  tag: -hairball
+- name: Cat Hat
+  artist: ---
+  description: Meow! /ᐠ｡ꞈ｡ᐟ\
+  tag: -cat-hat
+- name: Rolling Mill
+  artist: ---
+  description: Great for when you want to reduce 3 dimensions back down to 1.
+  tag: -rolling-mill
+- name: Iron Wire
+  artist: ---
+  description: It's iron. It's wire. It's iron wire!
+  tag: -iron-wire
+- name: Gold Wire
+  artist: ---
+  description: For those times when regular wire just isn't fancy enough.
+  tag: -gold-wire
+- name: Coal Dust
+  artist: ---
+  description: Careful, this stuff stains your clothes.
+  tag: -coal-dust
+- name: Fruit Salad
+  artist: ---
+  description: Yummy yummy.
+  tag: -fruit-salad

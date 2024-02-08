@@ -22,9 +22,32 @@
   const toolColor = 'blue'
   const outputColor = 'green'
 
+  // Define a deterministic random number generator function
+  function seededRandom(seed) {
+    var x = Math.sin(seed) * 10000
+    return x - Math.floor(x)
+  }
+
+  // Deterministically calculate an integer from a string
+  function seedFromString(string) {
+    return _.reduce(string.split(''), (a, b) => a + b.charCodeAt(0), 0)
+  }
+
+  // Update the position initialization loop to use seeded random numbers
   _.each(nodes, (v, i) => {
-    v.x = Math.random() * canvasWidth
-    v.y = Math.random() * canvasHeight
+    // Clone the item into itself to create the tooltip info
+    v.tooltip = _.cloneDeep(v)
+
+    // Generate a pseudorandom value from a seed
+    const seedString =
+      v.name ?? _.join(_.concat(v.outputs, v.inputs || [], v.tools || []))
+    const seed = seedFromString(seedString)
+
+    const randX = seededRandom(seed) * canvasWidth
+    const randY = seededRandom(seed + 1) * canvasHeight
+    v.x = randX
+    v.y = randY
+
     v.index = i
   })
 
@@ -218,6 +241,37 @@
     .attr('dy', itemImageSize) // Adjust the distance below the image
     .text((d) => d.name) // Assuming each item has a 'name' field
 
+  // Add text labels below each image for items
+  itemNodes
+    .append('text')
+    .attr('text-anchor', 'middle')
+    .attr('dy', itemImageSize / 2 + 15) // Adjust the distance below the image
+    .text((d) => d.name)
+
+  // Tooltip
+  const tooltip = d3
+    .select('body')
+    .append('div')
+    .style('position', 'absolute')
+    .style('background', 'lightsteelblue')
+    .style('top', '5px')
+    .style('left', '5px')
+    .style('padding', '5px')
+    .style('border', '1px solid black')
+    .style('border-radius', '5px')
+    .style('visibility', 'hidden')
+    .style('pointer-events', 'none')
+
+  // Add mouseover and mouseout event listeners to item nodes
+  itemNodes
+    .on('mouseover', function (event, d) {
+      tooltip.style('visibility', 'visible')
+      tooltip.html(`<pre>${jsyaml.dump(d.tooltip)}</pre>`)
+    })
+    .on('mouseout', function () {
+      tooltip.style('visibility', 'hidden')
+    })
+
   // Create nodes for recipes
   const recipeNodes = svg
     .selectAll('.recipe')
@@ -246,6 +300,16 @@
     .attr('height', recipeImageSize)
     .attr('x', (d, i, data) => (i - data.length / 2) * recipeImageSize)
     .attr('y', (d) => -recipeImageSize / 2)
+
+  // Add mouseover and mouseout event listeners to recipe nodes
+  recipeNodes
+    .on('mouseover', function (event, d) {
+      tooltip.style('visibility', 'visible')
+      tooltip.html(`<pre>${jsyaml.dump(d.tooltip)}</pre>`)
+    })
+    .on('mouseout', function () {
+      tooltip.style('visibility', 'hidden')
+    })
 
   // Update node and link positions on each tick
   function tick() {
@@ -282,7 +346,7 @@
         .distance(100)
         .strength(0.1)
     )
-    .force('charge', d3.forceManyBody().strength(-500))
+    .force('charge', d3.forceManyBody().strength(-700))
     .force('x', d3.forceX(canvasWidth / 2).strength(0.05))
     .force('y', d3.forceY(canvasHeight / 2).strength(0.05))
     .on('tick', tick)
