@@ -28,13 +28,13 @@
             - description: You pull the struggling fish out of the water in a glorious display of your superiority as an apex predator! Way to go.
               frequency: 80
               # Items gained from this node in the tree
-              gains: [Fish]
+              outputs: [Fish]
             - description: You pull the fi— wait a minute, that's not a fish, it's a hat… cool, I guess?
               frequency: 5
-              gains: [Hat]
+              outputs: [Hat]
             - description: You reel the line out of the water, revealing a pair of pants. Pants are kind of like fish, when you think about it.
               frequency: 3
-              gains: [Pants]
+              outputs: [Pants]
             - description: The line goes slack. I guess this is what people mean by "the one that got away" :(
               frequency: 30
             - description: The rod snaps and floats downstream, taking your catch with it. What a shame.
