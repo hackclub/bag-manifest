@@ -520,7 +520,7 @@
   description: Without this, the entire birthday economy would collapse.
   tag: -cake
 - name: Cotton
-  artist: ---
+  artist: Jeijii
   description: The terrestrial cousin of clouds.
   tag: -cotton
 - name: Thread
@@ -532,7 +532,7 @@
   description: Its sharpness is matched only by its pokiness.
   tag: -needle
 - name: Fishhook
-  artist: ---
+  artist: Jeijii
   description: After all these years, you would think the fish would have learned not to fall for these.
   tag: -fishhook
 - name: Fishing Rod
@@ -560,7 +560,7 @@
   description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, _that_ surprising.
   tag: -stone-mill
 - name: Cloth
-  artist: ---
+  artist: Jeijii
   description: Literally the fabric of the universe… or at least the parts of the universe made from fabric.
   tag: -cloth
 - name: Loom
@@ -580,7 +580,7 @@
   description: _cough cough… blllech… bllleeeechhh… rourughROURouughhRUUUGH splat_
   tag: -hairball
 - name: Cat Hat
-  artist: ---
+  artist: Jeijii
   description: Meow! /ᐠ｡ꞈ｡ᐟ\
   tag: -cat-hat
 - name: Rolling Mill
