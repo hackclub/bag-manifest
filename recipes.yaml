@@ -271,3 +271,10 @@
   inputs: [Apple, Banana, Kiwi, Orange]
   tools: [Knife]
   description: You cut up a bunch of fruit and mix it all together. The Wiggles would be so proud!
+- outputs: [Shovel]
+  inputs: [Stick, Iron]
+  tools: [Hammer, Anvil]
+  description: You flatten the iron into a nice shovel head and put it on a stick. Personally, I dig it.
+- outputs: [Scythe]
+  inputs: [Stick, Knife]
+  description: You put the blade of the knife onto a long stick. It makes a great swishing sound when you wave it around in the air.

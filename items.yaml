@@ -603,3 +603,11 @@
   artist: ---
   description: Yummy yummy.
   tag: -fruit-salad
+- name: Shovel
+  artist: ---
+  description: In Australia these are known as diggeridoos.
+  tag: -shovel
+- name: Scythe
+  artist: ---
+  description: Don't fear the reaper.
+  tag: -scythe
