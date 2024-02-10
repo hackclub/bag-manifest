@@ -440,7 +440,7 @@
   description: This thing turns 3-dimensional fluff into 1-dimensional fluff.
   tag: -spinning-wheel
 - name: Bone
-  artist: ---
+  artist: Jeijii
   description: You already have 206 of these. Do you really need more?
   tag: -bone
 - name: Bone Dust
@@ -484,7 +484,7 @@
   description: Surprisingly, it's not actually made from flowers.
   tag: -flour
 - name: Brick
-  artist: ---
+  artist: Jeijii
   description: The natural enemy of windows.
   tag: -brick
 - name: Clay
