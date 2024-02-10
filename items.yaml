@@ -440,7 +440,7 @@
   description: This thing turns 3-dimensional fluff into 1-dimensional fluff.
   tag: -spinning-wheel
 - name: Bone
-  artist: ---
+  artist: Jeijii
   description: You already have 206 of these. Do you really need more?
   tag: -bone
 - name: Bone Dust
@@ -468,7 +468,7 @@
   description: Duh-dum… duh-dum duh-dum… duhdumduhdumduhdumduhdum
   tag: -blahaj
 - name: Water
-  artist: ---
+  artist: Jeijii
   description: I can't believe how wet this stuff is!
   tag: -water
 - name: Bread
@@ -484,7 +484,7 @@
   description: Surprisingly, it's not actually made from flowers.
   tag: -flour
 - name: Brick
-  artist: ---
+  artist: Jeijii
   description: The natural enemy of windows.
   tag: -brick
 - name: Clay
@@ -504,7 +504,7 @@
   description: An essential ingredient for creating chickens.
   tag: -egg
 - name: Sugar
-  artist: ---
+  artist: Jeijii
   description: Glucose, sucrose, fructose… feelgross.
   tag: -sugar
 - name: Firewood
@@ -568,7 +568,7 @@
   description: Something something problems looming on the horizon. Also, it makes cloth.
   tag: -loom
 - name: Vessel
-  artist: ---
+  artist: Jeijii
   description: Dissapointingly, this is just the kind of vessel that holds stuff. Not a boat.
   tag: -vessel
 - name: Pottery Wheel
@@ -588,11 +588,11 @@
   description: Great for when you want to reduce 3 dimensions back down to 1.
   tag: -rolling-mill
 - name: Iron Wire
-  artist: ---
+  artist: Jeijii
   description: It's iron. It's wire. It's iron wire!
   tag: -iron-wire
 - name: Gold Wire
-  artist: ---
+  artist: Jeijii
   description: For those times when regular wire just isn't fancy enough.
   tag: -gold-wire
 - name: Coal Dust
