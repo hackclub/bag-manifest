@@ -1,5 +1,5 @@
 # Channels that the action can be performed in. If empty, can be performed anywhere.
-- locations: [river]
+- locations: [river-test]
   # Items used as tools during this action
   tools: [Fishing Rod]
   # A tree of all possible results from this action
