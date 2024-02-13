@@ -1,0 +1,167 @@
+# Channels that the action can be performed in. If empty, can be performed anywhere.
+- locations: [river-test]
+  # Items used as tools during this action
+  tools: [Fishing Rod]
+  # A tree of all possible results from this action
+  results:
+    # The text displayed if this result occurs
+    - description: You cast your line into the water… here fishy fishy…
+      # Probability of this result (as a fraction of the sum of all frequencies for the results at this layer of the tree)
+      frequency: 100
+      # A random number of seconds after this step, before the next one
+      delay: [5, 10]
+      # The next layer of the results tree
+      results:
+        - description: You keep waiting… fishing sure is fun…
+          frequency: 5
+          # If this is true, randomly select another result from the same layer of the tree when this one completes
+          loop: true
+        - description: A bite! You wrestle with the fishy. You can tell already this is going to be a delicious one!
+          frequency: 4
+          results:
+            - description: You keep struggling. Wow, this one's a fighter!
+              frequency: 30
+              loop: true
+            - description: You pull the struggling fish out of the water in a glorious display of your superiority as an apex predator! Way to go.
+              frequency: 80
+              # Items gained from this node in the tree
+              outputs: [Fish]
+            - description: You pull the fi— wait a minute, that's not a fish, it's a hat… cool, I guess?
+              frequency: 5
+              outputs: [Hat]
+            - description: You reel the line out of the water, revealing a pair of pants. Pants are kind of like fish, when you think about it.
+              frequency: 3
+              outputs: [Pants]
+            - description: The line goes slack. I guess this is what people mean by "the one that got away" :(
+              frequency: 30
+            - description: The rod snaps and floats downstream, taking your catch with it. What a shame.
+              frequency: 1
+              # Items lost from this node in the tree
+              losses: [Fishing Rod]
+            - description: "You finally see below the surface… it's a hat… with a person attached? Is that… a fish and game warden? He climbs onto the shore and scolds you: "No fishing without a permit! That's a one gp fine!""
+              frequency: 1
+              # If an admin runs the use command with this flag at the end, it will guarantee that the action tree progresses to this node. This is important for testing.
+              test: -warden
+              losses: [gp]
+        - description: You wait for a while without any bites. Maybe next time
+          frequency: 3
+          # A random number of seconds to wait before this one, after the previous step (incorporating any delay from the last step)
+          await: [8, 10]
+    - description: You try to cast your line but you end up just throwing your rod into the water by mistake. Oops.
+      frequency: 1
+      losses: [Fishing Rod]
+
+- locations: [river, river-test]
+  tools: [Shovel]
+  results:
+    - description: You plunge your shovel into the ground and start digging.
+      frequency: 100
+      results:
+        - description: You keep digging… nothing interesting yet…
+          frequency: 30
+          loop: true
+        - description: The only thing you find is a pretty cool rock.
+          frequency: 80
+          outputs: [Rock]
+        - description: You find some high-quality clay. That's useful!
+          frequency: 50
+          outputs: [Clay]
+        - description: You find a deposit of pure fine sand. Mmmmm sand 
+          frequency: 50
+          outputs: [Sand]
+        - description: Your shovel snaps right where the wood and iron come together. Time for a new shovel I guess.
+          frequency: 1
+          losses: [Shovel]
+        - description: Nothing in this spot but plain old dirt.
+          frequency: 20
+    - description: You plunge your shovel straight into a rock just below the surface, which destroys them both. Dang
+      frequency: 1
+      losses: [Shovel]
+
+- locations: [mine, river-test]
+  tools: [Pickaxe]
+  results:
+    - description: You find a spot that looks promising and start breaking things apart with heavy swings of your pickaxe.
+      frequency: 150
+      results:
+        - description: You keep swinging, rock keeps breaking…
+          frequency: 200
+          loop: true
+        - description: Not much here, but you take a solid-looking rock as a consolation prize.
+          frequency: 100
+          outputs: [Rock]
+        - description: You find a nice black lump of coal!
+          frequency: 100
+          outputs: [Coal]
+        - description: You pry out a good piece of iron ore. That's pretty metal.
+          frequency: 70
+          outputs: [Iron Ore]
+        - description: You find a solid chunk of alumninum ore. Not bad!
+          frequency: 40
+          outputs: [Aluminum Ore]
+        - description: A dirty bluish rock tumbles out of the vein. You found a raw sapphire!
+          frequency: 8
+          outputs: [Raw Sapphire]
+        - description: You brush off a rock to reveal some solid red ruby crystals. Nice!
+          frequency: 7
+          outputs: [Raw Ruby]
+        - description: You uncover a deliciously green-looking rock… it's a raw emerald!
+          frequency: 6
+          outputs: [Raw Emerald]
+        - description: You pull out a rock with some white sparkles on one side… wow, it's a raw diamond!!
+          frequency: 5
+          outputs: [Raw Diamond]
+        - description: Mein gott… is that…? It is! It's a raw tanzanite!! And it's all yours!!!
+          frequency: 2
+          outputs: [Raw Tanzanite]
+        - description: You pry out a rock with some shiny yellow stuff in it. It's gold!!
+          frequency: 8
+          outputs: [Gold Ore]
+        - description: Your pickaxe makes an awful sound on the next strike. Inspection reveals that it's thoroughly broken.
+          frequency: 5
+          losses: [Pickaxe]
+        - description: You raise your pickaxe, ready to strike the rock, when a little voice behind you says "Please, if I could have a moment…"
+          frequency: 1
+          delay: [8, 8]
+          test: -gnome
+          results:
+            - description: You turn around and find yourself face to face with a gnome. A real gnome. With a hat and everything. "Follow me. I wish to show you something" she says
+              delay: [8, 8]
+              results:
+              - description: She disappears into a tunnel you hadn't even realized was there. You shrug and decide to go with it. What else are you gonna do?
+                delay: [8, 8]
+                results:
+                - description: You stumble through a series of twisty, turny tunnels, struggling to keep up with her tiny but surprisingly fast legs. "Don't worry, it's not much farther…"
+                  delay: [8, 8]
+                  results:
+                  - description: You stumble through a series of twisty, turny tunnels, struggling to keep up with her tiny but surprisingly fast legs. "Don't worry, it's not much farther…"
+                    delay: [8, 8]
+                    results:
+                    - description: At last the tunnel opens up into a cave. It's massive, dry, and lit by hundreds of candles. The smell of lavendar wafts through the air. You look around in amazement.
+                      delay: [8, 8]
+                      results:
+                      - description: "Every single surface is covered with stuff. Books, DVDs, signed photos… and most of them feature the same four letters, in the same order every time:"
+                        delay: [8, 8]
+                        results:
+                        - description: M…
+                          delay: [2, 2]
+                          results:
+                          - description: A…
+                            delay: [2, 2]
+                            results:
+                            - description: S…
+                              delay: [2, 2]
+                              results:
+                              - description: H…
+                                delay: [2, 2]
+        - description: There's nothing good here. Even the rocks aren't sturdy enough to use.
+          frequency: 80
+    - description: Your fist strike hits the rock funny and twists the pick right off the handle. That's the end of _that_ pickaxe…
+      frequency: 1
+      losses: [Pickaxe]
+
+- locations: [forest, river-test]
+  tools: [Axe]
+  results:
+    - description: You wander into the trees and find one that looks nice and solid.
+      frequency: 100
