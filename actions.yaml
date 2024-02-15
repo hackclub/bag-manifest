@@ -230,5 +230,54 @@
 - locations: [spooktree-forest]
   tools: [Axe]
   branch:
-    - description: You wander into the trees and find one that looks nice and solid.
-      frequency: 100
+    - description: You wander into the trees and find one that looks nice and solid. You swing your axe, embedding it into the wood with a satisfying thud.
+      frequency: 200
+      tag: tree-find
+      branch:
+        - description: You keep chopping away. This is taking a while, but a strong tree makes for strong lumber!
+          frequency: 60
+          loop: true
+        - description: While you're chopping, an apple falls loose and hits you on the head. You are momentarily inspired to formulate a theory of gravity, but the moment passes and you get back to work.
+          frequency: 10
+          outputs: [Apple]
+          loop: true
+        - description: Your chopping knocks an acorn loose onto the ground next to you. You squirrel it away and get back to the task at hand.
+          frequency: 10
+          outputs: [Acorn]
+          loop: true
+        - description: After many blows the tree tips over. What do they say in these situations? Timber? Whatever. You set to work on the felled tree.
+          frequency: 40
+          tag: tree-split
+          branch:
+            - description: You separate a solid limb from the trunk and take a satisfied look at your haul. Way to go!
+              frequency: 2
+              outputs: [Log, Stick]
+            - description: You split off a log and put it to the side. There's still more work to be done on this tree. You get back to it.
+              frequency: 3
+              outputs: [Log]
+              loop: true
+            - description: You get a chonky limb off the trunk. This will make a good stick for all sorts of crafts. You set it aside and keep chopping.
+              frequency: 3
+              outputs: [Stick]
+              loop: true
+            - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease.
+              frequency: 1
+              branch:
+              - description: You finally get the axe dislodged from the wood, wipe the sweat from your brow, and get back to work.
+                frequency: 5
+                gotoChildren: tree-split
+              - description: You pull hard on the axe handle, but instead of dislodging it snaps… what a shame. I guess axes can't last forever.
+                frequency: 1
+                losses: [Axe]
+        - description: You land a hard strike into the trunk of the tree, but now you can't seem to get the axe out!
+          frequency: 10
+          branch:
+            - description: After much pulling and prying, the axe comes loose. Phew! Now you can get back to chopping.
+              frequency: 5
+              gotoChildren: tree-find
+            - description: You yank on the axe to pull it out, but instead the handle just snaps with the head still embedded in the tree. Dang. Now you need a new axe.
+              frequency: 1
+              losses: [Axe]
+    - description: You find a solid-looking tree in the woods. You swing your axe backward, but it slips out of your hands and flies off into a huge thicket of poison ivy. You're not getting that back.
+      frequency: 1
+      losses: [Axe]
