@@ -38,7 +38,8 @@
               frequency: 1
               # Items lost from this node in the tree
               losses: [Fishing Rod]
-            - description: "You finally see below the surface… it's a hat… with a person attached? Is that… a fish and game warden? He climbs onto the shore and scolds you: "No fishing without a permit! That's a one gp fine!""
+            - description: >
+                You finally see below the surface… it's a hat… with a person attached? Is that… a fish and game warden? She climbs onto the shore and scolds you: "No fishing without a permit! That's a one gp fine!"
               frequency: 1
               # If an admin runs the use command with this flag at the end (prefixed with a hyphen, like -warden), it will guarantee that the action tree progresses to this node. This is important for testing.
               # This tag can also be used by goto fields on other nodes in the tree, which will identify this node by its tag.
@@ -67,7 +68,7 @@
         - description: You find some high-quality clay. That's useful!
           frequency: 50
           outputs: [Clay]
-        - description: You find a deposit of pure fine sand. Mmmmm sand 
+        - description: You find a deposit of pure fine sand. Mmmmm sand
           frequency: 50
           outputs: [Sand]
         - description: Your shovel snaps right where the wood and iron come together. Time for a new shovel I guess.
@@ -130,97 +131,100 @@
             - description: She disappears into a tunnel you hadn't even realized was there. You shrug and decide to go with it. What else are you gonna do?
             - description: You stumble through a series of twisty, turny passages, struggling to keep up with her tiny but surprisingly fast legs. "Don't worry, it's not much farther…"
               branch:
-              - - description: It is much farther. You're getting breathless. The passage seems to be narrowing, constricting your movements as you navigate a channel which was clearly not built for your kind.
-                  tag: gnome-lose
-                - description: You lose all sight of the gnome. Disoriented and scared, you call out for her. But she is too far ahead. You have no choice but to find your own way back.
-                - description: Eventually you step out into the sunshine. All you are left with is a spinning mind filled with questions. How long has it been? Who was that? What did she want to show you?
-                - description: There is simply no way to know. Perhaps one day you will encounter the gnome again. Or perhaps not. Uncertainty is a part of life, and all of us must make our peace with it.
-                  # Terminate ends the action completely (another way to think of it is that it breaks all sequences)
-                  terminate: true
-              - - description: At last the tunnel opens up into a cave. It's massive, dry, and lit by hundreds of candles. The smell of lavendar wafts through the air. You look around in amazement.
-                  tag: gnome-win
-                - description: "Every single surface is covered with stuff. Books, DVDs, signed photos… and almost all of them feature the same four letters, in the same order every time:"
-                - description: M…
-                  delay: 4
-                - description: A…
-                  delay: 4
-                - description: S…
-                  delay: 4
-                - description: H.
-                  delay: 4
-                - description: The gnome casts her gaze over the massive collection, her arms spread widely, palms up, as if standing before the glory of god. "This is our most cherished tradition."
-                - description: Her voice quivers as she speaks. "Many generations ago these artifacts came to us, washed up from the sea in a large steel box, dimensions 20'x8'x8.5'. At first we were mystified."
-                - description: ""The books were decoded first. Much joy they brought us, odd as they were. But it took many years for our brightest minds to unlock the secrets of the discs. And these turned out to be the greater treasure.""
-                - description: ""The discs revealed a legend from a land called… Korea. The stories within were equally tragic and humorous. The dialogue was snappy. The antics amusing. And the social commentary on-point.""
-                - description: The gnome looks at you, now with tears in her eyes. "Our civilization is dying. And our traditions are dying with it." You feel a sense of pity. And also a little uncomfortable. This is weird.
-                - description: She has a far-away look, as if gazing into the future. "A benevolent god bestowed these tales upon us. But their wisdom belongs to all creatures. When I see a human with a pure soul, I bring them here… so they may leave with a gift."
-                - description: The gnome takes an object wrapped in newspaper out of her dirty coat. "This is for you", she says, her eyes wide with pupils dilated to the maxx. You unwrap the gift slowly, doing your best to mirror the reverence the gnome clearly has for it.
-                  branch:
-                  - - description: It's a book. The cover says \"MASH, A Novel About Three Army Doctors"
-                      frequency: 1
-                    - description: The gnome is full-on crying now. "This hallowed text is the foundation. The beginning. Its wisdom is less refined than the tales of the discs. But it will enable you to understand those tales more deeply, should you one day encounter them."
-                      outputs: [MASH The Original Novel]
-                  - - description: It's a DVD. The title is \"MASH Season 1"
-                      frequency: 3
-                    - description: A trio of tears trail down the gnome's cheeks. "This disc is the first of the series. It contains many great tales, such as _Dear Dad_ and _Tuttle_."
-                      outputs: [MASH Season 1]
-                  - - description: It's a DVD. The title is \"MASH Season 2"
-                      frequency: 3
-                    - description: A trio of tears trail down the gnome's cheeks. "This disc is the second of the series. It contains tales of great sadness, such as _Dr. Pierce and Mr. Hyde_, and tales of great laughter, such as _5 O'Clock Charlie_."
-                      outputs: [MASH Season 2]
-                  - - description: It's a DVD. The title is \"MASH Season 3"
-                      frequency: 3
-                    - description: Tears are streaming down the gnome's cheeks. "This disc is the third of the series. The end of the era of Henry Blake and Trapper John McIntyre. It ends with _Abyssinia, Henry_, perhaps the most gut-wrenching tale of all."
-                      outputs: [MASH Season 3]
-                  - - description: It's a DVD. The title is \"MASH Season 4"
-                      frequency: 3
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the fourth of the series. It introduces the characters of Colonel Potter and BJ Hunnicut. They are different from the beloved characters they replace. But with time, you will come to appreciate them."
-                      outputs: [MASH Season 4]
-                  - - description: It's a DVD. The title is \"MASH Season 5"
-                      frequency: 3
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the fifth of the series. It signals the end of the relationship between Frank and Margaret. This is ultimately good for Margaret. She could do better than Ferret-Face Frank."
-                      outputs: [MASH Season 5]
-                  - - description: It's a DVD. The title is \"MASH Season 6"
-                      frequency: 3
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the sixth of the series. In it we witness the arrival of Major Charles Winchester. He is very different from Frank Burns. But in many ways, he is a deeper character, and more deserving of our respect."
-                      outputs: [MASH Season 6]
-                  - - description: It's a DVD. The title is \"MASH Season 7"
-                      frequency: 3
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the seventh of the series. In it we see the introduction of BJ Hunnicut's mustache, and a few classic tales such as _Point of View_."
-                      outputs: [MASH Season 7]
-                  - - description: It's a DVD. The title is \"MASH Season 8"
-                      frequency: 3
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the eigth of the series. In the beginning, we witness the departure of Radar O'Reilly. This turn of events will make your heart ache. But in time, that pain will be eased by the elevation of Corporal Klinger."
-                      outputs: [MASH Season 8]
-                  - - description: It's a DVD. The title is \"MASH Season 9"
-                      frequency: 3
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the ninth of the series. The first tale it contains is deeply impactful. Two stories are interwoven; one is a frivolous game of bridge, and the other a heart-wrenching encounter between Hawkeye and a North Korean soldier."
-                      outputs: [MASH Season 9]
-                  - - description: It's a DVD. The title is \"MASH Season 10"
-                      frequency: 3
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the tenth of the series. In it we find tales such as _Follies of the Living - Concerns of the Dead_ that take us deep into the spiritual and psychic wounds of battle."
-                      outputs: [MASH Season 10]
-                  - - description: It's a DVD. The title is \"MASH Season 11"
-                      frequency: 3
-                    - description: A river of tears pour down the gnome's cheeks. "This disc is the eleventh and last of the series. In its dramatic finale, _Goodbye, Farewell, Amen_, we learn difficult lessons about war. We see Hawkeye in a disturbed and disturbing state. And we learn that the chicken was never a chicken."
-                      outputs: [MASH Season 11]
-                  - - description: It's a DVD. The title is \"MASH The Movie"
-                      frequency: 2
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the genesis of the filmic tales of MASH. In it we see an unrefined and disjointed version of the tales of the main series. The elements of wisdom are unrefined, but nonetheless present."
-                      outputs: [MASH The Movie]
-                  - - description: It's a DVD. The title is \"AfterMASH Season 1"
-                      frequency: 2
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the first in an epilogue of sorts. It tells the story of three characters from the main series after they return home from the war. Its wisdom is weak, but nonetheless it holds a place in our sacred tradition."
-                      outputs: [AfterMASH Season 1]
-                  - - description: It's a DVD. The title is \"AfterMASH Season 2"
-                      frequency: 2
-                    - description: A single tear trails down the gnome's cheeks. "This disc is the second in an epilogue of sorts. It tells the story of three characters from the main series after they return home from the war. Its wisdom is weak, but nonetheless it holds a place in our sacred tradition."
-                      outputs: [AfterMASH Season 2]
-                - description: You thank the gnome as non-awkwardly as you can. She nods silently, and gestures toward the tunnel you came in through. "Thank you for accepting my gift, human. It is now time for you to go."
-                - description: You nod and turn to leave, giving one last glance around the cave. And then you begin your journey back to the surface.
-                - description: When you find your way back above ground, you are surprised to see that the shadows all fall in the same place as when you left. It feels as if much time has passed, but the sun disagrees with your judgment.
-                - description: You examine your gift, unsure what to make of it. You suppose it's nice to be chosen for having a pure soul, whatever that means.
-                - description: What a weird day.
+                - - description: It is much farther. You're getting breathless. The passage seems to be narrowing, constricting your movements as you navigate a channel which was clearly not built for your kind.
+                    tag: gnome-lose
+                  - description: You lose all sight of the gnome. Disoriented and scared, you call out for her. But she is too far ahead. You have no choice but to find your own way back.
+                  - description: Eventually you step out into the sunshine. All you are left with is a spinning mind filled with questions. How long has it been? Who was that? What did she want to show you?
+                  - description: There is simply no way to know. Perhaps one day you will encounter the gnome again. Or perhaps not. Uncertainty is a part of life, and all of us must make our peace with it.
+                    # Terminate ends the action completely (another way to think of it is that it breaks all sequences)
+                    terminate: true
+                - - description: At last the tunnel opens up into a cave. It's massive, dry, and lit by hundreds of candles. The smell of lavendar wafts through the air. You look around in amazement.
+                    tag: gnome-win
+                  - description: >
+                      Every single surface is covered with stuff. Books, DVDs, signed photos… and almost all of them feature the same four letters, in the same order every time:
+                  - description: M…
+                    delay: 4
+                  - description: A…
+                    delay: 4
+                  - description: S…
+                    delay: 4
+                  - description: H.
+                    delay: 4
+                  - description: The gnome casts her gaze over the massive collection, her arms spread widely, palms up, as if standing before the glory of god. "This is our most cherished tradition."
+                  - description: Her voice quivers as she speaks. "Many generations ago these artifacts came to us, washed up from the sea in a large steel box, dimensions 20'x8'x8.5'. At first we were mystified."
+                  - description: >
+                      "The books were decoded first. Much joy they brought us, odd as they were. But it took many years for our brightest minds to unlock the secrets of the discs. And these turned out to be the greater treasure."
+                  - description: >
+                      "The discs revealed a legend from a land called… Korea. The stories within were equally tragic and humorous. The dialogue was snappy. The antics amusing. And the social commentary on-point."
+                  - description: The gnome looks at you, now with tears in her eyes. "Our civilization is dying. And our traditions are dying with it." You feel a sense of pity. And also a little uncomfortable. This is weird.
+                  - description: She has a far-away look, as if gazing into the future. "A benevolent god bestowed these tales upon us. But their wisdom belongs to all creatures. When I see a human with a pure soul, I bring them here… so they may leave with a gift."
+                  - description: The gnome takes an object wrapped in newspaper out of her dirty coat. "This is for you", she says, her eyes wide with pupils dilated to the maxx. You unwrap the gift slowly, doing your best to mirror the reverence the gnome clearly has for it.
+                    branch:
+                      - - description: It's a book. The cover says \"MASH, A Novel About Three Army Doctors"
+                          frequency: 1
+                        - description: The gnome is full-on crying now. "This hallowed text is the foundation. The beginning. Its wisdom is less refined than the tales of the discs. But it will enable you to understand those tales more deeply, should you one day encounter them."
+                          outputs: [MASH The Original Novel]
+                      - - description: It's a DVD. The title is \"MASH Season 1"
+                          frequency: 3
+                        - description: A trio of tears trail down the gnome's cheeks. "This disc is the first of the series. It contains many great tales, such as _Dear Dad_ and _Tuttle_."
+                          outputs: [MASH Season 1]
+                      - - description: It's a DVD. The title is \"MASH Season 2"
+                          frequency: 3
+                        - description: A trio of tears trail down the gnome's cheeks. "This disc is the second of the series. It contains tales of great sadness, such as _Dr. Pierce and Mr. Hyde_, and tales of great laughter, such as _5 O'Clock Charlie_."
+                          outputs: [MASH Season 2]
+                      - - description: It's a DVD. The title is \"MASH Season 3"
+                          frequency: 3
+                        - description: Tears are streaming down the gnome's cheeks. "This disc is the third of the series. The end of the era of Henry Blake and Trapper John McIntyre. It ends with _Abyssinia, Henry_, perhaps the most gut-wrenching tale of all."
+                          outputs: [MASH Season 3]
+                      - - description: It's a DVD. The title is \"MASH Season 4"
+                          frequency: 3
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the fourth of the series. It introduces the characters of Colonel Potter and BJ Hunnicut. They are different from the beloved characters they replace. But with time, you will come to appreciate them."
+                          outputs: [MASH Season 4]
+                      - - description: It's a DVD. The title is \"MASH Season 5"
+                          frequency: 3
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the fifth of the series. It signals the end of the relationship between Frank and Margaret. This is ultimately good for Margaret. She could do better than Ferret-Face Frank."
+                          outputs: [MASH Season 5]
+                      - - description: It's a DVD. The title is \"MASH Season 6"
+                          frequency: 3
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the sixth of the series. In it we witness the arrival of Major Charles Winchester. He is very different from Frank Burns. But in many ways, he is a deeper character, and more deserving of our respect."
+                          outputs: [MASH Season 6]
+                      - - description: It's a DVD. The title is \"MASH Season 7"
+                          frequency: 3
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the seventh of the series. In it we see the introduction of BJ Hunnicut's mustache, and a few classic tales such as _Point of View_."
+                          outputs: [MASH Season 7]
+                      - - description: It's a DVD. The title is \"MASH Season 8"
+                          frequency: 3
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the eigth of the series. In the beginning, we witness the departure of Radar O'Reilly. This turn of events will make your heart ache. But in time, that pain will be eased by the elevation of Corporal Klinger."
+                          outputs: [MASH Season 8]
+                      - - description: It's a DVD. The title is \"MASH Season 9"
+                          frequency: 3
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the ninth of the series. The first tale it contains is deeply impactful. Two stories are interwoven; one is a frivolous game of bridge, and the other a heart-wrenching encounter between Hawkeye and a North Korean soldier."
+                          outputs: [MASH Season 9]
+                      - - description: It's a DVD. The title is \"MASH Season 10"
+                          frequency: 3
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the tenth of the series. In it we find tales such as _Follies of the Living - Concerns of the Dead_ that take us deep into the spiritual and psychic wounds of battle."
+                          outputs: [MASH Season 10]
+                      - - description: It's a DVD. The title is \"MASH Season 11"
+                          frequency: 3
+                        - description: A river of tears pour down the gnome's cheeks. "This disc is the eleventh and last of the series. In its dramatic finale, _Goodbye, Farewell, Amen_, we learn difficult lessons about war. We see Hawkeye in a disturbed and disturbing state. And we learn that the chicken was never a chicken."
+                          outputs: [MASH Season 11]
+                      - - description: It's a DVD. The title is \"MASH The Movie"
+                          frequency: 2
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the genesis of the filmic tales of MASH. In it we see an unrefined and disjointed version of the tales of the main series. The elements of wisdom are unrefined, but nonetheless present."
+                          outputs: [MASH The Movie]
+                      - - description: It's a DVD. The title is \"AfterMASH Season 1"
+                          frequency: 2
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the first in an epilogue of sorts. It tells the story of three characters from the main series after they return home from the war. Its wisdom is weak, but nonetheless it holds a place in our sacred tradition."
+                          outputs: [AfterMASH Season 1]
+                      - - description: It's a DVD. The title is \"AfterMASH Season 2"
+                          frequency: 2
+                        - description: A single tear trails down the gnome's cheeks. "This disc is the second in an epilogue of sorts. It tells the story of three characters from the main series after they return home from the war. Its wisdom is weak, but nonetheless it holds a place in our sacred tradition."
+                          outputs: [AfterMASH Season 2]
+                  - description: You thank the gnome as non-awkwardly as you can. She nods silently, and gestures toward the tunnel you came in through. "Thank you for accepting my gift, human. It is now time for you to go."
+                  - description: You nod and turn to leave, giving one last glance around the cave. And then you begin your journey back to the surface.
+                  - description: When you find your way back above ground, you are surprised to see that the shadows all fall in the same place as when you left. It feels as if much time has passed, but the sun disagrees with your judgment.
+                  - description: You examine your gift, unsure what to make of it. You suppose it's nice to be chosen for having a pure soul, whatever that means.
+                  - description: What a weird day.
         - description: There's nothing good here. Even the rocks aren't sturdy enough to use.
           frequency: 80
     - description: Your first strike hits the rock funny and twists the pick right off the handle. That's the end of _that_ pickaxe…
@@ -237,12 +241,15 @@
         - description: You keep chopping away. This is taking a while, but a strong tree makes for strong lumber!
           frequency: 60
           loop: true
+        - description: Wow. This wood is tough, and you're barely making any progress… you're gonna have to try a different tree.
+          frequency: 15
+          terminate: true
         - description: While you're chopping, an apple falls loose and hits you on the head. You are momentarily inspired to formulate a theory of gravity, but the moment passes and you get back to work.
-          frequency: 10
+          frequency: 5
           outputs: [Apple]
           loop: true
         - description: Your chopping knocks an acorn loose onto the ground next to you. You squirrel it away and get back to the task at hand.
-          frequency: 10
+          frequency: 8
           outputs: [Acorn]
           loop: true
         - description: After many blows the tree tips over. What do they say in these situations? Timber? Whatever. You set to work on the felled tree.
@@ -263,12 +270,12 @@
             - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease.
               frequency: 1
               branch:
-              - description: You finally get the axe dislodged from the wood, wipe the sweat from your brow, and get back to work.
-                frequency: 5
-                gotoChildren: tree-split
-              - description: You pull hard on the axe handle, but instead of dislodging it snaps… what a shame. I guess axes can't last forever.
-                frequency: 1
-                losses: [Axe]
+                - description: You finally get the axe dislodged from the wood, wipe the sweat from your brow, and get back to work.
+                  frequency: 5
+                  gotoChildren: tree-split
+                - description: You pull hard on the axe handle, but instead of dislodging it snaps… what a shame. I guess axes can't last forever.
+                  frequency: 1
+                  losses: [Axe]
         - description: You land a hard strike into the trunk of the tree, but now you can't seem to get the axe out!
           frequency: 10
           branch:
@@ -281,3 +288,75 @@
     - description: You find a solid-looking tree in the woods. You swing your axe backward, but it slips out of your hands and flies off into a huge thicket of poison ivy. You're not getting that back.
       frequency: 1
       losses: [Axe]
+
+- locations: [smallberry-farms]
+  tools: [Shears]
+  branch:
+    - description: You look around for a sheep… where are you sheep…
+      frequency: 100
+      branch:
+        - description: You spy one galloping in the distance. It's… _beautiful_. You give chase to the wooly beast.
+          frequency: 3
+          branch:
+            - description: You catch up to your squooshy prey and wrestle it to the ground. You cry out, "It's time for a haircut, silly creature!!""
+              frequency: 20
+              branch:
+                - description: You set to work with your shears, trimming off fibers with the precision of a hawk that identifies as a laser cutter. The deed is done. The wool is yours!!!
+                  outputs: [Wool]
+                  frequency: 1
+                - description: In the ensuing fracas the sheep wriggles away from you, bleating it up like a big noisy boi. What a drama queen. You'll get that overgrown squishmallow next time.
+                  frequency: 1
+            - description: While running after the hoofy hairball you trip and faceplant straight into a patch of mud. By the time you get up the sheep is nowhere to be seen. Blast!
+              frequency: 10
+            - - description: Shortly after the hunt begins, you hear a voice behind you. "Varmint, stop right there!" You freeze, turn around, and find yourself face-to-face with Farmer Smallberry.
+                defaultDelay: 8
+                tag: -farmer-chase
+                frequency: 5
+              - description: He looks suspicious, eyeing you like a tailor sizing up a hungry badger who has come in for a tuxedo rental. "What are you doing? You have some business to conduct with my sheep?"
+                branch:
+                  - - description: Your mind races. What do you say? You know you've been caught. You stammer awkwardly, "W-well, you see I saw that sheep, and it was so beautiful, I had to get closer for a selfie?"
+                      frequency: 1
+                      branch:
+                        - - description: "Oh. Well that seems perfectly reasonable." the farmer says with a shrug. You breathe a sigh of relief as he turns and walks away. The sheep is gone, but at least the farmer let you keep your shears.
+                            frequency: 3
+                        - - description: Farmer Smallberry's eyes narrow even further. "Oh yeah? Well… if you think that sheep is so beautiful… why don't you marry it?"
+                            frequency: 1
+                          - description: Thirty minutes later the ceremony begins. The setting, outfits, flowers, are all absolutely gorgeous. Exactly what you always imagined for your wedding. Except, you know, for the sheep part.
+                          - description: A string quartet plays Pachelbel's Canon as Farmer Smallberry walks the sheep down the aisle. He has tears in his eyes. The sheep seems pretty cavalier about the big day, and is clearly more interested in munching on the rose petals strewn over the ground.
+                          - description: >
+                              Farmer Smallberry hands the leash to you with a bittersweet nod. He looks solemn but proud. The officiant begins to speak: "Today we gather to witness the matrimony of human and sheep. Many said it could not be done, and yet here we all are."
+                          - description: >
+                              "Love is the strongest force in the world. Stronger than the force generated by the exchange of mesons between two protons in an atomic nucleus that keeps the whole thing from flying apart."
+                          - description: >
+                              "The judgments of society are like the electrostatic repulsion barrier that prevents fusion from happening spontaneously. But when two baryons collide at just the right velocity and incident angle, the strong nuclear force takes over, and a new atom is formed."
+                          - description: The crowd looks confused by all the physics talk. Some of them are nodding but they still look unsure. A single nerd in the front row is on the edge of his seat, smiling ear-to-ear, clearly holding back the urge to clap.
+                          - description: >
+                              "Today, we witness the most rare and precious event… of fusion." The officiant claps together two closed hands. "One human. One sheep. Joined together to make… a nucleus. Bonded together, inseparable, forever."
+                          - description: >
+                              "Barring the occurrence of a neutron bombardment of course. Now kiss, and be joined."
+                          - description: You feel wildly uncomfortable but at this point you can't back out. You bend down face-to-face with the sheep, who sniffs you briefly and then sloppily licks your face, probably to get a taste of all the salt from your nervous sweating.
+                          - description: The crowd erupts in applause. The string quartet resumes playing. Honestly, where did Farmer Smallberry get all these people on such short notice? Whatever. Let's just get this over with.
+                          - description: Later that evening, after a lovely reception, Farmer Smallberry comes to you with a gift in hand. "I always knew one day that sheep would find true love. But I'm glad it was with you. Please, take this as a token of my appreciation."
+                            branch:
+                              - description: You unwrap the gift. It's a fish hat. "This hat belonged to my grandmother. She was married to an Orca, these were fashionable among their kind at the time."
+                                outputs: [Fish Hat]
+                              - description: You unwrap the gift. It's a pair of pants. They are very fancy. "These pants belonged to my great uncle. He married a fancy rat. Now you can be fancy too."
+                                outputs: [Fancy Pants]
+                              - description: You unwrap the gift. It's a cat hat. "This hat belonged to my great-great-grandfather. He was married to a cat. This hat is made from her hairballs."
+                                outputs: [Cat Hat]
+                          - description: The gift makes you uneasy but you accept it with grace. Farmer Smallberry nods and walks away. You take the opportunity to slip away and go home.
+                          - description: On the way back to your house you reflect on the bizarre ordeal, turning your gift over in your hands and your mind. You're married to a sheep now. What does this say about your boundaries? And what does it mean for the future?
+                          - description: All in all, it wasn't exactly a bad experience. The ceremony was very sweet. And watching a startled sheep plow straight through an expensive wedding cake was actually pretty funny. But you're tired. You decide to put off any deeper reflection until tomorrow.
+                          - description: You close the front door behind you and lock the door. It's time to go to bed.
+                  - - description: For a moment you're flummoxed. It's a tense situation… but you have an idea. "Sir, I don't know if you're aware, but that sheep was exposed to a radioactive waste spill! We must remove the wool immediately before the rest of the flock is exposed!"
+                      frequency: 5
+                      branch:
+                        - description: The farmer's eyes go wide. "Good god, let's act quickly then!". An hour later you're on your way home with a bundle of "radioactive" wool, and two more bundles you received as thanks. Sucker.
+                          outputs: [Wool, Wool, Wool]
+                          frequency: 1
+                        - description: Farmer Smallberry looks unamused. "That's the stupidest excuse this farmer has ever heard. I'm taking your shears. Now go away.". He takes your shears. You go away.
+                          losses: [Shears]
+        - description: You look for a long time, but those big poofy doofs seem to have sensed your presence… you swear they'll pay for this next time. With their WOOL.
+    - description: You squeeze your shears menacingly as you peer around for future sweaters… when suddenly, a seagull swoops down and snatches them from you. Why are birds such jerks?? Now you need new shears.
+      frequency: 1
+      losses: [Shears]
