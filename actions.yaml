@@ -319,6 +319,7 @@
                 branch:
                   - - description: Your mind races. What do you say? You know you've been caught. You stammer awkwardly, "W-well, you see I saw that sheep, and it was so beautiful, I had to get closer for a selfie?"
                       frequency: 1
+                      tag: -marriage
                       branch:
                         - - description: "Oh. Well that seems perfectly reasonable." the farmer says with a shrug. You breathe a sigh of relief as he turns and walks away. The sheep is gone, but at least the farmer let you keep your shears.
                             frequency: 3
@@ -343,15 +344,15 @@
                             branch:
                               - description: You unwrap the gift. It's a fish hat. "This hat belonged to my grandmother. She was married to an Orca, these were fashionable among their kind at the time."
                                 outputs: [Fish Hat]
-                              - description: You unwrap the gift. It's a pair of pants. They are very fancy. "These pants belonged to my great uncle. He married a fancy rat. Now you can be fancy too."
+                              - description: You unwrap the gift. It's a pair of pants. They are very fancy. "These pants belonged to my great uncle. He married a Fancy Rat. Now you can be fancy too."
                                 outputs: [Fancy Pants]
-                              - description: You unwrap the gift. It's a cat hat. "This hat belonged to my great-great-grandfather. He was married to a cat. This hat is made from her hairballs."
+                              - description: You unwrap the gift. It's a cat hat. "This hat belonged to my great-great-grandfather. He was married to a Scottish Fold. This hat is made from her hairballs."
                                 outputs: [Cat Hat]
                           - description: The gift makes you uneasy but you accept it with grace. Farmer Smallberry nods and walks away. You take the opportunity to slip away and go home.
                           - description: On the way back to your house you reflect on the bizarre ordeal, turning your gift over in your hands and your mind. You're married to a sheep now. What does this say about your boundaries? And what does it mean for the future?
                           - description: All in all, it wasn't exactly a bad experience. The ceremony was very sweet. And watching a startled sheep plow straight through an expensive wedding cake was actually pretty funny. But you're tired. You decide to put off any deeper reflection until tomorrow.
-                          - description: You close the front door behind you and lock the door. It's time to go to bed.
-                  - - description: For a moment you're flummoxed. It's a tense situation… but you have an idea. "Sir, I don't know if you're aware, but that sheep was exposed to a radioactive waste spill! We must remove the wool immediately before the rest of the flock is exposed!"
+                          - description: You close the front door behind you and lock it. It's time to go to sleep.
+                  - - description: For a moment you're flummoxed. It's a tense situation… but you have an idea. "Sir, I don't know if you're aware, but that sheep was exposed to a radioactive waste spill! We must remove the wool immediately before the rest of the flock is endangered by it!"
                       frequency: 5
                       branch:
                         - description: The farmer's eyes go wide. "Good god, let's act quickly then!". An hour later you're on your way home with a bundle of "radioactive" wool, and two more bundles you received as thanks. Sucker.
