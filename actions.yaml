@@ -239,17 +239,20 @@
       tag: tree-find
       branch:
         - description: You keep chopping away. This is taking a while, but a strong tree makes for strong lumber!
-          frequency: 60
+          frequency: 50
+          loop: true
+        - description: Chop… chop… chop…
+          frequency: 50
           loop: true
         - description: Wow. This wood is tough, and you're barely making any progress… you're gonna have to try a different tree.
-          frequency: 15
+          frequency: 20
           terminate: true
         - description: While you're chopping, an apple falls loose and hits you on the head. You are momentarily inspired to formulate a theory of gravity, but the moment passes and you get back to work.
-          frequency: 5
+          frequency: 8
           outputs: [Apple]
           loop: true
         - description: Your chopping knocks an acorn loose onto the ground next to you. You squirrel it away and get back to the task at hand.
-          frequency: 8
+          frequency: 10
           outputs: [Acorn]
           loop: true
         - description: After many blows the tree tips over. What do they say in these situations? Timber? Whatever. You set to work on the felled tree.
