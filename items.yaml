@@ -585,7 +585,7 @@
   tag: -cat-hat
 - name: Rolling Mill
   artist: ---
-  description: Great for when you want to reduce 3 dimensions back down to 1.
+  description: Great for when your metal is just a little too 3-dimensional.
   tag: -rolling-mill
 - name: Iron Wire
   artist: Jeijii
@@ -611,3 +611,7 @@
   artist: ---
   description: Don't fear the reaper.
   tag: -scythe
+- name: Acorn
+  artist: ---
+  description: Their fancy berets make these the most fashionable seeds of all.
+  tag: -acorn
