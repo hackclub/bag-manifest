@@ -615,3 +615,11 @@
   artist: ---
   description: Their fancy berets make these the most fashionable seeds of all.
   tag: -acorn
+- name: Ladder
+  artist: ---
+  description: Remember, always follow the 4:1 rule or the ghost of OSHA will come to haunt you.
+  tag: -ladder
+- name: Trowel
+  artist: ---
+  description: A cute lil mini-shovel for digging cute lil mini-holes.
+  tag: -trowel
