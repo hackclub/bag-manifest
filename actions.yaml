@@ -6,7 +6,7 @@
   branch:
     # The text displayed if this result occurs
     - description: You cast your line into the water… here fishy fishy…
-      # Probability of this node being selected (as a fraction of the sum of all frequencies for the results at this layer of the tree)
+      # Probability of this node being selected (as a fraction of the sum of all frequencies for the nodes at this layer of the tree)
       frequency: 100
       # The number of seconds after this step, before the next one. An array means a random range.
       delay: [5, 10]
@@ -39,7 +39,7 @@
               # Items lost from this node in the tree
               losses: [Fishing Rod]
             - description: >
-                You finally see below the surface… it's a hat… with a person attached? Is that… a fish and game warden? She climbs onto the shore and scolds you: "No fishing without a permit! That's a one gp fine!"
+                You finally see below the surface… it's a hat… with a person attached? Is that… the fish and game warden? She climbs onto the shore and scolds you: "No fishing without a permit! That's a one gp fine!"
               frequency: 1
               # If an admin runs the use command with this flag at the end (prefixed with a hyphen, like -warden), it will guarantee that the action tree progresses to this node. This is important for testing.
               # This tag can also be used by goto fields on other nodes in the tree, which will identify this node by its tag.
@@ -359,8 +359,227 @@
                           outputs: [Wool, Wool, Wool]
                           frequency: 1
                         - description: Farmer Smallberry looks unamused. "That's the stupidest excuse this farmer has ever heard. I'm taking your shears. Now go away.". He takes your shears. You go away.
+                          frequency: 2
                           losses: [Shears]
         - description: You look for a long time, but those big poofy doofs seem to have sensed your presence… you swear they'll pay for this next time. With their WOOL.
     - description: You squeeze your shears menacingly as you peer around for future sweaters… when suddenly, a seagull swoops down and snatches them from you. Why are birds such jerks?? Now you need new shears.
       frequency: 1
       losses: [Shears]
+
+- locations: [smallberry-farms]
+  tools: [Scythe]
+  branch:
+    - description: You wander out into the fields, scythe in hand, on the hunt for crops. The blades of grass and grain whisper secrets of the earth.
+      frequency: 100
+      branch:
+        - description: Hmm… not much so far… let's keep looking.
+          frequency: 60
+          loop: true
+        - description: After a thorough search you don't find any worthwhile crops. You'll have to try again later.
+          frequency: 40
+        - description: Every fiber of your clothing begins to vibrate as you come across a patch of girthy flax. With a stroke of your scythe you cry out "HYAH!!" like some kind of anime character and put the bundle in your bag.
+          frequency: 30
+          outputs: [Flax]
+          tag: flax-harvest
+          branch:
+            - description: That's it for this patch. Time to move on.
+              frequency: 15
+            - description: Another stroke, another bundle. Today is a good day to harvest.
+              frequency: 10
+              outputs: [Flax]
+              gotoChildren: flax-harvest
+            - description: You swing your scythe but the head snaps off and flies into the distance. Rats. That was a good scythe.
+              frequency: 1
+              losses: [Scythe]
+        - description: You spy a lovely patch of wheat and instantly begin to salivate. The first stroke of your scythe yields a hearty bundle which you secret away in your bag as droplets of your mouthy evidence fall to nourish the earth.
+          frequency: 35
+          outputs: [Wheat]
+          tag: wheat-harvest
+          branch:
+            - description: That's it for this patch. Time to move on.
+              frequency: 15
+            - description: Another stroke, another bundle. Today is a good day to harvest.
+              frequency: 10
+              outputs: [Wheat]
+              gotoChildren: wheat-harvest
+            - description: You swing your scythe but the head snaps off and flies into the distance. Rats. That was a good scythe.
+              frequency: 1
+              losses: [Scythe]
+        - description: You come across a patch of sugarcane. You can already feel your body's insulin response gearing up. You sweep your scythe across the patch and shove the bundle of cane in your bag.
+          frequency: 25
+          outputs: [Sugarcane]
+          tag: sugarcane-harvest
+          branch:
+            - description: That's it for this patch. Time to move on.
+              frequency: 15
+            - description: Another stroke, another bundle. Today is a good day to harvest.
+              frequency: 10
+              outputs: [Sugarcane]
+              gotoChildren: sugarcane-harvest
+            - description: You swing your scythe but the head snaps off and flies into the distance. Rats. That was a good scythe.
+              frequency: 1
+              losses: [Scythe]
+        - - description: A sudden gust of wind carries away your scythe, depositing it at Madame Smallberry's feet. Where did she even come from? She picks it up, inspecting the blade.
+            frequency: 2
+            delay: 8
+          - description: "Even the sharpest blade cannot harvest without a steady hand. You are not ready for this." She turns and walks away with your scythe. What the heck. You needed that.
+            losses: [Scythe]
+        - description: As you wander you are startled by the approach of Madame Smallberry, her eyes sparkling with a mix of curiosity and wisdom. "The art of the scythe is much like conducting an orchestra, isn't it?" she muses. Ok. Weird.
+          frequency: 5
+          defaultDelay: 8
+          branch:
+            - - description: Madame Smallberry gives you a stern look. "But the orchestra's not playing today, bub". You shift uncomfortably on your feet.
+                frequency: 1
+              - description: You both stand in silence. You're not really sure what to do.
+              - description: She's still not saying anything.
+                branch:
+                  - - description: Suddenly Madame Smallberry beams at you. "Would you like a hat? You should have a hat." She reveals a top hat that she apparently has been holding behind her back this whole time.
+                      frequency: 1
+                    - description: She delicately places the top hat on your dome as if it were a crown. "Now begone, wayward soul". You slowly back away and exit the property. What a strange woman. It's a nice hat, though.
+                      outputs: [Top Hat]
+                  - description: Ok. She's still like, totally silent. You decide to just… go. Home. Or anywhere but here. Bye, Smallberry Farms.
+                    frequency: 5
+            - - description: She whips out a whetstone and assists you in honing the blade of your scythe, giving you a gleaming smile with every stroke. "Follow me to a fertile patch, darling."
+                frequency: 1
+                branch:
+                  - description: "Try it now" she says, gesturing to a large patch of wheat. Guess she's in a good mood today. _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
+                    outputs: [Wheat, Wheat, Wheat, Wheat, Wheat, Wheat, Wheat]
+                  - description: "Try it now" she says, gesturing to a large patch of flax. Guess she's in a good mood today _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
+                    outputs: [Flax, Flax, Flax, Flax, Flax, Flax, Flax]
+                  - description: "Try it now" she says, gesturing to a large patch of sugarcane. Guess she's in a good mood today. _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
+                    outputs: [Sugarcane, Sugarcane, Sugarcane, Sugarcane, Sugarcane, Sugarcane, Sugarcane]
+              - description: Madame Smallberry looks very satisfied. "The music of the soil is well-accompanied by the sound of an efficient blade. And now, the performance has concluded." She gestures as if ushering you out of a theater, and you sense that it's time to leave.
+
+- locations: [smallberry-farms]
+  tools: [Ladder]
+  branch:
+    - description: You approach the orchard, ladder in hand, gazing up at all the succulent fruits.
+      frequency: 100
+      branch:
+        - description: None of these trees look particularly fruitful yet. Let's keep looking.
+          frequency: 100
+          loop: true
+        - description: You're not finding much, and you're getting tired. You'll have to try again some other time.
+          frequency: 60
+        - description: You come across a sturdy apple tree, set your ladder, and pull a shiny red apple off a nearby branch.
+          frequency: 35
+          outputs: [Apple]
+          branch:
+            - description: There are no more ripe apples in this tree. You climb down the ladder and put the fruit into your bag.
+              frequency: 20
+            - description: You pluck another apple and stuff it into a pocket.
+              frequency: 10
+              outputs: [Apple]
+            - description: You reach for an apple when you hear a sickening crack from your ladder. Your feet plow through every single rung in sequence like some kind of cartoon, landing you safely on the ground… but with a broken ladder. Nuts.
+              frequency: 1
+              losses: [Ladder]
+        - description: You set your ladder against the thicc trunk of a coconut palm. You climb up and knock one off to the ground below.
+          frequency: 20
+          outputs: [Coconut]
+          branch:
+            - description: There are no more coconuts here worthy of your high standards. You climb down the ladder and gather your haul.
+              frequency: 20
+            - description: You slap another coconut and it falls to the ground with a satisfying thud.
+              frequency: 10
+              outputs: [Coconut]
+            - description: You're about to smack another handsome coconut when you hear a terrifying crack from your ladder. Your feet plow through every single rung in sequence like some kind of cartoon, landing you safely on the ground… but with a broken ladder. Nuts.
+              frequency: 1
+              losses: [Ladder]
+        - description: You find an orange tree, set your ladder against it, and pick off a big bulbous orange. It smells divine. You drop it onto the grass next to your bag.
+          frequency: 25
+          outputs: [Orange]
+          branch:
+            - description: You don't see any other oranges that look ripe. You return to the ground and gather your harvest into your bag. 
+              frequency: 20
+            - description: You pull another orange off and drop it onto the grass below you.
+              frequency: 10
+            - description: You extend your arm toward a really stellar-looking orange when you hear a foreboding crack from your ladder. Your feet plow through every single rung in sequence like some kind of cartoon, landing you safely on the ground… but with a broken ladder. Nuts.
+              frequency: 1
+              losses: [Ladder]
+        - description: You discover a remarkable specimen of a banana tree, use your ladder to climb up into the canopy, and pull off a beautiful greenish-yellow fruit. 
+          frequency: 30
+          outputs: [Banana]
+          branch:
+            - description: All the other bananas here are still super green. You return to the earth and put the curvaceous fruit in your bag. 
+              frequency: 20
+            - description: You tear off another banana, quietly humming that one Harry Belafonte song.
+              frequency: 10
+            - description: You crane your neck for a better look at a promising bunch when you hear an awful crack from your ladder. Your feet plow through every single rung in sequence like some kind of cartoon, landing you safely on the ground… but with a broken ladder. Nuts.
+              frequency: 1
+              losses: [Ladder]
+        - - description: As you wander among the trees, you are startled by Madame Smallberry watching you from the limbs of an apple tree like some kind of goddamn cheshire cat. She even has that same unnerving smile.
+            frequency: 1
+            defaultDelay: 8
+          - description: "Doing a little foraging, are we?" she says. You struggle to find words but they aren't coming. Somehow this lady always finds a way to make you feel uncomfortable.
+          - description: "Come with me." She turns away from you and saunters off deeper into the grove.
+          - description: After a short walk the trees open up into a clearing with an ominous-looking stone obelisk in the middle. You wonder if you are about to be sacrificed.
+          - description: "This is the shrine of treeful widom. It emanates the life force that allows such a diversity of trees to grow in this orchard without regard to season or weather." Your woo-woo nonsense detector is blinking red, but you have to admit you feel a strange energy here.
+          - description: Madame Smallberry approaches a birdbath-sized dish at the base of the obelisk and beckons you closer. You look into the dish and see that it's filled to the brim with a bluish-purple powder.
+          - description: She scoops up a handful of the powder, gazing into it with a kind of reverence. "And this… is tanzanite dust. It's what fuels the shrine." She looks up from the powder in her palm and stares deep into your soul.
+          - description: "I see something within you. A kind of creative force that mirrors the energy contained in this substance." Madame Smallberry pours the dust into a small leather pouch and gives it to you.
+          - description: You give a meek and awkward "Ummm… thanks", and she replies only with a nod.
+          - description: You both stand there for a while without saying anything.
+          - description: The silence hangs in the air like a pair of undies flapping around on a clothesline.
+          - description: "Ok, we're done here. Time for you to go. Go on, shoo" she says, giving a you a little shooing motion like you would to a cat. You turn around and escort yourself out of the grove. Yeesh. What are you going to do with this dust? Maybe you can make something cool with it.
+            outputs: [Tanzanite Dust]
+
+- locations: [smallberry-farms]
+  tools: [Trowel]
+  branch:
+    - description: You begin your stroll through Madame Smallberry's enormous permaculture garden, glancing at the ground for indications of mature crops.
+      frequency: 100
+      tag: trowel-hunt
+      branch:
+        - description: Nothing sticks out at you yet. The stroll goes on.
+          frequency: 80
+          loop: true
+        - description: Ok, you can't find anything. Root vegetables are boring and stupid anyway.
+          frequency: 70
+        - description: You drop your trowel on the ground. No problem, you'll just pick it up.
+          frequency: 10
+          branch:
+            - description: You retrieve the trowel and continue with the task at hand. Minor inconveniences sure are annoying!
+              gotoChildren: trowel-hunt
+              frequency: 10
+            - description: You accidentally step on the trowel instead, irreparably damaging it. Crap. That's super frustrating.
+              frequency: 3
+              losses: [Trowel]
+        - description: >
+            And then you see it: your prey. The characteristic green stalk of an onion peeking above the soil, quivering in fear… or in the wind. One of the two. You hastily dig it out with your trowel and put it in your bag.
+          frequency: 28
+          outputs: [Onion]
+        - description: Ah-hah!! The leafy stalks of a potato are in your sights. You furiously plunge your trowel into the earth, screaming with delight as you yank the starchful beast out with your bare hands. The potato is yours!
+          frequency: 24
+          outputs: [Potato]
+        - description: Ok, you can't find any— wait a minute. Those ruffled leaves, the puny pathetic stems… these are the unmistakable signals of a carrot. Your trowel makes quick work of the dirt and before long your hypothesis is proven. Carrot acquired!!
+          frequency: 20
+          outputs: [Carrot]
+
+- locations: [smallberry-farms]
+  tools: [Bread]
+  branch:
+    - description: You step into the chicken realm, bread in hand, and peel off a single solitary crumb.
+      frequency: 100
+      tag: chicken-hunt
+      branch:
+        - description: No chickens yet. You are undettered. You begin clucking softly under your breath.
+          frequency: 80
+        - description: The sun is getting low and you haven't found any chickens yet. You'll have to try again some other time.
+          frequency: 60
+        - description: A gorgeous hen approaches you, and politely asks what you are looking for in exchange for that crumb. "Well, an egg, I suppose…"
+          frequency: 40
+          branch:
+            - description: She thoughfully considers the exchange for a moment. "No, I don't think that's a trade I'm willing to make." You give an understanding nod and watch as she gracefully strides away. You'll have to find another chicken.
+              frequency: 1
+            - description: She nods gently as she withdraws a large egg from her purse and hands it to you before eagerly gobbling the crumb from your palm. It doesn't seem like a completely fair trade to you, but the relativity of value is a core tenet of a well-functioning capitalist economy.
+              frequency: 1
+              outputs: [Egg]
+        - description: Farmer Smallberry appears in the corner of your vision, bouncing around in a crouch, flapping his elbows and squawking wildly.
+          frequency: 5
+          branch:
+            - description: His eyes widen at something in the ground. With an ear-splitting _SQUAAAAAWK!!_ he plunges his head into the dirt and pulls a worm out with his teeth. You use the opportunity to run away from this crazy man and go home, feeling a little shook.
+              frequency: 1
+            - description: He turns his head to the side, one eye locked on to the loaf of bread in your hand. In one fell swoop he lunges at you, snatches the entire loaf in his mouth, and hops away with surprising speed. Well that sucks.
+              frequency: 1
+              losses: [Bread]
+

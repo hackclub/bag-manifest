@@ -631,3 +631,7 @@
   artist: ---
   description: The beauty of this foodstuff is enough to bring you to tears. Or maybe it's the sulfur. I don't know.
   tag: -onion
+- name: Flax
+  artist: ---
+  description: One day, all these fibers will be cloth. But for now they are fibers.
+  tag: -flax
