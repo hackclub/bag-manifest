@@ -6,7 +6,7 @@
   branch:
     # The text displayed if this result occurs
     - description: You cast your line into the water… here fishy fishy…
-      # Probability of this node being selected (as a fraction of the sum of all frequencies for the results at this layer of the tree)
+      # Probability of this node being selected (as a fraction of the sum of all frequencies for the nodes at this layer of the tree)
       frequency: 100
       # The number of seconds after this step, before the next one. An array means a random range.
       delay: [5, 10]
@@ -571,13 +571,13 @@
           branch:
             - description: She thoughfully considers the exchange for a moment. "No, I don't think that's a trade I'm willing to make." You give an understanding nod and watch as she gracefully strides away. You'll have to find another chicken.
               frequency: 1
-            - description: She nods gently as she withdraws a large egg and hands it to you before eagerly gobbling the crumb from your palm. It doesn't seem like a completely fair trade to you, but then again the relativity of value is a core tenet of a well-functioning capitalist economy.
+            - description: She nods gently as she withdraws a large egg from her purse and hands it to you before eagerly gobbling the crumb from your palm. It doesn't seem like a completely fair trade to you, but the relativity of value is a core tenet of a well-functioning capitalist economy.
               frequency: 1
               outputs: [Egg]
         - description: Farmer Smallberry appears in the corner of your vision, bouncing around in a crouch, flapping his elbows and squawking wildly.
           frequency: 5
           branch:
-            - description: His eyes widen at something in the ground. With an ear-splitting _SQUAAAAAWK!!_ he plunges his head into the ground and pulls a worm out with his teeth. You use the opportunity to run away from this crazy man and go home, feeling a little shook.
+            - description: His eyes widen at something in the ground. With an ear-splitting _SQUAAAAAWK!!_ he plunges his head into the dirt and pulls a worm out with his teeth. You use the opportunity to run away from this crazy man and go home, feeling a little shook.
               frequency: 1
             - description: He turns his head to the side, one eye locked on to the loaf of bread in your hand. In one fell swoop he lunges at you, snatches the entire loaf in his mouth, and hops away with surprising speed. Well that sucks.
               frequency: 1
