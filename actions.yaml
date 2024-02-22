@@ -593,6 +593,7 @@
           branch:
             - description: She thoughfully considers the exchange for a moment. "No, I don't think that's a trade I'm willing to make." You give an understanding nod and watch as she gracefully strides away. You'll have to find another chicken.
               frequency: 1
+              gotoChildren: chicken-hunt
             - description: She nods gently as she withdraws a large egg from her purse and hands it to you before eagerly gobbling the crumb from your palm. It doesn't seem like a completely fair trade to you, but the relativity of value is a core tenet of a well-functioning capitalist economy.
               frequency: 1
               outputs: [Egg]
