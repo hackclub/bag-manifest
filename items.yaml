@@ -624,11 +624,11 @@
   description: A cute lil mini-shovel for digging cute lil mini-holes.
   tag: -trowel
 - name: Potato
-  artist: ---
+  artist: Acon
   description: Wow, a potato. If the internet is to be believed you can take pictures with this thing.
   tag: -potato
 - name: Onion
-  artist: ---
+  artist: Acon
   description: The beauty of this foodstuff is enough to bring you to tears. Or maybe it's the sulfur. I don't know.
   tag: -onion
 - name: Flax
