@@ -313,13 +313,13 @@
               frequency: 10
             - - description: Shortly after the hunt begins, you hear a voice behind you. "Varmint, stop right there!" You freeze, turn around, and find yourself face-to-face with Farmer Smallberry.
                 defaultDelay: 8
-                tag: -farmer-chase
+                tag: farmer-chase
                 frequency: 5
               - description: He looks suspicious, eyeing you like a tailor sizing up a hungry badger who has come in for a tuxedo rental. "What are you doing? You have some business to conduct with my sheep?"
                 branch:
                   - - description: Your mind races. What do you say? You know you've been caught. You stammer awkwardly, "W-well, you see I saw that sheep, and it was so beautiful, I had to get closer for a selfie?"
                       frequency: 1
-                      tag: -marriage
+                      tag: marriage
                       branch:
                         - - description: >
                               "Oh. Well that seems perfectly reasonable." the farmer says with a shrug. You breathe a sigh of relief as he turns and walks away. The sheep is gone, but at least the farmer let you keep your shears.
@@ -429,6 +429,7 @@
         - description: As you wander you are startled by the approach of Madame Smallberry, her eyes sparkling with a mix of curiosity and wisdom. "The art of the scythe is much like conducting an orchestra, isn't it?" she muses. Ok. Weird.
           frequency: 5
           defaultDelay: 8
+          tag: madame-smallberry
           branch:
             - - description: Madame Smallberry gives you a stern look. "But the orchestra's not playing today, bub". You shift uncomfortably on your feet.
                 frequency: 1
@@ -522,6 +523,7 @@
               frequency: 1
               losses: [Ladder]
         - - description: As you wander among the trees, you are startled by Madame Smallberry watching you from the limbs of an apple tree like some kind of goddamn cheshire cat. She even has that same unnerving smile.
+            tag: madame-smallberry
             frequency: 1
             defaultDelay: 8
           - description: >
@@ -595,6 +597,7 @@
               frequency: 1
               outputs: [Egg]
         - description: Farmer Smallberry appears in the corner of your vision, bouncing around in a crouch, flapping his elbows and squawking wildly.
+          tag: farmer
           frequency: 5
           branch:
             - description: His eyes widen at something in the ground. With an ear-splitting _SQUAAAAAWK!!_ he plunges his head into the dirt and pulls a worm out with his teeth. You use the opportunity to run away from this crazy man and go home, feeling a little shook.
