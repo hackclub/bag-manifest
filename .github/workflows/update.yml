@@ -1,0 +1,27 @@
+---
+name: Update database
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Install Node.js and npm
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.17.0'
+      - name: Update items, recipes, actions
+        run: >
+          cd workflow && npm i -f && node update.js
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_KEY: ${{ secrets.APP_KEY }}
