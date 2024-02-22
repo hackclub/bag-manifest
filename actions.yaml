@@ -321,7 +321,8 @@
                       frequency: 1
                       tag: -marriage
                       branch:
-                        - - description: "Oh. Well that seems perfectly reasonable." the farmer says with a shrug. You breathe a sigh of relief as he turns and walks away. The sheep is gone, but at least the farmer let you keep your shears.
+                        - - description: >
+                              "Oh. Well that seems perfectly reasonable." the farmer says with a shrug. You breathe a sigh of relief as he turns and walks away. The sheep is gone, but at least the farmer let you keep your shears.
                             frequency: 3
                         - - description: Farmer Smallberry's eyes narrow even further. "Oh yeah? Well… if you think that sheep is so beautiful… why don't you marry it?"
                             frequency: 1
@@ -422,7 +423,8 @@
         - - description: A sudden gust of wind carries away your scythe, depositing it at Madame Smallberry's feet. Where did she even come from? She picks it up, inspecting the blade.
             frequency: 2
             delay: 8
-          - description: "Even the sharpest blade cannot harvest without a steady hand. You are not ready for this." She turns and walks away with your scythe. What the heck. You needed that.
+          - description: >
+              "Even the sharpest blade cannot harvest without a steady hand. You are not ready for this." She turns and walks away with your scythe. What the heck. You needed that.
             losses: [Scythe]
         - description: As you wander you are startled by the approach of Madame Smallberry, her eyes sparkling with a mix of curiosity and wisdom. "The art of the scythe is much like conducting an orchestra, isn't it?" she muses. Ok. Weird.
           frequency: 5
@@ -442,12 +444,24 @@
             - - description: She whips out a whetstone and assists you in honing the blade of your scythe, giving you a gleaming smile with every stroke. "Follow me to a fertile patch, darling."
                 frequency: 1
                 branch:
-                  - description: "Try it now" she says, gesturing to a large patch of wheat. Guess she's in a good mood today. _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
+                  - description: >
+                      "Try it now" she says, gesturing to a large patch of wheat. Guess she's in a good mood today. _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
                     outputs: [Wheat, Wheat, Wheat, Wheat, Wheat, Wheat, Wheat]
-                  - description: "Try it now" she says, gesturing to a large patch of flax. Guess she's in a good mood today _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
+                  - description: >
+                      "Try it now" she says, gesturing to a large patch of flax. Guess she's in a good mood today _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
                     outputs: [Flax, Flax, Flax, Flax, Flax, Flax, Flax]
-                  - description: "Try it now" she says, gesturing to a large patch of sugarcane. Guess she's in a good mood today. _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
-                    outputs: [Sugarcane, Sugarcane, Sugarcane, Sugarcane, Sugarcane, Sugarcane, Sugarcane]
+                  - description: >
+                      "Try it now" she says, gesturing to a large patch of sugarcane. Guess she's in a good mood today. _Shhhhing!_ Your sharpened instrument yields an extraordinary harvest in one stroke.
+                    outputs:
+                      [
+                        Sugarcane,
+                        Sugarcane,
+                        Sugarcane,
+                        Sugarcane,
+                        Sugarcane,
+                        Sugarcane,
+                        Sugarcane
+                      ]
               - description: Madame Smallberry looks very satisfied. "The music of the soil is well-accompanied by the sound of an efficient blade. And now, the performance has concluded." She gestures as if ushering you out of a theater, and you sense that it's time to leave.
 
 - locations: [smallberry-farms]
@@ -489,18 +503,18 @@
           frequency: 25
           outputs: [Orange]
           branch:
-            - description: You don't see any other oranges that look ripe. You return to the ground and gather your harvest into your bag. 
+            - description: You don't see any other oranges that look ripe. You return to the ground and gather your harvest into your bag.
               frequency: 20
             - description: You pull another orange off and drop it onto the grass below you.
               frequency: 10
             - description: You extend your arm toward a really stellar-looking orange when you hear a foreboding crack from your ladder. Your feet plow through every single rung in sequence like some kind of cartoon, landing you safely on the ground… but with a broken ladder. Nuts.
               frequency: 1
               losses: [Ladder]
-        - description: You discover a remarkable specimen of a banana tree, use your ladder to climb up into the canopy, and pull off a beautiful greenish-yellow fruit. 
+        - description: You discover a remarkable specimen of a banana tree, use your ladder to climb up into the canopy, and pull off a beautiful greenish-yellow fruit.
           frequency: 30
           outputs: [Banana]
           branch:
-            - description: All the other bananas here are still super green. You return to the earth and put the curvaceous fruit in your bag. 
+            - description: All the other bananas here are still super green. You return to the earth and put the curvaceous fruit in your bag.
               frequency: 20
             - description: You tear off another banana, quietly humming that one Harry Belafonte song.
               frequency: 10
@@ -510,17 +524,22 @@
         - - description: As you wander among the trees, you are startled by Madame Smallberry watching you from the limbs of an apple tree like some kind of goddamn cheshire cat. She even has that same unnerving smile.
             frequency: 1
             defaultDelay: 8
-          - description: "Doing a little foraging, are we?" she says. You struggle to find words but they aren't coming. Somehow this lady always finds a way to make you feel uncomfortable.
-          - description: "Come with me." She turns away from you and saunters off deeper into the grove.
+          - description: >
+              "Doing a little foraging, are we?" she says. You struggle to find words but they aren't coming. Somehow this lady always finds a way to make you feel uncomfortable.
+          - description: >
+              "Come with me." She turns away from you and saunters off deeper into the grove.
           - description: After a short walk the trees open up into a clearing with an ominous-looking stone obelisk in the middle. You wonder if you are about to be sacrificed.
-          - description: "This is the shrine of treeful widom. It emanates the life force that allows such a diversity of trees to grow in this orchard without regard to season or weather." Your woo-woo nonsense detector is blinking red, but you have to admit you feel a strange energy here.
+          - description: >
+              "This is the shrine of treeful widom. It emanates the life force that allows such a diversity of trees to grow in this orchard without regard to season or weather." Your woo-woo nonsense detector is blinking red, but you have to admit you feel a strange energy here.
           - description: Madame Smallberry approaches a birdbath-sized dish at the base of the obelisk and beckons you closer. You look into the dish and see that it's filled to the brim with a bluish-purple powder.
           - description: She scoops up a handful of the powder, gazing into it with a kind of reverence. "And this… is tanzanite dust. It's what fuels the shrine." She looks up from the powder in her palm and stares deep into your soul.
-          - description: "I see something within you. A kind of creative force that mirrors the energy contained in this substance." Madame Smallberry pours the dust into a small leather pouch and gives it to you.
+          - description: >
+              "I see something within you. A kind of creative force that mirrors the energy contained in this substance." Madame Smallberry pours the dust into a small leather pouch and gives it to you.
           - description: You give a meek and awkward "Ummm… thanks", and she replies only with a nod.
           - description: You both stand there for a while without saying anything.
           - description: The silence hangs in the air like a pair of undies flapping around on a clothesline.
-          - description: "Ok, we're done here. Time for you to go. Go on, shoo" she says, giving a you a little shooing motion like you would to a cat. You turn around and escort yourself out of the grove. Yeesh. What are you going to do with this dust? Maybe you can make something cool with it.
+          - description: >
+              "Ok, we're done here. Time for you to go. Go on, shoo" she says, giving a you a little shooing motion like you would to a cat. You turn around and escort yourself out of the grove. Yeesh. What are you going to do with this dust? Maybe you can make something cool with it.
             outputs: [Tanzanite Dust]
 
 - locations: [smallberry-farms]
@@ -583,4 +602,3 @@
             - description: He turns his head to the side, one eye locked on to the loaf of bread in your hand. In one fell swoop he lunges at you, snatches the entire loaf in his mouth, and hops away with surprising speed. Well that sucks.
               frequency: 1
               losses: [Bread]
-
