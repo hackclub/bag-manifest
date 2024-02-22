@@ -8,9 +8,7 @@ import { parse } from 'yaml'
 ;(async () => {
   const app = await App.connect({
     appId: Number(process.env.APP_ID),
-    key: process.env.APP_KEY,
-    baseUrl: 'http://0.0.0.0:3000',
-    httpVersion: '1.1'
+    key: process.env.APP_KEY
   })
 
   // Update items
@@ -85,26 +83,22 @@ import { parse } from 'yaml'
     if (exists.actions.length) {
       // Update action if it already exists
       const id = exists.actions[0].id
-      console.log(
-        await app.updateAction({
-          actionId: id,
-          new: {
-            locations: actions.locations,
-            tools: action.tools,
-            branch: JSON.stringify(action.branch)
-          }
-        })
-      )
+      await app.updateAction({
+        actionId: id,
+        new: {
+          locations: actions.locations,
+          tools: action.tools,
+          branch: JSON.stringify(action.branch)
+        }
+      })
     } else
-      console.log(
-        await app.createAction({
-          action: {
-            locations: action.locations,
-            tools: action.tools,
-            branch: JSON.stringify(action.branch)
-          }
-        })
-      )
+      await app.createAction({
+        action: {
+          locations: action.locations,
+          tools: action.tools,
+          branch: JSON.stringify(action.branch)
+        }
+      })
   }
 
   // Update recipes
@@ -125,28 +119,24 @@ import { parse } from 'yaml'
     })
     if (search.recipes.length) {
       // Update recipe if it already exists
-      console.log(
-        await app.updateRecipe({
-          recipeId: search.recipes[0].id,
-          new: {
-            inputs,
-            outputs,
-            tools,
-            description: recipe.description
-          }
-        })
-      )
+      await app.updateRecipe({
+        recipeId: search.recipes[0].id,
+        new: {
+          inputs,
+          outputs,
+          tools,
+          description: recipe.description
+        }
+      })
     } else {
-      console.log(
-        await app.createRecipe({
-          recipe: {
-            inputs,
-            outputs,
-            tools,
-            description: recipe.description
-          }
-        })
-      )
+      await app.createRecipe({
+        recipe: {
+          inputs,
+          outputs,
+          tools,
+          description: recipe.description
+        }
+      })
     }
   }
 })()
