@@ -1,1 +1,3 @@
 /management/
+.env
+node_modules
