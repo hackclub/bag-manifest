@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '18.17.0'
       - name: Update items, recipes, actions
-        run: /
+        run: >
           cd workflow && npm i -f && node update.js
         env:
           APP_ID: ${{ secrets.APP_ID }}
