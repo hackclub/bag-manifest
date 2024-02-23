@@ -325,6 +325,7 @@
                               "Oh. Well that seems perfectly reasonable." the farmer says with a shrug. You breathe a sigh of relief as he turns and walks away. The sheep is gone, but at least the farmer let you keep your shears.
                             frequency: 3
                         - - description: Farmer Smallberry's eyes narrow even further. "Oh yeah? Well… if you think that sheep is so beautiful… why don't you marry it?"
+                            tag: marriage-confirm
                             frequency: 1
                           - description: Thirty minutes later the ceremony begins. The setting, outfits, flowers, are all absolutely gorgeous. Exactly what you always imagined for your wedding. Except, you know, for the sheep part.
                           - description: A string quartet plays Pachelbel's Canon as Farmer Smallberry walks the sheep down the aisle. He has tears in his eyes. The sheep seems pretty cavalier about the big day, and is clearly more interested in munching on the rose petals strewn over the ground.
