@@ -8,7 +8,9 @@ import { parse } from 'yaml'
 ;(async () => {
   const app = await App.connect({
     appId: Number(process.env.APP_ID),
-    key: process.env.APP_KEY
+    key: process.env.APP_KEY,
+    httpVersion: '1.1',
+    baseUrl: 'http://0.0.0.0:3000'
   })
 
   // Update items
@@ -77,7 +79,7 @@ import { parse } from 'yaml'
     const exists = await app.readAction({
       query: {
         locations: action.locations,
-        tools: action.tools
+        tools: action.tools.map(tool => tool.toLowerCase())
       }
     })
     if (exists.actions.length) {
@@ -86,12 +88,12 @@ import { parse } from 'yaml'
       await app.updateAction({
         actionId: id,
         new: {
-          locations: actions.locations,
+          locations: action.locations,
           tools: action.tools,
           branch: JSON.stringify(action.branch)
         }
       })
-    } else
+    } else {
       await app.createAction({
         action: {
           locations: action.locations,
@@ -99,6 +101,7 @@ import { parse } from 'yaml'
           branch: JSON.stringify(action.branch)
         }
       })
+    }
   }
 
   // Update recipes
