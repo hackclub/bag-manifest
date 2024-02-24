@@ -604,11 +604,11 @@
   description: Yummy yummy.
   tag: -fruit-salad
 - name: Shovel
-  artist: ---
+  artist: Elena
   description: In Australia these are known as diggeridoos.
   tag: -shovel
 - name: Scythe
-  artist: ---
+  artist: Elena
   description: Don't fear the reaper.
   tag: -scythe
 - name: Acorn
