@@ -40,7 +40,7 @@ import { parse } from 'yaml'
             name: item.name,
             reaction: `:${item.tag}:`,
             description: `${item.description}${
-              item.artist ? ' - Drawn by ' + item.artist : ''
+              item.artist ? '  - Drawn by ' + item.artist : ''
             }`,
             tradable: item.tradable ? item.tradable : undefined,
             metadata: JSON.stringify({
