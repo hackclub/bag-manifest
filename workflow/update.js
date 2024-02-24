@@ -40,7 +40,7 @@ import { parse } from 'yaml'
             name: item.name,
             reaction: `:${item.tag}:`,
             description: `${item.description}${
-              item.artist ? ' - Drawn by ' + item.artist : ''
+              item.artist ? '  - Drawn by ' + item.artist : ''
             }`,
             tradable: item.tradable ? item.tradable : undefined,
             metadata: JSON.stringify({
@@ -77,7 +77,7 @@ import { parse } from 'yaml'
     const exists = await app.readAction({
       query: {
         locations: action.locations,
-        tools: action.tools
+        tools: action.tools.map(tool => tool.toLowerCase())
       }
     })
     if (exists.actions.length) {
@@ -86,12 +86,12 @@ import { parse } from 'yaml'
       await app.updateAction({
         actionId: id,
         new: {
-          locations: actions.locations,
+          locations: action.locations,
           tools: action.tools,
           branch: JSON.stringify(action.branch)
         }
       })
-    } else
+    } else {
       await app.createAction({
         action: {
           locations: action.locations,
@@ -99,6 +99,7 @@ import { parse } from 'yaml'
           branch: JSON.stringify(action.branch)
         }
       })
+    }
   }
 
   // Update recipes

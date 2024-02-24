@@ -164,59 +164,59 @@
                           frequency: 1
                         - description: The gnome is full-on crying now. "This hallowed text is the foundation. The beginning. Its wisdom is less refined than the tales of the discs. But it will enable you to understand those tales more deeply, should you one day encounter them."
                           outputs: [MASH The Original Novel]
-                      - - description: It's a DVD. The title is \"MASH Season 1"
+                      - - description: It's a DVD. The title is "MASH Season 1"
                           frequency: 3
                         - description: A trio of tears trail down the gnome's cheeks. "This disc is the first of the series. It contains many great tales, such as _Dear Dad_ and _Tuttle_."
                           outputs: [MASH Season 1]
-                      - - description: It's a DVD. The title is \"MASH Season 2"
+                      - - description: It's a DVD. The title is "MASH Season 2"
                           frequency: 3
                         - description: A trio of tears trail down the gnome's cheeks. "This disc is the second of the series. It contains tales of great sadness, such as _Dr. Pierce and Mr. Hyde_, and tales of great laughter, such as _5 O'Clock Charlie_."
                           outputs: [MASH Season 2]
-                      - - description: It's a DVD. The title is \"MASH Season 3"
+                      - - description: It's a DVD. The title is "MASH Season 3"
                           frequency: 3
                         - description: Tears are streaming down the gnome's cheeks. "This disc is the third of the series. The end of the era of Henry Blake and Trapper John McIntyre. It ends with _Abyssinia, Henry_, perhaps the most gut-wrenching tale of all."
                           outputs: [MASH Season 3]
-                      - - description: It's a DVD. The title is \"MASH Season 4"
+                      - - description: It's a DVD. The title is "MASH Season 4"
                           frequency: 3
                         - description: A single tear trails down the gnome's cheeks. "This disc is the fourth of the series. It introduces the characters of Colonel Potter and BJ Hunnicut. They are different from the beloved characters they replace. But with time, you will come to appreciate them."
                           outputs: [MASH Season 4]
-                      - - description: It's a DVD. The title is \"MASH Season 5"
+                      - - description: It's a DVD. The title is "MASH Season 5"
                           frequency: 3
                         - description: A single tear trails down the gnome's cheeks. "This disc is the fifth of the series. It signals the end of the relationship between Frank and Margaret. This is ultimately good for Margaret. She could do better than Ferret-Face Frank."
                           outputs: [MASH Season 5]
-                      - - description: It's a DVD. The title is \"MASH Season 6"
+                      - - description: It's a DVD. The title is "MASH Season 6"
                           frequency: 3
                         - description: A single tear trails down the gnome's cheeks. "This disc is the sixth of the series. In it we witness the arrival of Major Charles Winchester. He is very different from Frank Burns. But in many ways, he is a deeper character, and more deserving of our respect."
                           outputs: [MASH Season 6]
-                      - - description: It's a DVD. The title is \"MASH Season 7"
+                      - - description: It's a DVD. The title is "MASH Season 7"
                           frequency: 3
                         - description: A single tear trails down the gnome's cheeks. "This disc is the seventh of the series. In it we see the introduction of BJ Hunnicut's mustache, and a few classic tales such as _Point of View_."
                           outputs: [MASH Season 7]
-                      - - description: It's a DVD. The title is \"MASH Season 8"
+                      - - description: It's a DVD. The title is "MASH Season 8"
                           frequency: 3
                         - description: A single tear trails down the gnome's cheeks. "This disc is the eigth of the series. In the beginning, we witness the departure of Radar O'Reilly. This turn of events will make your heart ache. But in time, that pain will be eased by the elevation of Corporal Klinger."
                           outputs: [MASH Season 8]
-                      - - description: It's a DVD. The title is \"MASH Season 9"
+                      - - description: It's a DVD. The title is "MASH Season 9"
                           frequency: 3
                         - description: A single tear trails down the gnome's cheeks. "This disc is the ninth of the series. The first tale it contains is deeply impactful. Two stories are interwoven; one is a frivolous game of bridge, and the other a heart-wrenching encounter between Hawkeye and a North Korean soldier."
                           outputs: [MASH Season 9]
-                      - - description: It's a DVD. The title is \"MASH Season 10"
+                      - - description: It's a DVD. The title is "MASH Season 10"
                           frequency: 3
                         - description: A single tear trails down the gnome's cheeks. "This disc is the tenth of the series. In it we find tales such as _Follies of the Living - Concerns of the Dead_ that take us deep into the spiritual and psychic wounds of battle."
                           outputs: [MASH Season 10]
-                      - - description: It's a DVD. The title is \"MASH Season 11"
+                      - - description: It's a DVD. The title is "MASH Season 11"
                           frequency: 3
                         - description: A river of tears pour down the gnome's cheeks. "This disc is the eleventh and last of the series. In its dramatic finale, _Goodbye, Farewell, Amen_, we learn difficult lessons about war. We see Hawkeye in a disturbed and disturbing state. And we learn that the chicken was never a chicken."
                           outputs: [MASH Season 11]
-                      - - description: It's a DVD. The title is \"MASH The Movie"
+                      - - description: It's a DVD. The title is "MASH The Movie"
                           frequency: 2
                         - description: A single tear trails down the gnome's cheeks. "This disc is the genesis of the filmic tales of MASH. In it we see an unrefined and disjointed version of the tales of the main series. The elements of wisdom are unrefined, but nonetheless present."
                           outputs: [MASH The Movie]
-                      - - description: It's a DVD. The title is \"AfterMASH Season 1"
+                      - - description: It's a DVD. The title is "AfterMASH Season 1"
                           frequency: 2
                         - description: A single tear trails down the gnome's cheeks. "This disc is the first in an epilogue of sorts. It tells the story of three characters from the main series after they return home from the war. Its wisdom is weak, but nonetheless it holds a place in our sacred tradition."
                           outputs: [AfterMASH Season 1]
-                      - - description: It's a DVD. The title is \"AfterMASH Season 2"
+                      - - description: It's a DVD. The title is "AfterMASH Season 2"
                           frequency: 2
                         - description: A single tear trails down the gnome's cheeks. "This disc is the second in an epilogue of sorts. It tells the story of three characters from the main series after they return home from the war. Its wisdom is weak, but nonetheless it holds a place in our sacred tradition."
                           outputs: [AfterMASH Season 2]
@@ -325,6 +325,7 @@
                               "Oh. Well that seems perfectly reasonable." the farmer says with a shrug. You breathe a sigh of relief as he turns and walks away. The sheep is gone, but at least the farmer let you keep your shears.
                             frequency: 3
                         - - description: Farmer Smallberry's eyes narrow even further. "Oh yeah? Well… if you think that sheep is so beautiful… why don't you marry it?"
+                            tag: marriage-confirm
                             frequency: 1
                           - description: Thirty minutes later the ceremony begins. The setting, outfits, flowers, are all absolutely gorgeous. Exactly what you always imagined for your wedding. Except, you know, for the sheep part.
                           - description: A string quartet plays Pachelbel's Canon as Farmer Smallberry walks the sheep down the aisle. He has tears in his eyes. The sheep seems pretty cavalier about the big day, and is clearly more interested in munching on the rose petals strewn over the ground.
