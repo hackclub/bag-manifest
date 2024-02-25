@@ -298,6 +298,8 @@
     - description: You look around for a sheep… where are you sheep…
       frequency: 100
       branch:
+        - description: You look for a long time, but those big poofy doofs seem to have sensed your presence… you swear they'll pay for this next time. With their WOOL.
+          frequency: 1
         - description: You spy one galloping in the distance. It's… _beautiful_. You give chase to the wooly beast.
           frequency: 3
           branch:
@@ -363,7 +365,6 @@
                         - description: Farmer Smallberry looks unamused. "That's the stupidest excuse this farmer has ever heard. I'm taking your shears. Now go away.". He takes your shears. You go away.
                           frequency: 2
                           losses: [Shears]
-        - description: You look for a long time, but those big poofy doofs seem to have sensed your presence… you swear they'll pay for this next time. With their WOOL.
     - description: You squeeze your shears menacingly as you peer around for future sweaters… when suddenly, a seagull swoops down and snatches them from you. Why are birds such jerks?? Now you need new shears.
       frequency: 1
       losses: [Shears]
@@ -393,7 +394,7 @@
             - description: You swing your scythe but the head snaps off and flies into the distance. Rats. That was a good scythe.
               frequency: 1
               losses: [Scythe]
-        - description: You spy a lovely patch of wheat and instantly begin to salivate. The first stroke of your scythe yields a hearty bundle which you secret away in your bag as droplets of your mouthy evidence fall to nourish the earth.
+        - description: You spy a lovely patch of wheat and instantly begin to salivate. The first stroke of your scythe yields a hearty bundle which you secret away in your bag as droplets of your mouthy essence fall to nourish the earth.
           frequency: 35
           outputs: [Wheat]
           tag: wheat-harvest
