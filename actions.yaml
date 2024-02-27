@@ -75,7 +75,7 @@
           frequency: 1
           losses: [Shovel]
         - description: Nothing in this spot but plain old dirt.
-          frequency: 20
+          frequency: 100
     - description: You plunge your shovel straight into a rock just below the surface, which destroys them both. Dang
       frequency: 1
       losses: [Shovel]
