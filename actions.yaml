@@ -585,7 +585,7 @@
       frequency: 100
       tag: chicken-hunt
       branch:
-        - description: No chickens yet. You are undettered. You begin clucking softly under your breath.
+        - description: No chickens yet. You are undeterred. You begin clucking softly under your breath.
           loop: true
           frequency: 80
         - description: The sun is getting low and you haven't found any chickens yet. You'll have to try again some other time.
