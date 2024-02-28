@@ -200,9 +200,9 @@
   tools: [Hammer, Anvil]
   description: You slowly and carefully shape the iron into a tapered rod. There's no joke on this one… mandrels are useful but not very funny.
 - outputs: [Thread, Thread, Thread, Thread]
-  inputs: [Cotton]
+  inputs: [Flax]
   tools: [Spinning Wheel]
-  description: You carefully spin the cotton into thread. Some may call you a threadhead. Not me, but some.
+  description: You carefully spin the flax into thread. Some may call you a threadhead. Not me, but some.
 - outputs: [Pickaxe]
   inputs: [Stick, Iron]
   tools: [Hammer, Anvil]
