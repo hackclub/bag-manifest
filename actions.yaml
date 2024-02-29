@@ -248,11 +248,11 @@
           frequency: 20
           terminate: true
         - description: While you're chopping, an apple falls loose and hits you on the head. You are momentarily inspired to formulate a theory of gravity, but the moment passes and you get back to work.
-          frequency: 8
+          frequency: 3
           outputs: [Apple]
           loop: true
         - description: Your chopping knocks an acorn loose onto the ground next to you. You squirrel it away and get back to the task at hand.
-          frequency: 10
+          frequency: 5
           outputs: [Acorn]
           loop: true
         - description: After many blows the tree tips over. What do they say in these situations? Timber? Whatever. You set to work on the felled tree.
@@ -260,7 +260,7 @@
           tag: tree-split
           branch:
             - description: You separate a solid limb from the trunk and take a satisfied look at your haul. Way to go!
-              frequency: 2
+              frequency: 6
               outputs: [Log, Stick]
             - description: You split off a log and put it to the side. There's still more work to be done on this tree. You get back to it.
               frequency: 3
@@ -271,10 +271,10 @@
               outputs: [Stick]
               loop: true
             - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease.
-              frequency: 1
+              frequency: 2
               branch:
                 - description: You finally get the axe dislodged from the wood, wipe the sweat from your brow, and get back to work.
-                  frequency: 5
+                  frequency: 20
                   gotoChildren: tree-split
                 - description: You pull hard on the axe handle, but instead of dislodging it snaps… what a shame. I guess axes can't last forever.
                   frequency: 1
@@ -283,7 +283,7 @@
           frequency: 10
           branch:
             - description: After much pulling and prying, the axe comes loose. Phew! Now you can get back to chopping.
-              frequency: 5
+              frequency: 20
               gotoChildren: tree-find
             - description: You yank on the axe to pull it out, but instead the handle just snaps with the head still embedded in the tree. Dang. Now you need a new axe.
               frequency: 1
