@@ -279,11 +279,11 @@
   inputs: [Stick, Knife]
   description: You put the blade of the knife onto a long stick. It makes a great swishing sound when you wave it around in the air.
 - outputs: [Ladder]
-  inputs: [Stick, Stick, Stick, Stick, Stick, Glue]
+  inputs: [Lumber, Lumber, Stick, Stick, Stick, Glue]
   tools: [Saw]
   description: You cut them sticks up into ladder-appropriate lengths and slap 'em together with glue. A ladder is born.
 - outputs: [Saw]
-  inputs: [Wood, Iron]
+  inputs: [Lumber, Iron]
   tools: [Hammer, Anvil, File]
   description: You flatten the iron into a blade, file out some pointy teeth, put it on a wooden handle. Watch out trees, this hacker is ready to cut a birch.
 - outputs: [File]
