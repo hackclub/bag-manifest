@@ -2,12 +2,22 @@
   // Load items.yaml and recipes.yaml
   const itemsYaml = await $.get('./items.yaml')
   const recipesYaml = await $.get('./recipes.yaml')
+  const actionsYaml = await $.get('./actions.yaml')
 
   const items = jsyaml.load(itemsYaml, 'utf8')
   const recipes = jsyaml.load(recipesYaml, 'utf8')
+  const actions = jsyaml.load(actionsYaml, 'utf8')
 
   console.log('Items:', items)
   console.log('Recipes:', recipes)
+  console.log('Actions:', actions)
+
+  const analysis = analyze(
+    _.cloneDeep(items),
+    _.cloneDeep(recipes),
+    _.cloneDeep(actions),
+    _
+  )
 
   // Combine items and recipes into a single array
   const nodes = [...items, ...recipes]
@@ -64,7 +74,7 @@
     .append('g') // Append a 'g' element for grouping elements
 
   // Define the zoom behavior
-  const zoom = d3.zoom().on('zoom', (event) => {
+  const zoom = d3.zoom().on('zoom', event => {
     svg.attr('transform', event.transform)
   })
 
@@ -120,9 +130,9 @@
     .append('g')
     .attr('class', 'input-link-group')
     .selectAll('.input-link')
-    .data((d) =>
-      d.inputs.map((input) => {
-        const sourceIndex = nodes.findIndex((node) => node.name === input)
+    .data(d =>
+      d.inputs.map(input => {
+        const sourceIndex = nodes.findIndex(node => node.name === input)
         if (sourceIndex === -1) {
           console.error(`Input not found for recipe: ${JSON.stringify(d)}`)
         }
@@ -130,7 +140,7 @@
           source: sourceIndex,
           target: nodes.indexOf(d),
           item: nodes[sourceIndex],
-          recipe: d,
+          recipe: d
         }
         return inputLink
       })
@@ -151,10 +161,10 @@
     .append('g')
     .attr('class', 'tool-link-group')
     .selectAll('.tool-link')
-    .data((d) => {
+    .data(d => {
       if (!d.tools) return []
-      return d.tools.map((tool) => {
-        const sourceIndex = nodes.findIndex((node) => node.name === tool)
+      return d.tools.map(tool => {
+        const sourceIndex = nodes.findIndex(node => node.name === tool)
         if (sourceIndex === -1) {
           console.error(`Tool not found for recipe: ${JSON.stringify(d)}`)
         }
@@ -162,7 +172,7 @@
           source: sourceIndex,
           target: nodes.indexOf(d),
           item: nodes[sourceIndex],
-          recipe: d,
+          recipe: d
         }
         return toolLink
       })
@@ -185,9 +195,9 @@
     .append('g')
     .attr('class', 'output-link-group')
     .selectAll('.output-link')
-    .data((d) =>
-      d.outputs.map((output) => {
-        const targetIndex = nodes.findIndex((node) => node.name === output)
+    .data(d =>
+      d.outputs.map(output => {
+        const targetIndex = nodes.findIndex(node => node.name === output)
         if (targetIndex === -1) {
           console.error(`Output not found for recipe: ${JSON.stringify(d)}`)
         }
@@ -195,7 +205,7 @@
           source: nodes.indexOf(d),
           target: targetIndex,
           item: nodes[targetIndex],
-          recipe: d,
+          recipe: d
         }
         return outputLink
       })
@@ -228,7 +238,7 @@
   // Add an image to each group
   itemNodes
     .append('svg:image')
-    .attr('xlink:href', (d) => `./images/${d.tag}.png`) // Set the image source
+    .attr('xlink:href', d => `./images/${d.tag}.png`) // Set the image source
     .attr('width', itemImageSize) // Set the width of the image
     .attr('height', itemImageSize) // Set the height of the image
     .attr('x', -itemImageSize / 2) // Offset the image position
@@ -239,14 +249,14 @@
     .append('g')
     .attr('text-anchor', 'middle')
     .attr('dy', itemImageSize) // Adjust the distance below the image
-    .text((d) => d.name) // Assuming each item has a 'name' field
+    .text(d => d.name) // Assuming each item has a 'name' field
 
   // Add text labels below each image for items
   itemNodes
     .append('text')
     .attr('text-anchor', 'middle')
     .attr('dy', itemImageSize / 2 + 15) // Adjust the distance below the image
-    .text((d) => d.name)
+    .text(d => d.name)
 
   // Tooltip
   const tooltip = d3
@@ -283,7 +293,7 @@
   // Append images for each item in the formula
   recipeNodes
     .selectAll('.formula')
-    .data((d) => {
+    .data(d => {
       let items = [...d.inputs]
       if (d.tools) items = [...items, '+', ...d.tools]
       items = [...items, '=', ...d.outputs]
@@ -291,15 +301,15 @@
     })
     .enter()
     .append('svg:image')
-    .attr('xlink:href', (d) => {
+    .attr('xlink:href', d => {
       if (d == '+') return './plus.png'
       if (d == '=') return './equals.png'
-      return `./images/${items.find((v) => v.name === d).tag}.png`
+      return `./images/${items.find(v => v.name === d).tag}.png`
     })
     .attr('width', recipeImageSize)
     .attr('height', recipeImageSize)
     .attr('x', (d, i, data) => (i - data.length / 2) * recipeImageSize)
-    .attr('y', (d) => -recipeImageSize / 2)
+    .attr('y', d => -recipeImageSize / 2)
 
   // Add mouseover and mouseout event listeners to recipe nodes
   recipeNodes
@@ -313,26 +323,26 @@
 
   // Update node and link positions on each tick
   function tick() {
-    itemNodes.attr('transform', (d) => `translate(${d.x},${d.y})`)
-    recipeNodes.attr('transform', (d) => `translate(${d.x},${d.y})`)
+    itemNodes.attr('transform', d => `translate(${d.x},${d.y})`)
+    recipeNodes.attr('transform', d => `translate(${d.x},${d.y})`)
 
     inputLinks
-      .attr('x1', (d) => d.item.x)
-      .attr('y1', (d) => d.item.y)
-      .attr('x2', (d) => d.recipe.x)
-      .attr('y2', (d) => d.recipe.y)
+      .attr('x1', d => d.item.x)
+      .attr('y1', d => d.item.y)
+      .attr('x2', d => d.recipe.x)
+      .attr('y2', d => d.recipe.y)
 
     toolLinks
-      .attr('x1', (d) => d.item.x)
-      .attr('y1', (d) => d.item.y)
-      .attr('x2', (d) => d.recipe.x)
-      .attr('y2', (d) => d.recipe.y)
+      .attr('x1', d => d.item.x)
+      .attr('y1', d => d.item.y)
+      .attr('x2', d => d.recipe.x)
+      .attr('y2', d => d.recipe.y)
 
     outputLinks
-      .attr('x1', (d) => d.recipe.x)
-      .attr('y1', (d) => d.recipe.y)
-      .attr('x2', (d) => d.item.x)
-      .attr('y2', (d) => d.item.y)
+      .attr('x1', d => d.recipe.x)
+      .attr('y1', d => d.recipe.y)
+      .attr('x2', d => d.item.x)
+      .attr('y2', d => d.item.y)
   }
 
   // Create a force simulation
@@ -342,7 +352,7 @@
       'link',
       d3
         .forceLink()
-        .id((d) => d.index)
+        .id(d => d.index)
         .distance(100)
         .strength(0.1)
     )
