@@ -63,7 +63,7 @@
   description: After hours of sawing, gluing, and hammering, you give your creation an oh-so-satisfying spin.
 - outputs: [Lapidary Wheel]
   inputs: [Spinning Wheel, Diamond Dust, Glue]
-  description: You bling out your spinning wheel, Giving it a new life as a tool of the jewel.
+  description: You bling out your spinning wheel, giving it a new life as a tool of the jewel.
 - outputs: [Yarn, Yarn]
   inputs: [Wool]
   tools: [Spinning Wheel]
