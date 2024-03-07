@@ -32,6 +32,7 @@ import { parse } from 'yaml'
         query: JSON.stringify({ name: item.name })
       })
     ).items[0]
+    console.log(search)
     try {
       if (!search) {
         // Create new item
@@ -121,6 +122,35 @@ import { parse } from 'yaml'
     let inputs = recipe.inputs.map(input => ({ recipeItemId: input }))
     let outputs = recipe.outputs.map(output => ({ recipeItemId: output }))
     let tools = recipe.tools?.map(tool => ({ recipeItemId: tool })) || []
+
+    // Combine inputs, outputs, and tools appropriately
+    inputs = inputs.reduce((acc, curr) => {
+      const index = acc.findIndex(
+        input => input.recipeItemId === curr.recipeItemId
+      )
+      if (index >= 0) acc[index].quantity++
+      else acc.push({ quantity: 1, ...curr })
+      return acc
+    }, [])
+
+    outputs = outputs.reduce((acc, curr) => {
+      const index = acc.findIndex(
+        output => output.recipeItemId === curr.recipeItemId
+      )
+      if (index >= 0) acc[index].quantity++
+      else acc.push({ quantity: 1, ...curr })
+      return acc
+    }, [])
+
+    tools = tools.reduce((acc, curr) => {
+      const index = acc.findIndex(
+        tool => tool.recipeItemId === curr.recipeItemId
+      )
+      if (index >= 0) acc[index].quantity++
+      else acc.push({ quantity: 1, ...curr })
+      return acc
+    }, [])
+
     const search = await app.readRecipe({
       query: {
         inputs,
