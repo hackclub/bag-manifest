@@ -40,7 +40,11 @@ import { parse } from 'yaml'
             name: item.name,
             reaction: `:${item.tag}:`,
             description: `${item.description}${
-              item.artist ? '  - Drawn by ' + item.artist === '---' ? 'Unknown' : item.artist : ''
+              item.artist
+                ? '  - Drawn by ' + item.artist === '---'
+                  ? 'Unknown'
+                  : item.artist
+                : ''
             }`,
             tradable: item.tradable ? item.tradable : undefined,
             metadata: JSON.stringify({
@@ -65,7 +69,9 @@ import { parse } from 'yaml'
           }
         })
       }
-    } catch {}
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   // Update actions

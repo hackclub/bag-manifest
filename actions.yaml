@@ -111,6 +111,7 @@
           frequency: 6
           outputs: [Raw Emerald]
         - description: You pull out a rock with some white sparkles on one side… wow, it's a raw diamond!!
+          tag: diamond
           frequency: 5
           outputs: [Raw Diamond]
         - description: Mein gott… is that…? It is! It's a raw tanzanite!! And it's all yours!!!
