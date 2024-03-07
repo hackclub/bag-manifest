@@ -111,6 +111,7 @@
           frequency: 6
           outputs: [Raw Emerald]
         - description: You pull out a rock with some white sparkles on one side… wow, it's a raw diamond!!
+          tag: diamond
           frequency: 5
           outputs: [Raw Diamond]
         - description: Mein gott… is that…? It is! It's a raw tanzanite!! And it's all yours!!!
@@ -307,6 +308,7 @@
               frequency: 20
               branch:
                 - description: You set to work with your shears, trimming off fibers with the precision of a hawk that identifies as a laser cutter. The deed is done. The wool is yours!!!
+                  tag: win
                   outputs: [Wool]
                   frequency: 1
                 - description: In the ensuing fracas the sheep wriggles away from you, bleating it up like a big noisy boi. What a drama queen. You'll get that overgrown squishmallow next time.
