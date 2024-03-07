@@ -116,6 +116,7 @@
           outputs: [Raw Diamond]
         - description: Mein gott… is that…? It is! It's a raw tanzanite!! And it's all yours!!!
           frequency: 2
+          tag: tanzanite
           outputs: [Raw Tanzanite]
         - description: You pry out a rock with some shiny yellow stuff in it. It's gold!!
           frequency: 8

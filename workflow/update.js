@@ -61,7 +61,7 @@ import { parse } from 'yaml'
             description: `${item.description}${
               item.artist
                 ? '- Drawn by ' + item.artist === '---'
-                  ? 'Unknown'
+                  ? 'Currently unknown'
                   : item.artist
                 : ''
             }`,
