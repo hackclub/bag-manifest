@@ -59,7 +59,11 @@ import { parse } from 'yaml'
           new: {
             reaction: `:${item.tag}:`,
             description: `${item.description}${
-              item.artist ? '- Drawn by ' + item.artist : ''
+              item.artist
+                ? '- Drawn by ' + item.artist === '---'
+                  ? 'Unknown'
+                  : item.artist
+                : ''
             }`,
             tradable: item.tradable ? item.tradable : undefined,
             metadata: JSON.stringify({
