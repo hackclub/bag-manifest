@@ -639,3 +639,67 @@
   artist: ---
   description: This thing is covered in angry little teeth that are very good at removing bits of metal.
   tag: -file
+- name: Diamond Ring
+  artist: ---
+  description:
+  tag: -diamond-ring
+- name: Emerald Ring
+  artist: ---
+  description:
+  tag: -emerald-ring
+- name: Sapphire Ring
+  artist: ---
+  description:
+  tag: -sapphire-ring
+- name: Ruby Ring
+  artist: ---
+  description:
+  tag: -ruby-ring
+- name: Tanzanite Ring
+  artist: ---
+  description:
+  tag: -tanzanite-ring
+- name: Stew
+  artist: ---
+  description:
+  tag: -stew
+- name: Grapes
+  artist: ---
+  description:
+  tag: -grapes
+- name: Rice
+  artist: ---
+  description:
+  tag: -rice
+- name: Crab
+  artist: ---
+  description:
+  tag: -crab
+- name: Butter
+  artist: ---
+  description:
+  tag: -butter
+- name: String
+  artist: ---
+  description:
+  tag: -string
+- name: Rope
+  artist: ---
+  description:
+  tag: -rope
+- name: Bowl
+  artist: ---
+  description:
+  tag: -bowl
+- name: Milk
+  artist: ---
+  description:
+  tag: -milk
+- name: Clam
+  artist: ---
+  description:
+  tag: -clam
+- name: Churn
+  artist: ---
+  description:
+  tag: -churn
