@@ -57,13 +57,13 @@
   tools: [Shovel]
   branch:
     - description: You plunge your shovel into the ground and start digging.
-      frequency: 100
+      frequency: 200
       branch:
         - description: You keep digging… nothing interesting yet…
-          frequency: 30
+          frequency: 80
           loop: true
         - description: The only thing you find is a pretty cool rock.
-          frequency: 80
+          frequency: 50
           outputs: [Rock]
         - description: You find some high-quality clay. That's useful!
           frequency: 50
@@ -71,6 +71,9 @@
         - description: You find a deposit of pure fine sand. Mmmmm sand
           frequency: 50
           outputs: [Sand]
+        - description: You find a bone. How incredibly gothic.
+          frequency: 30
+          outputs: [Bone]
         - description: Your shovel snaps right where the wood and iron come together. Time for a new shovel I guess.
           frequency: 1
           losses: [Shovel]
