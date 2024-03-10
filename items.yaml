@@ -644,11 +644,11 @@
   description:
   tag: -diamond-ring
 - name: Emerald Ring
-  artist: ---
+  artist: Elena
   description:
   tag: -emerald-ring
 - name: Sapphire Ring
-  artist: ---
+  artist: Elena
   description:
   tag: -sapphire-ring
 - name: Ruby Ring
@@ -664,7 +664,7 @@
   description:
   tag: -stew
 - name: Grapes
-  artist: ---
+  artist: Elena
   description:
   tag: -grapes
 - name: Rice
@@ -684,7 +684,7 @@
   description:
   tag: -string
 - name: Rope
-  artist: ---
+  artist: Elena
   description:
   tag: -rope
 - name: Bowl
@@ -696,7 +696,7 @@
   description:
   tag: -milk
 - name: Clam
-  artist: ---
+  artist: Elena
   description:
   tag: -clam
 - name: Churn
