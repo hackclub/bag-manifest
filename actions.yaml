@@ -83,6 +83,22 @@
       frequency: 1
       losses: [Shovel]
 
+- locations: [the-river-sploosh]
+  tools: [Vessel]
+  branch:
+    - description: You stoop by the river to fill your vessel with water.
+      frequency: 200
+      branch:
+        - description: You scoop up a few liters with a satisfying "sploosh". I guess that's where this river got its name.
+          frequency: 200
+          outputs: [Water]
+        - description: You dip your vessel into the water, but you lose your grip and the current carries it away. Drat!
+          frequency: 1
+          losses: [Vessel]
+    - description: You stoop to fill your vessel, but a sneaky rock trips you up and you drop it, smashing it to bits. Oh no!
+      frequency: 1
+      losses: [Vessel]
+
 - locations: [hillrock-mine]
   tools: [Pickaxe]
   branch:
