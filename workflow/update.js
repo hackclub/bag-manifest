@@ -8,7 +8,9 @@ import { parse } from 'yaml'
 ;(async () => {
   const app = await App.connect({
     appId: Number(process.env.APP_ID),
-    key: process.env.APP_KEY
+    key: process.env.APP_KEY,
+    httpVersion: '1.1',
+    baseUrl: 'http://0.0.0.0:3000'
   })
 
   // Update items
@@ -50,7 +52,6 @@ import { parse } from 'yaml'
           }
         })
       } else {
-        console.log(item.artist, item.artist.trim() === '---')
         await app.updateItem({
           itemId: item.name,
           new: {
@@ -77,31 +78,35 @@ import { parse } from 'yaml'
   )
 
   for (let action of actions) {
-    const exists = await app.readAction({
-      query: {
-        locations: action.locations,
-        tools: action.tools.map(tool => tool.toLowerCase())
+    try {
+      const exists = await app.readAction({
+        query: {
+          locations: action.locations,
+          tools: action.tools.map(tool => tool.toLowerCase())
+        }
+      })
+      if (exists.actions.length) {
+        // Update action if it already exists
+        const id = exists.actions[0].id
+        await app.updateAction({
+          actionId: id,
+          new: {
+            locations: action.locations,
+            tools: action.tools,
+            branch: JSON.stringify(action.branch)
+          }
+        })
+      } else {
+        await app.createAction({
+          action: {
+            locations: action.locations,
+            tools: action.tools,
+            branch: JSON.stringify(action.branch)
+          }
+        })
       }
-    })
-    if (exists.actions.length) {
-      // Update action if it already exists
-      const id = exists.actions[0].id
-      await app.updateAction({
-        actionId: id,
-        new: {
-          locations: action.locations,
-          tools: action.tools,
-          branch: JSON.stringify(action.branch)
-        }
-      })
-    } else {
-      await app.createAction({
-        action: {
-          locations: action.locations,
-          tools: action.tools,
-          branch: JSON.stringify(action.branch)
-        }
-      })
+    } catch (error) {
+      console.log(error)
     }
   }
 
@@ -143,7 +148,7 @@ import { parse } from 'yaml'
       return acc
     }, [])
 
-    const search = await app.readRecipe({
+    const search = await app.readRecipes({
       query: {
         inputs,
         outputs,
