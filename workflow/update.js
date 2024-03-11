@@ -32,7 +32,6 @@ import { parse } from 'yaml'
         query: JSON.stringify({ name: item.name })
       })
     ).items[0]
-    console.log(search)
     try {
       if (!search) {
         // Create new item
@@ -40,12 +39,8 @@ import { parse } from 'yaml'
           item: {
             name: item.name,
             reaction: `:${item.tag}:`,
-            description: `${item.description}${
-              item.artist
-                ? '  - Drawn by ' + item.artist.trim() === '---'
-                  ? 'Unknown'
-                  : item.artist
-                : ''
+            description: `${item.description} - Drawn by ${
+              item.artist.trim() === '---' ? 'Unknown' : item.artist
             }`,
             tradable: item.tradable ? item.tradable : undefined,
             metadata: JSON.stringify({
@@ -55,16 +50,13 @@ import { parse } from 'yaml'
           }
         })
       } else {
+        console.log(item.artist, item.artist.trim() === '---')
         await app.updateItem({
           itemId: item.name,
           new: {
             reaction: `:${item.tag}:`,
-            description: `${item.description}${
-              item.artist
-                ? '- Drawn by ' + item.artist.trim() === '---'
-                  ? 'Unknown'
-                  : item.artist
-                : ''
+            description: `${item.description} - Drawn by ${
+              item.artist.trim() === '---' ? 'Unknown' : item.artist
             }`,
             tradable: item.tradable ? item.tradable : undefined,
             metadata: JSON.stringify({

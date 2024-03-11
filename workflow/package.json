@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hackclub/bag": "^1.0.24",
+    "@hackclub/bag": "^1.0.30",
     "dotenv": "^16.4.5",
     "yaml": "^2.3.4"
   }
