@@ -41,7 +41,7 @@ import { parse } from 'yaml'
             reaction: `:${item.tag}:`,
             description: `${item.description}${
               item.artist
-                ? '  - Drawn by ' + item.artist === '---'
+                ? '  - Drawn by ' + item.artist.trim() === '---'
                   ? 'Unknown'
                   : item.artist
                 : ''
@@ -60,7 +60,7 @@ import { parse } from 'yaml'
             reaction: `:${item.tag}:`,
             description: `${item.description}${
               item.artist
-                ? '- Drawn by ' + item.artist === '---'
+                ? '- Drawn by ' + item.artist.trim() === '---'
                   ? 'Unknown'
                   : item.artist
                 : ''

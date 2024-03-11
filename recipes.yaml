@@ -260,7 +260,7 @@
   tools: [Rolling Mill]
   description: You roll the iron out into its very best impression of spaghetti. It's trying so hard! Are you proud of it??
 - outputs: [Gold Wire]
-  inputs: [Iron]
+  inputs: [Gold]
   tools: [Rolling Mill]
   description: You roll the gold out into its very best impression of spaghetti. It's getting a lot closer than iron does. The yellowness helps.
 - outputs: [Top Hat]
@@ -290,3 +290,9 @@
   inputs: [Iron]
   tools: [Hammer, Anvil, Chisel]
   description: You forge a flat blank and painstakingly cut the teeth using your chisel. File this one under… eh… there's not a great joke here but you have a file now.
+- outputs: [Furnace]
+  inputs: [Rock, Rock, Rock, Rock, Rock, Rock, Rock, Rock]
+  description: You stack rocks together to make a chamber capable of reaching high temperatures. Fire in the hole!
+- outputs: [Range]
+  inputs: [Brick, Brick, Brick, Brick, Brick, Brick, Brick, Brick, Iron]
+  description: You carefully arrange the bricks to make an oven with a nice lil stove spot on top. Your cookware is quivering with excitement!!
