@@ -57,13 +57,13 @@
   tools: [Shovel]
   branch:
     - description: You plunge your shovel into the ground and start digging.
-      frequency: 100
+      frequency: 200
       branch:
         - description: You keep digging… nothing interesting yet…
-          frequency: 30
+          frequency: 80
           loop: true
         - description: The only thing you find is a pretty cool rock.
-          frequency: 80
+          frequency: 50
           outputs: [Rock]
         - description: You find some high-quality clay. That's useful!
           frequency: 50
@@ -71,6 +71,9 @@
         - description: You find a deposit of pure fine sand. Mmmmm sand
           frequency: 50
           outputs: [Sand]
+        - description: You find a bone. How incredibly gothic.
+          frequency: 30
+          outputs: [Bone]
         - description: Your shovel snaps right where the wood and iron come together. Time for a new shovel I guess.
           frequency: 1
           losses: [Shovel]
@@ -79,6 +82,22 @@
     - description: You plunge your shovel straight into a rock just below the surface, which destroys them both. Dang
       frequency: 1
       losses: [Shovel]
+
+- locations: [the-river-sploosh]
+  tools: [Vessel]
+  branch:
+    - description: You stoop by the river to fill your vessel with water.
+      frequency: 200
+      branch:
+        - description: You scoop up a few liters with a satisfying "sploosh". I guess that's where this river got its name.
+          frequency: 200
+          outputs: [Water]
+        - description: You dip your vessel into the water, but you lose your grip and the current carries it away. Drat!
+          frequency: 1
+          losses: [Vessel]
+    - description: You stoop to fill your vessel, but a sneaky rock trips you up and you drop it, smashing it to bits. Oh no!
+      frequency: 1
+      losses: [Vessel]
 
 - locations: [hillrock-mine]
   tools: [Pickaxe]
