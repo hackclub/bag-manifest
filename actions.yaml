@@ -72,7 +72,7 @@
           frequency: 50
           outputs: [Sand]
         - description: You find a bone. How incredibly gothic.
-          frequency: 30
+          frequency: 50
           outputs: [Bone]
         - description: Your shovel snaps right where the wood and iron come together. Time for a new shovel I guess.
           frequency: 1
