@@ -285,7 +285,7 @@
 - outputs: [Saw]
   inputs: [Lumber, Iron]
   tools: [Hammer, Anvil, File]
-  description: You flatten the iron into a blade, file out some pointy teeth, put it on a wooden handle. Watch out trees, this hacker is ready to cut a birch.
+  description: You flatten the iron into a blade, file out some pointy teeth, and put it on a wooden handle. Watch out trees, this hacker is ready to cut a birch.
 - outputs: [File]
   inputs: [Iron]
   tools: [Hammer, Anvil, Chisel]
