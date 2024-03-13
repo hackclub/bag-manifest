@@ -109,7 +109,7 @@
           frequency: 200
           loop: true
         - description: Not much here, but you take a solid-looking rock as a consolation prize.
-          frequency: 100
+          frequency: 90
           outputs: [Rock]
         - description: You find a nice black lump of coal!
           frequency: 100
