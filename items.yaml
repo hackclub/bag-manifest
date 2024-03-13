@@ -457,15 +457,15 @@
   description: Harness the power of rotation to turn ugly rocks into pretty rocks.
   tag: -lapidary-wheel
 - name: Glue
-  artist: ---
+  artist: Elena
   description: Ewwww it's all sticky… pretty useful though.
   tag: -glue
 - name: Wheel
-  artist: ---
+  artist: Elena
   description: It seems to be locked in an endless competion with Sliced Bread for the title of Greatest Invention Ever.
   tag: -wheel
 - name: Spinning Wheel
-  artist: ---
+  artist: Elena
   description: This thing turns 3-dimensional fluff into 1-dimensional fluff.
   tag: -spinning-wheel
 - name: Bone
@@ -489,11 +489,11 @@
   description: Don't build a house out of this. Except the windows. Those are ok.
   tag: -glass
 - name: Chisel
-  artist: ---
+  artist: Elena
   description: Seriously, don't attempt to enhance your jaw with this thing.
   tag: -chisel
 - name: Blahaj
-  artist: ---
+  artist: Elena
   description: Duh-dum… duh-dum duh-dum… duhdumduhdumduhdumduhdum
   tag: -blahaj
 - name: Water
@@ -502,11 +502,11 @@
   tag: -water
 - name: Bread
   price: 20
-  artist: ---
+  artist: Elena
   description: The best thing since sliced… well… um… hmm.
   tag: -bread
 - name: Wheat
-  artist: ---
+  artist: Elena
   description: Mmmmm, gluten!
   tag: -wheat
 - name: Flour
@@ -518,7 +518,7 @@
   description: The natural enemy of windows.
   tag: -brick
 - name: Clay
-  artist: ---
+  artist: Elena
   description: Like mud, but better!
   tag: -clay
 - name: Range
@@ -526,11 +526,11 @@
   description: It didn't make sense to split "Stove" and "Oven" into separate items.
   tag: -range
 - name: Salt
-  artist: ---
+  artist: Elena
   description: Best to avoid this stuff if you happen to be a slug.
   tag: -salt
 - name: Egg
-  artist: ---
+  artist: Elena
   description: An essential ingredient for creating chickens.
   tag: -egg
 - name: Sugar
@@ -542,11 +542,11 @@
   description: It burns, it burns!! That's a good thing in this case.
   tag: -firewood
 - name: Sugarcane
-  artist: ---
+  artist: Elena
   description: Despite the name, it doesn't work great as a cane.
   tag: -sugarcane
 - name: Cake
-  artist: ---
+  artist: Elena
   description: Without this, the entire birthday economy would collapse.
   tag: -cake
 - name: Cotton
@@ -554,7 +554,7 @@
   description: The terrestrial cousin of clouds.
   tag: -cotton
 - name: Thread
-  artist: ---
+  artist: Elena
   description: A useful material supposedly invented in the far-off land of Reddite.
   tag: -thread
 - name: Needle
@@ -566,11 +566,11 @@
   description: After all these years, you would think the fish would have learned not to fall for these.
   tag: -fishhook
 - name: Fishing Rod
-  artist: ---
+  artist: Elena
   description: Go ye to the river, wave this special wand, and ye shall summon thyself a fishee. Magic!
   tag: -fishing-rod
 - name: Pickaxe
-  artist: ---
+  artist: Elena
   description: Great for solving miner problems, not so much for majer ones.
   tag: -pickaxe
 - name: Mandrel
@@ -578,7 +578,7 @@
   description: It's really just a glorified rod. But sometimes that's what you need.
   tag: -mandrel
 - name: Carrot Cake
-  artist: ---
+  artist: Elena
   description: This delicious-looking cake has 0.04% more dietary fiber than regular cake.
   tag: -carrot-cake
 - name: Banana Bread
@@ -586,7 +586,7 @@
   description: This loaf of banana bread smells like bananas, and also bread. Incredible!
   tag: -banana-bread
 - name: Stone Mill
-  artist: ---
+  artist: Elena
   description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, _that_ surprising.
   tag: -stone-mill
 - name: Cloth
@@ -594,7 +594,7 @@
   description: Literally the fabric of the universe… or at least the parts of the universe made from fabric.
   tag: -cloth
 - name: Loom
-  artist: ---
+  artist: Elena
   description: Something something problems looming on the horizon. Also, it makes cloth.
   tag: -loom
 - name: Vessel
@@ -602,7 +602,7 @@
   description: Dissapointingly, this is just the kind of vessel that holds stuff. Not a boat.
   tag: -vessel
 - name: Pottery Wheel
-  artist: ---
+  artist: Elena
   description: You spin me right round baby right round, like a vessel baby right round round round.
   tag: -pottery-wheel
 - name: Hairball
@@ -615,7 +615,7 @@
   description: Meow! /ᐠ｡ꞈ｡ᐟ\
   tag: -cat-hat
 - name: Rolling Mill
-  artist: ---
+  artist: Elena
   description: Great for when your metal is just a little too 3-dimensional.
   tag: -rolling-mill
 - name: Iron Wire
@@ -632,7 +632,7 @@
   tag: -coal-dust
 - name: Fruit Salad
   price: 50
-  artist: ---
+  artist: Elena
   description: Yummy yummy.
   tag: -fruit-salad
 - name: Shovel
@@ -644,7 +644,7 @@
   description: Don't fear the reaper.
   tag: -scythe
 - name: Acorn
-  artist: ---
+  artist: Elena
   description: Their fancy berets make these the most fashionable seeds of all.
   tag: -acorn
 - name: Ladder
@@ -671,3 +671,67 @@
   artist: ---
   description: This thing is covered in angry little teeth that are very good at removing bits of metal.
   tag: -file
+- name: Diamond Ring
+  artist: ---
+  description:
+  tag: -diamond-ring
+- name: Emerald Ring
+  artist: Elena
+  description:
+  tag: -emerald-ring
+- name: Sapphire Ring
+  artist: Elena
+  description:
+  tag: -sapphire-ring
+- name: Ruby Ring
+  artist: ---
+  description:
+  tag: -ruby-ring
+- name: Tanzanite Ring
+  artist: ---
+  description:
+  tag: -tanzanite-ring
+- name: Stew
+  artist: ---
+  description:
+  tag: -stew
+- name: Grapes
+  artist: Elena
+  description:
+  tag: -grapes
+- name: Rice
+  artist: ---
+  description:
+  tag: -rice
+- name: Crab
+  artist: Acon
+  description:
+  tag: -crab
+- name: Butter
+  artist: ---
+  description:
+  tag: -butter
+- name: String
+  artist: ---
+  description:
+  tag: -string
+- name: Rope
+  artist: Elena
+  description:
+  tag: -rope
+- name: Bowl
+  artist: ---
+  description:
+  tag: -bowl
+- name: Milk
+  artist: ---
+  description:
+  tag: -milk
+- name: Clam
+  artist: Elena
+  description:
+  tag: -clam
+- name: Churn
+  artist: ---
+  description:
+  tag: -churn
