@@ -1,0 +1,22 @@
+{
+  "name": "workflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "update.js",
+  "type": "module",
+  "scripts": {
+    "test": "node yamlcheck.js",
+    "format": "prettier --ignore-path ../.prettierignore --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hackclub/bag": "^1.0.30",
+    "dotenv": "^16.4.5",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}

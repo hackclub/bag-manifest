@@ -62,8 +62,8 @@
   tools: [Saw, Hammer]
   description: After hours of sawing, gluing, and hammering, you give your creation an oh-so-satisfying spin.
 - outputs: [Lapidary Wheel]
-  inputs: [Spinning Wheel, Diamond Dust, Glue]
-  description: You bling out your spinning wheel, Giving it a new life as a tool of the jewel.
+  inputs: [Pottery Wheel, Diamond Dust, Glue]
+  description: You bling out your pottery wheel, giving it a new life as a tool of the jewel.
 - outputs: [Yarn, Yarn]
   inputs: [Wool]
   tools: [Spinning Wheel]
@@ -153,12 +153,12 @@
   tools: [Range]
   description: You take that mushy old banana and give it a new life as bread. It seems… overjoyed? Bananas can be hard to read.
 - outputs: [Cake, Vessel]
-  inputs: [Water, Flour, Sugar, Salt, Egg, Firewood]
-  tools: [Range]
+  inputs: [Water, Flour, Sugar, Salt, Butter, Egg, Firewood]
+  tools: [Range, Bowl]
   description: You bake a delicious cake. Maybe Marie Antoinette had it right all along.
 - outputs: [Carrot Cake, Vessel]
-  inputs: [Water, Flour, Sugar, Salt, Egg, Firewood, Carrot]
-  tools: [Range]
+  inputs: [Water, Flour, Sugar, Salt, Butter, Egg, Firewood, Carrot]
+  tools: [Range, Knife, Bowl]
   description: You bake a delicious cake and throw in some carrots. That makes it healthy, right?
 - outputs: [Bone Dust]
   inputs: [Bone]
@@ -186,7 +186,7 @@
   description: The windows around you watch nervously as you fire the clay into the shape of a brick.
 - outputs: [Needle, Needle, Needle, Needle, Needle]
   inputs: [Iron Wire]
-  tools: [Hammer, Anvil, Chisel]
+  tools: [Hammer, Anvil, File]
   description: You painstakingly turn the iron wire into tinier, sharper bits of iron wire. All this work better have a point.
 - outputs: [Fishhook]
   inputs: [Needle]
@@ -200,9 +200,9 @@
   tools: [Hammer, Anvil]
   description: You slowly and carefully shape the iron into a tapered rod. There's no joke on this one… mandrels are useful but not very funny.
 - outputs: [Thread, Thread, Thread, Thread]
-  inputs: [Cotton]
+  inputs: [Flax]
   tools: [Spinning Wheel]
-  description: You carefully spin the cotton into thread. Some may call you a threadhead. Not me, but some.
+  description: You carefully spin the flax into thread. Some may call you a threadhead. Not me, but some.
 - outputs: [Pickaxe]
   inputs: [Stick, Iron]
   tools: [Hammer, Anvil]
@@ -260,7 +260,7 @@
   tools: [Rolling Mill]
   description: You roll the iron out into its very best impression of spaghetti. It's trying so hard! Are you proud of it??
 - outputs: [Gold Wire]
-  inputs: [Iron]
+  inputs: [Gold]
   tools: [Rolling Mill]
   description: You roll the gold out into its very best impression of spaghetti. It's getting a lot closer than iron does. The yellowness helps.
 - outputs: [Top Hat]
@@ -278,3 +278,67 @@
 - outputs: [Scythe]
   inputs: [Stick, Knife]
   description: You put the blade of the knife onto a long stick. It makes a great swishing sound when you wave it around in the air.
+- outputs: [Ladder]
+  inputs: [Lumber, Lumber, Stick, Stick, Stick, Glue]
+  tools: [Saw]
+  description: You cut them sticks up into ladder-appropriate lengths and slap 'em together with glue. A ladder is born.
+- outputs: [Saw]
+  inputs: [Lumber, Iron]
+  tools: [Hammer, Anvil, File]
+  description: You flatten the iron into a blade, file out some pointy teeth, put it on a wooden handle. Watch out trees, this hacker is ready to cut a birch.
+- outputs: [File]
+  inputs: [Iron]
+  tools: [Hammer, Anvil, Chisel]
+  description: You forge a flat blank and painstakingly cut the teeth using your chisel. File this one under… eh… there's not a great joke here but you have a file now.
+- outputs: [Furnace]
+  inputs: [Rock, Rock, Rock, Rock, Rock, Rock, Rock, Rock]
+  description: You stack rocks together to make a chamber capable of reaching high temperatures. Fire in the hole!
+- outputs: [Range]
+  inputs: [Brick, Brick, Brick, Brick, Brick, Brick, Brick, Brick, Iron]
+  description: You carefully arrange the bricks to make an oven with a nice lil stove spot on top. Your cookware is quivering with excitement!!
+- outputs: [Tanzanite Ring]
+  inputs: [Gold Wire, Tanzanite]
+  tools: [Mandrel, Hammer, File]
+  description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes tanzanite!
+- outputs: [Emerald Ring]
+  inputs: [Gold Wire, Emerald]
+  tools: [Mandrel, Hammer, File]
+  description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes emeralds!
+- outputs: [Ruby Ring]
+  inputs: [Gold Wire, Ruby]
+  tools: [Mandrel, Hammer, File]
+  description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes rubies!
+- outputs: [Sapphire Ring]
+  inputs: [Gold Wire, Sapphire]
+  tools: [Mandrel, Hammer, File]
+  description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes sapphires!
+- outputs: [Diamond Ring]
+  inputs: [Gold Wire, Diamond]
+  tools: [Mandrel, Hammer, File]
+  description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes diamonds!
+- outputs: [Butter, Vessel]
+  inputs: [Milk]
+  tools: [Churn]
+  description: You churn the milk until it turns into butter. It's like magic, but with dairy.
+- outputs: [Rope]
+  inputs: [String, String, String]
+  description: You braid the string together until it's strong enough to hold a boat to a dock. Or a person to a chair. Or a… you know what, let's just stick with the boat thing.
+- outputs: [String]
+  inputs: [Thread, Thread, Thread]
+  description: You braid the thread into a nice sturdy string. Just remember, if it ever gets tangled, there's always regex.
+- outputs: [Stew, Vessel]
+  inputs: [Water, Carrot, Potato, Onion, Mushroom, Firewood, Salt]
+  tools: [Pot, Range, Knife]
+  description: You cook up a nice hearty stew. Mmmmm, stew… like a hug for your insides.
+- outputs: [Shoes]
+  inputs: [Cloth, Thread, String, Glue]
+  tools: [Needle, Shears]
+  description: You sew the cloth into a pair of shoes and lace them up with string. You're ready to walk a mile in these babies.
+- outputs: [Churn]
+  inputs: [Lumber, Stick, Glue]
+  tools: [Saw, Hammer]
+  description: You saw and hammer and glue until you have a churn. Quick, someone get a cow!
+- outputs: [Trowel]
+  inputs: [Stick, Iron]
+  tools: [Hammer, Anvil]
+  description: You beat the iron into a flat trowely blade and attach it to a handle. Don't trowel me, bro.

@@ -692,7 +692,11 @@
   description: A bowl. It's… a bowl. You put stuff in it. What do you put in it? That's up to you.
   tag: -bowl
 - name: Milk
+<<<<<<< HEAD
   artist: Jeijii
+=======
+  artist: ---
+>>>>>>> 0e993967fe4905fe93f1b8105dad84d0ee73b549
   description: There's a lot of things you can do with milk. Drink it, for example.
   tag: -milk
 - name: Clam
