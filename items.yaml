@@ -399,44 +399,44 @@
   frequency: 0.05
   tag: -kamina-shades
 - name: Diamond Dust
-  artist: ---
+  artist: Acon
   description: Something expensive was obliterated to create this.
   frequency: 0.1
   tag: -diamond-dust
 - name: Emerald Dust
-  artist: ---
+  artist: Acon
   description: Nope, still doesn't taste like green apple.
   frequency: 0.12
   tag: -emerald-dust
 - name: Sapphire Dust
-  artist: ---
+  artist: Acon
   description: Still aluminum oxide, but in powder form.
   frequency: 0.12
   tag: -sapphire-dust
 - name: Ruby Dust
-  artist: ---
+  artist: Acon
   description: It's coarse and red and valuable and it gets everywhere.
   frequency: 0.12
   tag: -ruby-dust
 - name: Tanzanite Dust
-  artist: ---
+  artist: Acon
   description: I really hope you didn't smash a cut stone to make this.
   frequency: 0.08
   tag: -tanzanite-dust
 - name: Lapidary Wheel
-  artist: ---
+  artist: Acon
   description: Harness the power of rotation to turn ugly rocks into pretty rocks.
   tag: -lapidary-wheel
 - name: Glue
-  artist: ---
+  artist: Elena
   description: Ewwww it's all sticky… pretty useful though.
   tag: -glue
 - name: Wheel
-  artist: ---
+  artist: Elena
   description: It seems to be locked in an endless competion with Sliced Bread for the title of Greatest Invention Ever.
   tag: -wheel
 - name: Spinning Wheel
-  artist: ---
+  artist: Elena
   description: This thing turns 3-dimensional fluff into 1-dimensional fluff.
   tag: -spinning-wheel
 - name: Bone
@@ -452,19 +452,19 @@
   description: Just imagine all the boiling you can do with this!!
   tag: -pot
 - name: Sand
-  artist: ---
+  artist: Acon
   description: It's coarse and rough and irritating and it gets everywhere.
   tag: -sand
 - name: Glass
-  artist: ---
+  artist: Acon
   description: Don't build a house out of this. Except the windows. Those are ok.
   tag: -glass
 - name: Chisel
-  artist: ---
+  artist: Elena
   description: Seriously, don't attempt to enhance your jaw with this thing.
   tag: -chisel
 - name: Blahaj
-  artist: ---
+  artist: Elena
   description: Duh-dum… duh-dum duh-dum… duhdumduhdumduhdumduhdum
   tag: -blahaj
 - name: Water
@@ -472,11 +472,11 @@
   description: I can't believe how wet this stuff is!
   tag: -water
 - name: Bread
-  artist: ---
+  artist: Elena
   description: The best thing since sliced… well… um… hmm.
   tag: -bread
 - name: Wheat
-  artist: ---
+  artist: Elena
   description: Mmmmm, gluten!
   tag: -wheat
 - name: Flour
@@ -488,7 +488,7 @@
   description: The natural enemy of windows.
   tag: -brick
 - name: Clay
-  artist: ---
+  artist: Elena
   description: Like mud, but better!
   tag: -clay
 - name: Range
@@ -496,11 +496,11 @@
   description: It didn't make sense to split "Stove" and "Oven" into separate items.
   tag: -range
 - name: Salt
-  artist: ---
+  artist: Elena
   description: Best to avoid this stuff if you happen to be a slug.
   tag: -salt
 - name: Egg
-  artist: ---
+  artist: Elena
   description: An essential ingredient for creating chickens.
   tag: -egg
 - name: Sugar
@@ -512,11 +512,11 @@
   description: It burns, it burns!! That's a good thing in this case.
   tag: -firewood
 - name: Sugarcane
-  artist: ---
+  artist: Elena
   description: Despite the name, it doesn't work great as a cane.
   tag: -sugarcane
 - name: Cake
-  artist: ---
+  artist: Elena
   description: Without this, the entire birthday economy would collapse.
   tag: -cake
 - name: Cotton
@@ -524,7 +524,7 @@
   description: The terrestrial cousin of clouds.
   tag: -cotton
 - name: Thread
-  artist: ---
+  artist: Elena
   description: A useful material supposedly invented in the far-off land of Reddite.
   tag: -thread
 - name: Needle
@@ -536,11 +536,11 @@
   description: After all these years, you would think the fish would have learned not to fall for these.
   tag: -fishhook
 - name: Fishing Rod
-  artist: ---
+  artist: Elena
   description: Go ye to the river, wave this special wand, and ye shall summon thyself a fishee. Magic!
   tag: -fishing-rod
 - name: Pickaxe
-  artist: ---
+  artist: Elena
   description: Great for solving miner problems, not so much for majer ones.
   tag: -pickaxe
 - name: Mandrel
@@ -548,7 +548,7 @@
   description: It's really just a glorified rod. But sometimes that's what you need.
   tag: -mandrel
 - name: Carrot Cake
-  artist: ---
+  artist: Elena
   description: This delicious-looking cake has 0.04% more dietary fiber than regular cake.
   tag: -carrot-cake
 - name: Banana Bread
@@ -556,7 +556,7 @@
   description: This loaf of banana bread smells like bananas, and also bread. Incredible!
   tag: -banana-bread
 - name: Stone Mill
-  artist: ---
+  artist: Elena
   description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, _that_ surprising.
   tag: -stone-mill
 - name: Cloth
@@ -564,7 +564,7 @@
   description: Literally the fabric of the universe… or at least the parts of the universe made from fabric.
   tag: -cloth
 - name: Loom
-  artist: ---
+  artist: Elena
   description: Something something problems looming on the horizon. Also, it makes cloth.
   tag: -loom
 - name: Vessel
@@ -572,11 +572,11 @@
   description: Dissapointingly, this is just the kind of vessel that holds stuff. Not a boat.
   tag: -vessel
 - name: Pottery Wheel
-  artist: ---
+  artist: Elena
   description: You spin me right round baby right round, like a vessel baby right round round round.
   tag: -pottery-wheel
 - name: Hairball
-  artist: ---
+  artist: Acon
   description: _cough cough… blllech… bllleeeechhh… rourughROURouughhRUUUGH splat_
   tag: -hairball
 - name: Cat Hat
@@ -584,8 +584,8 @@
   description: Meow! /ᐠ｡ꞈ｡ᐟ\
   tag: -cat-hat
 - name: Rolling Mill
-  artist: ---
-  description: Great for when you want to reduce 3 dimensions back down to 1.
+  artist: Elena
+  description: Great for when your metal is just a little too 3-dimensional.
   tag: -rolling-mill
 - name: Iron Wire
   artist: Jeijii
@@ -596,18 +596,110 @@
   description: For those times when regular wire just isn't fancy enough.
   tag: -gold-wire
 - name: Coal Dust
-  artist: ---
+  artist: Acon
   description: Careful, this stuff stains your clothes.
   tag: -coal-dust
 - name: Fruit Salad
-  artist: ---
+  artist: Elena
   description: Yummy yummy.
   tag: -fruit-salad
 - name: Shovel
-  artist: ---
+  artist: Elena
   description: In Australia these are known as diggeridoos.
   tag: -shovel
 - name: Scythe
-  artist: ---
+  artist: Elena
   description: Don't fear the reaper.
   tag: -scythe
+- name: Acorn
+  artist: Elena
+  description: Their fancy berets make these the most fashionable seeds of all.
+  tag: -acorn
+- name: Ladder
+  artist: ---
+  description: Remember, always follow the 4:1 rule or the ghost of OSHA will come to haunt you.
+  tag: -ladder
+- name: Trowel
+  artist: ---
+  description: A cute lil mini-shovel for digging cute lil mini-holes.
+  tag: -trowel
+- name: Potato
+  artist: Acon
+  description: Wow, a potato. If the internet is to be believed you can take pictures with this thing.
+  tag: -potato
+- name: Onion
+  artist: Acon
+  description: The beauty of this foodstuff is enough to bring you to tears. Or maybe it's the sulfur. I don't know.
+  tag: -onion
+- name: Flax
+  artist: Acon
+  description: One day, all these fibers will be cloth. But for now they are fibers.
+  tag: -flax
+- name: File
+  artist: ---
+  description: This thing is covered in angry little teeth that are very good at removing bits of metal.
+  tag: -file
+- name: Diamond Ring
+  artist: ---
+  description: A gold ring with a big sparkly rock on it. It's a classic.
+  tag: -diamond-ring
+- name: Emerald Ring
+  artist: Elena
+  description: A gold ring with a bright green emerald. Nope, still doesn't taste like granny smith.
+  tag: -emerald-ring
+- name: Sapphire Ring
+  artist: Elena
+  description: A gold ring with a deep blue sapphire. It's like a tiny piece of the ocean on your finger.
+  tag: -sapphire-ring
+- name: Ruby Ring
+  artist: ---
+  description: A gold ring with a rich red ruby. It looks beautiful but angry. However tempting, you probably shouldn't date it.
+  tag: -ruby-ring
+- name: Tanzanite Ring
+  artist: ---
+  description: A gold ring with a gorgeous tanzanite stone. Wow… it seems to be changing color as you move it around.
+  tag: -tanzanite-ring
+- name: Stew
+  artist: ---
+  description: A hearty-looking stew. It looks yummy. And chunky. And… stewy.
+  tag: -stew
+- name: Grapes
+  artist: Elena
+  description: Ah, grapes. A fruit so nice they named a color after it. Wait… no, that's oranges.
+  tag: -grapes
+- name: Rice
+  artist: ---
+  description: Perfect for those days when you're hungry and want to eat two thousand of something.
+  tag: -rice
+- name: Crab
+  artist: Acon
+  description: According to Max Wofford, we are all slowly turning into these pinchy little things.
+  tag: -crab
+- name: Butter
+  artist: ---
+  description: Butter. It's like milk, but… butter.
+  tag: -butter
+- name: String
+  artist: ---
+  description: What can be said about string? It's long, it's thin, it can be split into an array of characters.
+  tag: -string
+- name: Rope
+  artist: Elena
+  description: Oh my god, it's a snake!! …no, wait, it's just rope. Phew.
+  tag: -rope
+- name: Bowl
+  artist: ---
+  description: A bowl. It's… a bowl. You put stuff in it. What do you put in it? That's up to you.
+  tag: -bowl
+- name: Milk
+  artist: Jeijii
+  description: There's a lot of things you can do with milk. Drink it, for example.
+  tag: -milk
+- name: Clam
+  artist: Elena
+  description: These things have really nailed the "shell" aspect of carcinization. It's only a matter of time before they grow legs.
+  tag: -clam
+- name: Churn
+  artist: ---
+  description: This object is the mortal enemy of SaaS companies. Either that or it's a butter-making device.
+  tag: -churn
