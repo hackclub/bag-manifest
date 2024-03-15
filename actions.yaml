@@ -92,6 +92,7 @@
         - description: You scoop up a few liters with a satisfying "sploosh". I guess that's where this river got its name.
           frequency: 200
           outputs: [Water]
+          losses: [Vessel]
         - description: You dip your vessel into the water, but you lose your grip and the current carries it away. Drat!
           frequency: 1
           losses: [Vessel]
