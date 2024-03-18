@@ -630,3 +630,67 @@
             - description: He turns his head to the side, one eye locked on to the loaf of bread in your hand. In one fell swoop he lunges at you, snatches the entire loaf in his mouth, and hops away with surprising speed. Well that sucks.
               frequency: 1
               losses: [Bread]
+
+- locations: [smallberry-farms]
+  tools: [Vessel]
+  branch:
+    - description: You wander into the cow pasture, vessel in hand, searching for a fertile udder.
+      frequency: 100
+      tag: cow-hunt
+      branch:
+        - description: You're not seeing much yet. But there must be a milk balloon around here somewhere.
+          frequency: 80
+          loop: true
+        - description: Ok, it's getting late and you haven't found another cow yet. You'll have to try again later.
+          minimums: {cow-find: 1}
+          frequency: 40
+        - description: You find a voluptuous dairy cow and cautiously stroke her as you kneel down and set your vessel below her bulging udder.
+          frequency: 80
+          increment: cow-find
+          branch:
+            - description: You seize the means of milk production and begin yanking furiously, your eyes wild with the ecstasy of dairy gold.
+              frequency: 200
+              tag: cow-milk
+              - description: 
+                  - A spurt of precious milk flies into your thirsty vessel, eliciting a satisfied gurgle from the clay.
+                  - Droplets fly everywhere as a stream of milk jets powerfully into your vessel. The cow looks at you with a mixture of confusion and disgust. You're not sure if you're doing this right.
+                  - The milk line rises in your vessel as a steady stream of dairy flows from the udder. You're doing it! You're milking a cow!
+                  - The power of laminar flow is on full display as a smooth, uninterrupted stream of milk raycasts into your vessel.
+                frequency: 200
+                increment: milk-progress
+                branch:
+                  - description: Your vessel is full to the brim with fresh milk. You stand up and give the cow a grateful pat on the head before heading home.
+                    outputs: [Milk]
+                    losses: [Vessel]
+                    minimums: {milk-progress: 2}
+                  - gotoChildren: cow-milk
+                    maximums: {milk-progress: 2}
+              - description: A stream of dairy ejects from the udder straight into your eye. You cry out, flailing your arms, upsetting your vessel, spilling the milk, and startling the cow so greatly that she runs away. The hunt for milk begins anew…
+                frequency: 14
+                set: {milk-progress: 0}
+                gotoChildren: cow-hunt
+              - description: The stream of milk stops abruptly as the cow adjusts its footing and you feel something heavy and wet land on your head. You look up to see the cow's tail swishing back and forth. You've been pooped on. You're not sure if you can ever show your face in this pasture again. Time to go home and clean up…
+                frequency: 1
+            - description: The cow takes one look at you and casually places a hoof squarely on your vessel, shattering it into a million pieces without ever breaking eye contact. You're left with nothing but a handful of shards and a heart full of sorrow. Cows can be so vindictive.
+              frequency: 1
+              losses: [Vessel]
+            - description: You're about to start milking when you hear a voice behind you. "What are you doing?" You turn around and find yourself face-to-face with Farmer Smallberry.
+              frequency: 2
+              branch:
+                - description: You think fast. "I'm just… um… I'm just… petting the cow. I like cows."
+                  frequency: 1
+                  branch:
+                    - description: Farmer Smallberry nods. "That's a good thing. Cows are good. You have a good day." He walks away. You breathe a sigh of relief and get back to work.
+                      goto: cow-milk
+                      frequency: 1
+                    - description: Farmer Smallberry squints at you with obvious suspicion and contempt. "Well then, I guess you won't mind if I take this vessel that just happens to be here below her udder." You watch forlornly as the farmer walks away with your vessel.
+                      losses: [Vessel]
+                      frequency: 1
+                - description: You are struck by a flash of brilliant inspiration. "I'm making a sculpture of the cow's udder. It's a tribute to the dairy industry."
+                  frequency: 1
+                  branch:
+                    - description: Farmer Smallberry looks shocked and touched. A single tear laced with dirt and gratitude trails down his ruddy sun-damaged cheek. "My god… that's so beautiful!! Here, please, take some milk as a token of my appreciation." Wow, you can't believe that worked.
+                      outputs: [Milk, Milk, Milk]
+                      frequency: 1
+                    - description: Farmer Smallberry looks unconvinced and unamused. "Yeah. Okay. You think I've never heard that one before? Go on, scram." You pick up your vessel, hang your head, and walk milklessly out of the pasture.
+                      frequency: 1
