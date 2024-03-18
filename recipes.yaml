@@ -268,7 +268,7 @@
   tools: [Needle]
   description: You felt the wool into a lovely top hat, with coal and tanzanite dust for color. Fancy!
 - outputs: [Fruit Salad]
-  inputs: [Apple, Banana, Kiwi, Orange]
+  inputs: [Apple, Banana, Kiwi, Orange, Grapes, Banana, Bowl]
   tools: [Knife]
   description: You cut up a bunch of fruit and mix it all together. The Wiggles would be so proud!
 - outputs: [Shovel]
@@ -327,7 +327,7 @@
   inputs: [Thread, Thread, Thread]
   description: You braid the thread into a nice sturdy string. Just remember, if it ever gets tangled, there's always regex.
 - outputs: [Stew, Vessel]
-  inputs: [Water, Carrot, Potato, Onion, Mushroom, Firewood, Salt]
+  inputs: [Water, Carrot, Potato, Onion, Mushroom, Firewood, Salt, Bowl]
   tools: [Pot, Range, Knife]
   description: You cook up a nice hearty stew. Mmmmm, stew… like a hug for your insides.
 - outputs: [Shoes]
@@ -342,3 +342,7 @@
   inputs: [Stick, Iron]
   tools: [Hammer, Anvil]
   description: You beat the iron into a flat trowely blade and attach it to a handle. Don't trowel me, bro.
+- outputs: [Cement]
+  inputs: [Clay, Aluminum Ore, Iron Ore, Coal, Limestone]
+  tools: [Stone Mill, Furnace]
+  description: You crush all the ingredients into a powder with the mill, burn the crap out of it with the furnace, and crush it up all over again. Voila! Cement.
