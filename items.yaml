@@ -640,7 +640,7 @@
   description: This thing is covered in angry little teeth that are very good at removing bits of metal.
   tag: -file
 - name: Diamond Ring
-  artist: ---
+  artist: Elena
   description: A gold ring with a big sparkly rock on it. It's a classic.
   tag: -diamond-ring
 - name: Emerald Ring
@@ -652,7 +652,7 @@
   description: A gold ring with a deep blue sapphire. It's like a tiny piece of the ocean on your finger.
   tag: -sapphire-ring
 - name: Ruby Ring
-  artist: ---
+  artist: Elena
   description: A gold ring with a rich red ruby. It looks beautiful but angry. However tempting, you probably shouldn't date it.
   tag: -ruby-ring
 - name: Tanzanite Ring
@@ -660,7 +660,7 @@
   description: A gold ring with a gorgeous tanzanite stone. Wow… it seems to be changing color as you move it around.
   tag: -tanzanite-ring
 - name: Stew
-  artist: ---
+  artist: Elena
   description: A hearty-looking stew. It looks yummy. And chunky. And… stewy.
   tag: -stew
 - name: Grapes
@@ -688,7 +688,7 @@
   description: Oh my god, it's a snake!! …no, wait, it's just rope. Phew.
   tag: -rope
 - name: Bowl
-  artist: ---
+  artist: Elena
   description: A bowl. It's… a bowl. You put stuff in it. What do you put in it? That's up to you.
   tag: -bowl
 - name: Milk
@@ -700,7 +700,7 @@
   description: These things have really nailed the "shell" aspect of carcinization. It's only a matter of time before they figure out claws.
   tag: -clam
 - name: Churn
-  artist: ---
+  artist: Elena
   description: This object is the mortal enemy of SaaS companies. Either that or it's a butter-making device.
   tag: -churn
 - name: Cheese
