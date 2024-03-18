@@ -612,7 +612,7 @@
           frequency: 80
         - description: The sun is getting low and you haven't found any chickens yet. You'll have to try again some other time.
           frequency: 60
-        - description: A gorgeous hen approaches you, and politely asks what you are looking for in exchange for that crumb. "Well, an egg, I suppose…"
+        - description: A gorgeous hen approaches you and politely asks what you are looking for in exchange for that crumb. "Well, an egg, I suppose…"
           frequency: 40
           branch:
             - description: She thoughfully considers the exchange for a moment. "No, I don't think that's a trade I'm willing to make." You give an understanding nod and watch as she gracefully strides away. You'll have to find another chicken.
