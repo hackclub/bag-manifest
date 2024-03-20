@@ -339,9 +339,9 @@
   tools: [Saw, Hammer]
   description: You saw and hammer and glue until you have a churn. Quick, someone get a cow!
 - outputs: [Trowel]
-  inputs: [Stick, Iron]
+  inputs: [Stick, Aluminum]
   tools: [Hammer, Anvil]
-  description: You beat the iron into a flat trowely blade and attach it to a handle. Don't trowel me, bro.
+  description: You beat the aluminum into a flat trowely blade and attach it to a handle. Don't trowel me, bro.
 - outputs: [Cement]
   inputs: [Clay, Aluminum Ore, Iron Ore, Coal, Limestone]
   tools: [Stone Mill, Furnace]
