@@ -680,7 +680,7 @@
   description: Butter. It's like milk, but… butter.
   tag: -butter
 - name: String
-  artist: ---
+  artist: Acon
   description: What can be said about string? It's long, it's thin, it can be split into an array of characters.
   tag: -string
 - name: Rope
