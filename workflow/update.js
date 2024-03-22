@@ -62,24 +62,6 @@ import { parse } from 'yaml'
         })
       }
     } catch (error) {
-      console.log(error)
-    }
-  }
-
-  // Update actions
-  const actions = parse(
-    fs.readFileSync(path.join(process.cwd(), '../actions.yaml'), 'utf-8')
-  )
-
-  for (let action of actions) {
-    try {
-      const exists = await app.getAction({
-        query: {
-          locations: action.locations,
-          tools: action.tools.map(tool => tool.toLowerCase())
-        }
-      })
-      console.log(exists)
       if (exists.actions) {
         // Update action if it already exists
         const id = exists.actions[0].id
@@ -152,7 +134,6 @@ import { parse } from 'yaml'
     })
     if (search.length) {
       // Update recipe if it already exists
-      console.log("Search: ", search);
       await app.updateRecipe({
         recipeId: search[0].id,
         new: {
