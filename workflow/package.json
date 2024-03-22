@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hackclub/bag": "^1.0.30",
+    "@hackclub/bag": "^2.0.0",
     "dotenv": "^16.4.5",
     "yaml": "^2.3.4"
   },

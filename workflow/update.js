@@ -9,6 +9,7 @@ import { parse } from 'yaml'
   const app = await App.connect({
     appId: Number(process.env.APP_ID),
     key: process.env.APP_KEY,
+    baseUrl: "http://0.0.0.0:3000"
   })
 
   // Update items
@@ -27,11 +28,7 @@ import { parse } from 'yaml'
   }
 
   for (let item of items) {
-    const search = (
-      await app.readItems({
-        query: JSON.stringify({ name: item.name })
-      })
-    ).items[0]
+    const search = await app.getItem({ query: JSON.stringify({ name: item.name }) })
     try {
       if (!search) {
         // Create new item
@@ -77,13 +74,14 @@ import { parse } from 'yaml'
 
   for (let action of actions) {
     try {
-      const exists = await app.readAction({
+      const exists = await app.getAction({
         query: {
           locations: action.locations,
           tools: action.tools.map(tool => tool.toLowerCase())
         }
       })
-      if (exists.actions.length) {
+      console.log(exists)
+      if (exists.actions) {
         // Update action if it already exists
         const id = exists.actions[0].id
         await app.updateAction({
@@ -146,17 +144,18 @@ import { parse } from 'yaml'
       return acc
     }, [])
 
-    const search = await app.readRecipes({
+    const search = await app.getRecipes({
       query: {
         inputs,
         outputs,
         tools
       }
     })
-    if (search.recipes.length) {
+    if (search.length) {
       // Update recipe if it already exists
+      console.log("Search: ", search);
       await app.updateRecipe({
-        recipeId: search.recipes[0].id,
+        recipeId: search[0].id,
         new: {
           inputs,
           outputs,
