@@ -82,8 +82,6 @@ import { parse } from 'yaml'
           }
         })
       }
-    } catch (error) {
-      console.log(error)
     }
   }
 
