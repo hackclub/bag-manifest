@@ -656,8 +656,8 @@
   description: A gold ring with a rich red ruby. It looks beautiful but angry. However tempting, you probably shouldn't date it.
   tag: -ruby-ring
 - name: Tanzanite Ring
-  artist: ---
   description: A gold ring with a gorgeous tanzanite stone. Wow… it seems to be changing color as you move it around.
+  artist: Grace
   tag: -tanzanite-ring
 - name: Stew
   artist: Elena
@@ -668,8 +668,8 @@
   description: Ah, grapes. A fruit so nice they named a color after it. Wait… no, that's oranges.
   tag: -grapes
 - name: Rice
-  artist: ---
   description: Perfect for those days when you're hungry and want to eat two thousand of something.
+  artist: Grace
   tag: -rice
 - name: Crab
   artist: Acon
