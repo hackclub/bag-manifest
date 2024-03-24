@@ -448,7 +448,7 @@
   description: Just think, this stuff used to be part of a skeleton.
   tag: -bone-dust
 - name: Pot
-  artist: ---
+  artist: Elena
   description: Just imagine all the boiling you can do with this!!
   tag: -pot
 - name: Sand
@@ -640,7 +640,7 @@
   description: This thing is covered in angry little teeth that are very good at removing bits of metal.
   tag: -file
 - name: Diamond Ring
-  artist: ---
+  artist: Elena
   description:
   tag: -diamond-ring
 - name: Emerald Ring
@@ -652,7 +652,7 @@
   description:
   tag: -sapphire-ring
 - name: Ruby Ring
-  artist: ---
+  artist: Elena
   description:
   tag: -ruby-ring
 - name: Tanzanite Ring
@@ -660,7 +660,7 @@
   description:
   tag: -tanzanite-ring
 - name: Stew
-  artist: ---
+  artist: Elena
   description:
   tag: -stew
 - name: Grapes
@@ -688,7 +688,7 @@
   description:
   tag: -rope
 - name: Bowl
-  artist: ---
+  artist: Elena
   description:
   tag: -bowl
 - name: Milk
@@ -700,6 +700,6 @@
   description:
   tag: -clam
 - name: Churn
-  artist: ---
+  artist: Elena
   description:
   tag: -churn
