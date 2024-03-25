@@ -26,6 +26,9 @@
               frequency: 30
               # Items gained from this node in the tree
               outputs: [Fish]
+            - description: You pull the line out, and… that's no fish, it's a ferocious crab!! You bonk it into submission and put it in your bag.
+              frequency: 15
+              outputs: [Crab]
             - description: You pull the fi— wait a minute, that's not a fish, it's a hat… cool, I guess?
               frequency: 5
               outputs: [Hat]
@@ -285,18 +288,22 @@
           tag: tree-split
           branch:
             - description: You separate a solid limb from the trunk and take a satisfied look at your haul. Way to go!
-              frequency: 6
+              frequency: 16
               outputs: [Log, Stick]
             - description: You split off a log and put it to the side. There's still more work to be done on this tree. You get back to it.
-              frequency: 3
+              frequency: 6
               outputs: [Log]
               loop: true
             - description: You get a chonky limb off the trunk. This will make a good stick for all sorts of crafts. You set it aside and keep chopping.
-              frequency: 3
+              frequency: 6
               outputs: [Stick]
               loop: true
-            - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease.
+            - description: Oh look, a tasty-looking mushroom! You're not sure if it's edible… but it's worth a shot, right? In the bag it goes.
               frequency: 2
+              outputs: [Mushroom]
+              loop: true
+            - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease.
+              frequency: 3
               branch:
                 - description: You finally get the axe dislodged from the wood, wipe the sweat from your brow, and get back to work.
                   frequency: 20
@@ -616,7 +623,7 @@
           frequency: 80
         - description: The sun is getting low and you haven't found any chickens yet. You'll have to try again some other time.
           frequency: 60
-        - description: A gorgeous hen approaches you, and politely asks what you are looking for in exchange for that crumb. "Well, an egg, I suppose…"
+        - description: A gorgeous hen approaches you and politely asks what you are looking for in exchange for that crumb. "Well, an egg, I suppose…"
           frequency: 40
           branch:
             - description: She thoughfully considers the exchange for a moment. "No, I don't think that's a trade I'm willing to make." You give an understanding nod and watch as she gracefully strides away. You'll have to find another chicken.
