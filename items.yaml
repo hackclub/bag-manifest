@@ -477,7 +477,7 @@
   description: Just think, this stuff used to be part of a skeleton.
   tag: -bone-dust
 - name: Pot
-  artist: ---
+  artist: Elena
   description: Just imagine all the boiling you can do with this!!
   tag: -pot
 - name: Sand
@@ -672,66 +672,78 @@
   description: This thing is covered in angry little teeth that are very good at removing bits of metal.
   tag: -file
 - name: Diamond Ring
-  artist: ---
-  description:
+  artist: Elena
+  description: A gold ring with a big sparkly rock on it. It's a classic.
   tag: -diamond-ring
 - name: Emerald Ring
   artist: Elena
-  description:
+  description: A gold ring with a bright green emerald. Nope, still doesn't taste like granny smith.
   tag: -emerald-ring
 - name: Sapphire Ring
   artist: Elena
-  description:
+  description: A gold ring with a deep blue sapphire. It's like a tiny piece of the ocean on your finger.
   tag: -sapphire-ring
 - name: Ruby Ring
-  artist: ---
-  description:
+  artist: Elena
+  description: A gold ring with a rich red ruby. It looks beautiful but angry. However tempting, you probably shouldn't date it.
   tag: -ruby-ring
 - name: Tanzanite Ring
-  artist: ---
-  description:
+  description: A gold ring with a gorgeous tanzanite stone. Wow… it seems to be changing color as you move it around.
+  artist: Grace
   tag: -tanzanite-ring
 - name: Stew
-  artist: ---
-  description:
+  artist: Elena
+  description: A hearty-looking stew. It looks yummy. And chunky. And… stewy.
   tag: -stew
 - name: Grapes
   artist: Elena
-  description:
+  description: Ah, grapes. A fruit so nice they named a color after it. Wait… no, that's oranges.
   tag: -grapes
 - name: Rice
-  artist: ---
-  description:
+  description: Perfect for those days when you're hungry and want to eat two thousand of something.
+  artist: Grace
   tag: -rice
 - name: Crab
   artist: Acon
-  description:
+  description: According to Max Wofford, we are all slowly turning into these pinchy little things.
   tag: -crab
 - name: Butter
-  artist: ---
-  description:
+  artist: Acon
+  description: Butter. It's like milk, but… butter.
   tag: -butter
 - name: String
-  artist: ---
-  description:
+  artist: Acon
+  description: What can be said about string? It's long, it's thin, it can be split into an array of characters.
   tag: -string
 - name: Rope
   artist: Elena
-  description:
+  description: Oh my god, it's a snake!! …no, wait, it's just rope. Phew.
   tag: -rope
 - name: Bowl
-  artist: ---
-  description:
+  artist: Elena
+  description: A bowl. It's… a bowl. You put stuff in it. What do you put in it? That's up to you.
   tag: -bowl
 - name: Milk
-  artist: ---
-  description:
+  artist: Jeijii
+  description: There's a lot of things you can do with milk. Drink it, for example.
   tag: -milk
 - name: Clam
   artist: Elena
-  description:
+  description: These things have really nailed the "shell" aspect of carcinization. It's only a matter of time before they figure out claws.
   tag: -clam
 - name: Churn
-  artist: ---
-  description:
+  artist: Elena
+  description: This object is the mortal enemy of SaaS companies. Either that or it's a butter-making device.
   tag: -churn
+- name: Cheese
+  artist: Acon
+  description: You would think that spoiled milk would be gross, but if you do it right it's kind of delicious.
+  tag: -cheese
+- name: Limestone
+  artist: Acon
+  description: This stuff is made of zillions of tiny little fossils. Isn't that amazing?? And to think, you're just going to crush it up and use it to glue rocks together.
+  tag: -limestone
+- name: Cement
+  artist: ---
+  description: Mmmm, cement…… no… come to think of it, this doesn't actually taste very good.
+  tag: -cement
