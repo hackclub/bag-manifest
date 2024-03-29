@@ -5,10 +5,10 @@ import path from 'path'
 import { parse } from 'yaml'
 
 // @prettier-ignore
-;(async () => {
+;async () => {
   const app = await App.connect({
     appId: Number(process.env.APP_ID),
-    key: process.env.APP_KEY,
+    key: process.env.APP_KEY
   })
 
   // Update items
@@ -27,8 +27,10 @@ import { parse } from 'yaml'
   }
 
   for (let item of items) {
-    const search = await app.getItem({ query: JSON.stringify({ name: item.name }) })
     try {
+      const search = await app.getItem({
+        query: JSON.stringify({ name: item.name })
+      })
       if (!search) {
         // Create new item
         await app.createItem({
@@ -61,7 +63,23 @@ import { parse } from 'yaml'
           }
         })
       }
-    } catch (error) {
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  const actions = parse(
+    fs.readFileSync(path.join(process.cwd(), '../actions.yaml'), 'utf-8')
+  )
+
+  for (let action of actions) {
+    try {
+      const exists = await app.getAction({
+        query: {
+          locations: action.locations,
+          tools: action.tools.map(tool => tool.toLowerCase())
+        }
+      })
       if (exists.actions) {
         // Update action if it already exists
         const id = exists.actions[0].id
@@ -82,6 +100,8 @@ import { parse } from 'yaml'
           }
         })
       }
+    } catch (err) {
+      console.log(err)
     }
   }
 
@@ -152,4 +172,4 @@ import { parse } from 'yaml'
       })
     }
   }
-})()
+}
