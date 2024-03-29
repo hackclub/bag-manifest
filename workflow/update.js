@@ -5,10 +5,11 @@ import path from 'path'
 import { parse } from 'yaml'
 
 // @prettier-ignore
-;async () => {
+;(async () => {
   const app = await App.connect({
     appId: Number(process.env.APP_ID),
-    key: process.env.APP_KEY
+    key: process.env.APP_KEY,
+    baseUrl: 'http://0.0.0.0:3000'
   })
 
   // Update items
@@ -64,7 +65,7 @@ import { parse } from 'yaml'
         })
       }
     } catch (err) {
-      console.log(err)
+      console.log(`Error updating ${item.name}: ${err}`)
     }
   }
 
@@ -101,7 +102,9 @@ import { parse } from 'yaml'
         })
       }
     } catch (err) {
-      console.log(err)
+      console.log(
+        `Error updating action [${action.locations}, ${action.tools}]: ${err}`
+      )
     }
   }
 
@@ -162,6 +165,7 @@ import { parse } from 'yaml'
         }
       })
     } else {
+      console.log(inputs)
       await app.createRecipe({
         recipe: {
           inputs,
@@ -172,4 +176,4 @@ import { parse } from 'yaml'
       })
     }
   }
-}
+})()
