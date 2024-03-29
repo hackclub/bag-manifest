@@ -9,7 +9,6 @@ import { parse } from 'yaml'
   const app = await App.connect({
     appId: Number(process.env.APP_ID),
     key: process.env.APP_KEY,
-    baseUrl: 'http://0.0.0.0:3000'
   })
 
   // Update items
