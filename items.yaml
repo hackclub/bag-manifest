@@ -719,3 +719,4 @@
   artist: Averse
   description: this item is very rare! you either paid a lot for this, or managed to get a project accepted into @Koder.
   tag: -koder-koin
+  tradable: false
