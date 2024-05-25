@@ -108,7 +108,7 @@ import { parse } from 'yaml'
       )
     }
   }
-
+  console.log("updating recipes...")
   // Update recipes
   const recipes = parse(
     fs.readFileSync(path.join(process.cwd(), '../recipes.yaml'), 'utf-8')
