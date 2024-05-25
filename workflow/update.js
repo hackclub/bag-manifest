@@ -11,7 +11,7 @@ import { parse } from 'yaml'
     key: process.env.APP_KEY,
     baseUrl: process.env.BASE_URL
   })
-  console.log(`Connected to Bag!! App ID: ${process.env.APP_ID}`)
+  console.log(`Connected to Bag!! App ID: ${app.request.appId}`)
 
   // Update items
   const items = parse(
