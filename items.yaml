@@ -1,722 +1,1550 @@
-# Items with no listed tag have their tag inferred from the name.
-# Frequency indicates the basic probability of this item appearing in standard drops, such as the initial "Mysterious Old Man" drops for new bag users.
-# Items with no listed frequency have a frequency of 0.
 - name: Cheese
+  tag: -cheese
   artist: Acon
   description: You would think that spoiled milk would be gross, but if you do it right it's kind of delicious.
-  tag: -cheese
+  frequency: null
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Limestone
+  tag: -limestone
   artist: Acon
   description: This stuff is made of zillions of tiny little fossils. Isn't that amazing?? And to think, you're just going to crush it up and use it to glue rocks together.
-  tag: -limestone
+  frequency: null
+  intended_value_atus: 1.3
+  intended_value_gp: 13.0
+  genstore_sell_to_player_price: 16.9
+  genstore_buy_from_player_price: 7.8
+  genstore_price_variance: 0.05
 - name: Cement
-  artist: ---
-  description: Mmmm, cement…… no… come to think of it, this doesn't actually taste very good.
   tag: -cement
+  artist: '---'
+  description: Mmmm, cement…… no… come to think of it, this doesn't actually taste very good.
+  frequency: null
+  intended_value_atus: 9.0
+  intended_value_gp: 90.0
+  genstore_sell_to_player_price: 117.0
+  genstore_buy_from_player_price: 54.0
+  genstore_price_variance: 0.05
 - name: gp
   tag: -gp
   artist: Jagex
   description: Gold pieces? Game points? Nobody knows what it stands for. But it's money.
-  frequency: 1
+  frequency: 1.0
+  intended_value_atus: 0.1
+  intended_value_gp: 1.0
+  genstore_sell_to_player_price: 1.0
+  genstore_buy_from_player_price: 1.0
+  genstore_price_variance: 0.0
 - name: Socks
   tag: -socks
   artist: Jeijii
   description: A warm, fuzzy pair of socks. You bury your nose in them. They smell… feetishly divine."
+  frequency: null
+  intended_value_atus: 5.0
+  intended_value_gp: 50.0
+  genstore_sell_to_player_price: 65.0
+  genstore_buy_from_player_price: 30.0
+  genstore_price_variance: 0.05
 - name: Carrot
   tag: -carrot
   artist: Acon
   description: They don't actually improve your vision, but you should eat them anyway.
-  frequency: 1
+  frequency: 1.0
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Wool
   tag: -wool
   artist: Jeijii
   description: '"Wooly" would be an accurate but maybe unhelpful description.'
+  frequency: null
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Yarn
   tag: -yarn
   artist: None
   description: The preferred plaything of cats and grandmothers everywhere.
+  frequency: null
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Iron
   tag: -iron
   artist: Eleeza
   description: Smelted iron, ready to be worked.
   frequency: 0.4
+  intended_value_atus: 2.6
+  intended_value_gp: 26.0
+  genstore_sell_to_player_price: 33.8
+  genstore_buy_from_player_price: 15.6
+  genstore_price_variance: 0.05
 - name: Lumber
   tag: -lumber
   artist: Jeijii
   description: Good strong boards, ready for all your lumbrous needs.
   frequency: 0.6
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Stick
   tag: -stick
   artist: Eleeza
   description: A solid-looking stick, the kind that makes you just wanna hit stuff.
   frequency: 0.9
+  intended_value_atus: 1.0
+  intended_value_gp: 10.0
+  genstore_sell_to_player_price: 13.0
+  genstore_buy_from_player_price: 6.0
+  genstore_price_variance: 0.05
 - name: Rock
   tag: -rock
   artist: Eleeza
   description: It's a rock.
-  frequency: 1
+  frequency: 1.0
+  intended_value_atus: 1.0
+  intended_value_gp: 10.0
+  genstore_sell_to_player_price: 13.0
+  genstore_buy_from_player_price: 6.0
+  genstore_price_variance: 0.05
 - name: Shears
   tag: -shears
   artist: Acon
   description: They make a satisfying snippy sound when you squeeze them closed. Schhhnip!
+  frequency: null
+  intended_value_atus: 12.0
+  intended_value_gp: 120.0
+  genstore_sell_to_player_price: 156.0
+  genstore_buy_from_player_price: 72.0
+  genstore_price_variance: 0.05
 - name: Sockmeister Challenge Coin
   tag: -sockmeister-challenge-coin
   artist: Jeijii
-  description:
-    The socks embossed on this challenge coin are a poetic complement to
-    the piece of lint stuck to it from your pocket.
-  Transferable: 'No'
+  description: The socks embossed on this challenge coin are a poetic complement to the piece of lint stuck to it from your pocket.
+  frequency: null
+  intended_value_atus: 100.0
+  intended_value_gp: 1000.0
+  genstore_sell_to_player_price: 1300.0
+  genstore_buy_from_player_price: 600.0
+  genstore_price_variance: 0.05
 - name: Knitting Needles
   tag: -knitting-needles
   artist: Eleeza
   description: Pokey-pokey making sticks.
+  frequency: null
+  intended_value_atus: 3.8
+  intended_value_gp: 38.0
+  genstore_sell_to_player_price: 49.4
+  genstore_buy_from_player_price: 22.8
+  genstore_price_variance: 0.05
 - name: Knife
-  artist: Acon
-  description:
-    The blade of this knife gleams in the sun like a gleaming knife blade
-    in sunlight.
-  frequency: 0.5
   tag: -knife
+  artist: Acon
+  description: The blade of this knife gleams in the sun like a gleaming knife blade in sunlight.
+  frequency: 0.5
+  intended_value_atus: 5.0
+  intended_value_gp: 50.0
+  genstore_sell_to_player_price: 65.0
+  genstore_buy_from_player_price: 30.0
+  genstore_price_variance: 0.05
 - name: Axe
+  tag: -axe
   artist: Acon
   description: Be careful with this, don't have an axe-ident.
   frequency: 0.5
-  tag: -axe
+  intended_value_atus: 10.0
+  intended_value_gp: 100.0
+  genstore_sell_to_player_price: 130.0
+  genstore_buy_from_player_price: 60.0
+  genstore_price_variance: 0.05
 - name: Dinoisseur Challenge Coin
+  tag: -dinoisseur-challenge-coin
   artist: Acon
   description: Congratulations, now you know how to make a pull request!
-  tag: -dinoisseur-challenge-coin
-  Transferable: 'No'
+  frequency: null
+  intended_value_atus: 100.0
+  intended_value_gp: 1000.0
+  genstore_sell_to_player_price: 1300.0
+  genstore_buy_from_player_price: 600.0
+  genstore_price_variance: 0.05
 - name: Apple
-  artist: Eleeza
-  description:
-    According to legend, eating one of these daily is supposed to ward
-    off medical professionals
-  frequency: 1
   tag: -apple
+  artist: Eleeza
+  description: According to legend, eating one of these daily is supposed to ward off medical professionals
+  frequency: 1.0
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Orange
+  tag: -orange
   artist: Jeijii
   description: Believe it or not, the color is named for the fruit—not the other way around.
   frequency: 0.8
-  tag: -orange
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Banana
-  artist: Jeijii
-  description:
-    How are these so cheap? They don't even grow locally. Economies of
-    scale are freaky.
-  frequency: 0.9
   tag: -banana
+  artist: Jeijii
+  description: How are these so cheap? They don't even grow locally. Economies of scale are freaky.
+  frequency: 0.9
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Coconut
+  tag: -coconut
   artist: Jeijii
   description: Look out below!!
   frequency: 0.7
-  tag: -coconut
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Wheat Seeds
+  tag: -wheat-seeds
   artist: Acon
   description: Looking to grow some wheat? Start with these.
   frequency: 0.6
-  tag: -wheat-seeds
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Grass Seeds
+  tag: -grass-seeds
   artist: Acon
   description: Any good lawn begins with these things.
   frequency: 0.6
-  tag: -grass-seeds
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Log
+  tag: -log
   artist: Acon
   description: A good thick log. What more could you want from a tree?
   frequency: 0.9
-  tag: -log
+  intended_value_atus: 1.2
+  intended_value_gp: 12.0
+  genstore_sell_to_player_price: 15.6
+  genstore_buy_from_player_price: 7.2
+  genstore_price_variance: 0.05
 - name: Saw
+  tag: -saw
   artist: Eleeza
   description: For those times when a knife just won't cut it
   frequency: 0.5
-  tag: -saw
+  intended_value_atus: 15.0
+  intended_value_gp: 150.0
+  genstore_sell_to_player_price: 195.0
+  genstore_buy_from_player_price: 90.0
+  genstore_price_variance: 0.05
 - name: Raw Diamond
+  tag: -raw-diamond
   artist: Acon
   description: A diamond, in the rough. Literally.
   frequency: 0.1
-  tag: -raw-diamond
+  intended_value_atus: 15.0
+  intended_value_gp: 150.0
+  genstore_sell_to_player_price: 195.0
+  genstore_buy_from_player_price: 90.0
+  genstore_price_variance: 0.05
 - name: Diamond
+  tag: -diamond
   artist: Elena
   description: Sparkly, clear, and ready for wide-scale market manipulation.
   frequency: 0.02
-  tag: -diamond
+  intended_value_atus: 20.0
+  intended_value_gp: 200.0
+  genstore_sell_to_player_price: 260.0
+  genstore_buy_from_player_price: 120.0
+  genstore_price_variance: 0.05
 - name: Raw Sapphire
+  tag: -raw-sapphire
   artist: Acon
   description: Somewhere in here is a beautiful sparkly blue thing.
   frequency: 0.2
-  tag: -raw-sapphire
+  intended_value_atus: 14.0
+  intended_value_gp: 140.0
+  genstore_sell_to_player_price: 182.0
+  genstore_buy_from_player_price: 84.0
+  genstore_price_variance: 0.05
 - name: Sapphire
+  tag: -sapphire
   artist: Elena
   description: Who knew that aluminum oxide could look so good?
   frequency: 0.05
-  tag: -sapphire
+  intended_value_atus: 16.0
+  intended_value_gp: 160.0
+  genstore_sell_to_player_price: 208.0
+  genstore_buy_from_player_price: 96.0
+  genstore_price_variance: 0.05
 - name: Raw Emerald
+  tag: -raw-emerald
   artist: Acon
   description: It may look sour-apple flavored, but it's not. Trust me.
   frequency: 0.08
-  tag: -raw-emerald
+  intended_value_atus: 14.0
+  intended_value_gp: 140.0
+  genstore_sell_to_player_price: 182.0
+  genstore_buy_from_player_price: 84.0
+  genstore_price_variance: 0.05
 - name: Emerald
+  tag: -emerald
   artist: Eleeza
   description: This green gemstone is notable mostly for its use as currency in Minecraft.
   frequency: 0.01
-  tag: -emerald
+  intended_value_atus: 16.0
+  intended_value_gp: 160.0
+  genstore_sell_to_player_price: 208.0
+  genstore_buy_from_player_price: 96.0
+  genstore_price_variance: 0.05
 - name: Raw Ruby
-  artist: Elena
-  description: 'Is it just me or does this ugly rock look kind of… angry?'
-  frequency: 0.2
   tag: -raw-ruby
-- name: Ruby
-  artist: Eleeza
-  description:
-    The gemstone of choice for people who are weirdly obsessed with the
-    color red.
-  frequency: 0.05
-  tag: -ruby
-- name: Raw Tanzanite
   artist: Elena
-  description:
-    Once thought to be found only in Tanzania, a rich deposit was recently
-    found in the Hack Club Slack.
-  frequency: 0.06
+  description: Is it just me or does this ugly rock look kind of… angry?
+  frequency: 0.2
+  intended_value_atus: 14.0
+  intended_value_gp: 140.0
+  genstore_sell_to_player_price: 182.0
+  genstore_buy_from_player_price: 84.0
+  genstore_price_variance: 0.05
+- name: Ruby
+  tag: -ruby
+  artist: Eleeza
+  description: The gemstone of choice for people who are weirdly obsessed with the color red.
+  frequency: 0.05
+  intended_value_atus: 16.0
+  intended_value_gp: 160.0
+  genstore_sell_to_player_price: 208.0
+  genstore_buy_from_player_price: 96.0
+  genstore_price_variance: 0.05
+- name: Raw Tanzanite
   tag: -raw-tanzanite
+  artist: Elena
+  description: Once thought to be found only in Tanzania, a rich deposit was recently found in the Hack Club Slack.
+  frequency: 0.06
+  intended_value_atus: 20.0
+  intended_value_gp: 200.0
+  genstore_sell_to_player_price: 260.0
+  genstore_buy_from_player_price: 120.0
+  genstore_price_variance: 0.05
 - name: Tanzanite
+  tag: -tanzanite
   artist: Jeijii
   description: Is it blue? Is it purple? That all depends on your perspective.
-  tag: -tanzanite
+  frequency: null
+  intended_value_atus: 25.0
+  intended_value_gp: 250.0
+  genstore_sell_to_player_price: 325.0
+  genstore_buy_from_player_price: 150.0
+  genstore_price_variance: 0.05
 - name: Mushroom
+  tag: -mushroom
   artist: Elena
   description: Anyone who makes the "fun guy" joke will be summarily fired.
   frequency: 0.9
-  tag: -mushroom
+  intended_value_atus: 1.3
+  intended_value_gp: 13.0
+  genstore_sell_to_player_price: 16.9
+  genstore_buy_from_player_price: 7.8
+  genstore_price_variance: 0.05
 - name: Kiwi
+  tag: -kiwi
   artist: Jeijii
   description: You should really eat the skin, it's the most nutritious part.
   frequency: 0.7
-  tag: -kiwi
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Shirt
+  tag: -shirt
   artist: Acon
   description: Just your basic shirt.
   frequency: 0.8
-  tag: -shirt
+  intended_value_atus: 18.0
+  intended_value_gp: 180.0
+  genstore_sell_to_player_price: 234.0
+  genstore_buy_from_player_price: 108.0
+  genstore_price_variance: 0.05
 - name: Pants
+  tag: -pants
   artist: Acon
   description: One pant per leg.
   frequency: 0.8
-  tag: -pants
+  intended_value_atus: 25.0
+  intended_value_gp: 250.0
+  genstore_sell_to_player_price: 325.0
+  genstore_buy_from_player_price: 150.0
+  genstore_price_variance: 0.05
 - name: Fashionable Shirt
+  tag: -fashionable-shirt
   artist: Acon
   description: It says SURPEEM on the front in big, expensive-looking letters.
   frequency: 0.4
-  tag: -fashionable-shirt
+  intended_value_atus: 40.0
+  intended_value_gp: 400.0
+  genstore_sell_to_player_price: 520.0
+  genstore_buy_from_player_price: 240.0
+  genstore_price_variance: 0.05
 - name: Fancy Pants
+  tag: -fancy-pants
   artist: Acon
   description: For those times when your legs need an ego boost.
   frequency: 0.4
-  tag: -fancy-pants
+  intended_value_atus: 50.0
+  intended_value_gp: 500.0
+  genstore_sell_to_player_price: 650.0
+  genstore_buy_from_player_price: 300.0
+  genstore_price_variance: 0.05
 - name: Shoes
+  tag: -shoes
   artist: Elena
   description: Don't worry feet, you're safe in here.
   frequency: 0.8
-  tag: -shoes
+  intended_value_atus: 25.0
+  intended_value_gp: 250.0
+  genstore_sell_to_player_price: 325.0
+  genstore_buy_from_player_price: 150.0
+  genstore_price_variance: 0.05
 - name: Cool Shoes
+  tag: -cool-shoes
   artist: Elena
   description: Wearing these is like having a tiny pair of sunglasses for each toe.
   frequency: 0.4
-  tag: -cool-shoes
+  intended_value_atus: 50.0
+  intended_value_gp: 500.0
+  genstore_sell_to_player_price: 650.0
+  genstore_buy_from_player_price: 300.0
+  genstore_price_variance: 0.05
 - name: Hammer
-  artist: 'Unkown'
+  tag: -hammer
+  artist: Unkown
   description: Famed for its ability to hit things.
   frequency: 0.5
-  tag: -hammer
+  intended_value_atus: 10.0
+  intended_value_gp: 100.0
+  genstore_sell_to_player_price: 130.0
+  genstore_buy_from_player_price: 60.0
+  genstore_price_variance: 0.05
 - name: Top Hat
-  artist: 'Unknown'
+  tag: -top-hat
+  artist: Unknown
   description: Popularized by Abraham Lincoln and the Deepwater Horizon.
   frequency: 0.4
-  tag: -top-hat
+  intended_value_atus: 35.0
+  intended_value_gp: 350.0
+  genstore_sell_to_player_price: 455.0
+  genstore_buy_from_player_price: 210.0
+  genstore_price_variance: 0.05
 - name: Hat
+  tag: -hat
   artist: Acon
   description: Your humble servant, protecting your head from the sun.
   frequency: 0.7
-  tag: -hat
+  intended_value_atus: 6.0
+  intended_value_gp: 60.0
+  genstore_sell_to_player_price: 78.0
+  genstore_buy_from_player_price: 36.0
+  genstore_price_variance: 0.05
 - name: Fish Hat
+  tag: -fish-hat
   artist: Jeijii
   description: A fashion brought to you by Orcas.
   frequency: 0.2
-  tag: -fish-hat
+  intended_value_atus: 10.0
+  intended_value_gp: 100.0
+  genstore_sell_to_player_price: 130.0
+  genstore_buy_from_player_price: 60.0
+  genstore_price_variance: 0.05
 - name: Shurt
-  artist: Elena
-  description: "It's a shirt alright, but it's a just a little… weird."
-  frequency: 0.2
   tag: -shurt
+  artist: Elena
+  description: It's a shirt alright, but it's a just a little… weird.
+  frequency: 0.2
+  intended_value_atus: 50.0
+  intended_value_gp: 500.0
+  genstore_sell_to_player_price: 650.0
+  genstore_buy_from_player_price: 300.0
+  genstore_price_variance: 0.05
 - name: Fish
+  tag: -fish
   artist: Jeijii
   description: This highly-edible creature is literally born to swim.
   frequency: 0.6
-  tag: -fish
+  intended_value_atus: 6.0
+  intended_value_gp: 60.0
+  genstore_sell_to_player_price: 78.0
+  genstore_buy_from_player_price: 36.0
+  genstore_price_variance: 0.05
 - name: Anvil
+  tag: -anvil
   artist: Acon
   description: Used since antiquity to forge metal and grievously injure cartoon characters.
   frequency: 0.3
-  tag: -anvil
+  intended_value_atus: 18.0
+  intended_value_gp: 180.0
+  genstore_sell_to_player_price: 234.0
+  genstore_buy_from_player_price: 108.0
+  genstore_price_variance: 0.05
 - name: Coal
+  tag: -coal
   artist: Acon
   description: Seriously, we need to stop burning this stuff.
   frequency: 0.8
-  tag: -coal
+  intended_value_atus: 1.2
+  intended_value_gp: 12.0
+  genstore_sell_to_player_price: 15.6
+  genstore_buy_from_player_price: 7.2
+  genstore_price_variance: 0.05
 - name: Furnace
+  tag: -furnace
   artist: Acon
   description: This fashionable appliance is great for producing sick burns.
   frequency: 0.3
-  tag: -furnace
+  intended_value_atus: 10.0
+  intended_value_gp: 100.0
+  genstore_sell_to_player_price: 130.0
+  genstore_buy_from_player_price: 60.0
+  genstore_price_variance: 0.05
 - name: 1982 Wurlitzer Jukebox
+  tag: -wurlitzer-jukebox
   artist: Elena
   description: Alec Watson could probably tell you a lot about this object.
   frequency: 0.01
-  tag: -wurlitzer-jukebox
+  intended_value_atus: 10000.0
+  intended_value_gp: 100000.0
+  genstore_sell_to_player_price: 130000.0
+  genstore_buy_from_player_price: 60000.0
+  genstore_price_variance: 0.05
 - name: MASH Season 1
+  tag: -mash-season-1
   artist: Elena
   description: Korea, 1950 (a hundred years ago)
   frequency: 0.1
-  tag: -mash-season-1
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 2
+  tag: -mash-season-2
   artist: Elena
   description: Includes essential classics like "5 O'Clock Charlie" and "George".
   frequency: 0.1
-  tag: -mash-season-2
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 3
+  tag: -mash-season-3
   artist: Elena
   description: Abyssinia, Henry.
   frequency: 0.1
-  tag: -mash-season-3
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 4
+  tag: -mash-season-4
   artist: Elena
   description: Now Trapper's gone too?? That's it. I'm out.
   frequency: 0.1
-  tag: -mash-season-4
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 5
+  tag: -mash-season-5
   artist: Elena
   description: The last season with Larry Linville.
   frequency: 0.1
-  tag: -mash-season-5
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 6
+  tag: -mash-season-6
   artist: Elena
   description: Well, at least Winchester is sort of ok. Kinda.
   frequency: 0.1
-  tag: -mash-season-6
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 7
-  artist: Elena
-  description:
-    '"Point of View" is a remarkably innovative episode in an otherwise
-    unremarkable season.'
-  frequency: 0.1
   tag: -mash-season-7
+  artist: Elena
+  description: '"Point of View" is a remarkably innovative episode in an otherwise unremarkable season.'
+  frequency: 0.1
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 8
+  tag: -mash-season-8
   artist: Elena
   description: Radar is gone, Klinger wears normal uniforms, the show drags on.
   frequency: 0.1
-  tag: -mash-season-8
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 9
+  tag: -mash-season-9
   artist: Elena
   description: Some truly heart-wrenching moments stick out in th
   frequency: 0.1
-  tag: -mash-season-9
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 10
-  artist: Elena
-  description: "Laurence Fishburne makes an appearance, so… that's something\
-    \ I guess."
-  frequency: 0.1
   tag: -mash-season-10
+  artist: Elena
+  description: Laurence Fishburne makes an appearance, so… that's something I guess.
+  frequency: 0.1
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH Season 11
+  tag: -mash-season-11
   artist: Elena
   description: Goodbye, farewell, amen.
   frequency: 0.1
-  tag: -mash-season-11
+  intended_value_atus: 200.0
+  intended_value_gp: 2000.0
+  genstore_sell_to_player_price: 2600.0
+  genstore_buy_from_player_price: 1200.0
+  genstore_price_variance: 0.05
 - name: MASH The Good Seasons
-  artist: Elena
-  description: 'Sorry BJ, sorry Colonel Potter… Henry and Trapper were better.'
-  frequency: 0.05
   tag: -mash-good-seasons
-- name: MASH The Complete Series
-  artist: Jeijii
-  description:
-    You really only need the first three seasons, but it's nice to have
-    a full set.
-  frequency: 0.01
-  tag: -mash-complete-series
-- name: AfterMASH Season 1
-  artist: Jeijii
-  description: 'Why do you own this? It is… not good.'
+  artist: Elena
+  description: Sorry BJ, sorry Colonel Potter… Henry and Trapper were better.
   frequency: 0.05
+  intended_value_atus: 650.0
+  intended_value_gp: 6500.0
+  genstore_sell_to_player_price: 8450.0
+  genstore_buy_from_player_price: 3900.0
+  genstore_price_variance: 0.05
+- name: MASH The Complete Series
+  tag: -mash-complete-series
+  artist: Jeijii
+  description: You really only need the first three seasons, but it's nice to have a full set.
+  frequency: 0.01
+  intended_value_atus: 2250.0
+  intended_value_gp: 22500.0
+  genstore_sell_to_player_price: 29250.0
+  genstore_buy_from_player_price: 13500.0
+  genstore_price_variance: 0.05
+- name: AfterMASH Season 1
   tag: -aftermash-season-1
+  artist: Jeijii
+  description: Why do you own this? It is… not good.
+  frequency: 0.05
+  intended_value_atus: 100.0
+  intended_value_gp: 1000.0
+  genstore_sell_to_player_price: 1300.0
+  genstore_buy_from_player_price: 600.0
+  genstore_price_variance: 0.05
 - name: AfterMASH Season 2
+  tag: -aftermash-season-2
   artist: Jeijii
   description: Seriously, how did this get renewed for a second season.
   frequency: 0.05
-  tag: -aftermash-season-2
+  intended_value_atus: 100.0
+  intended_value_gp: 1000.0
+  genstore_sell_to_player_price: 1300.0
+  genstore_buy_from_player_price: 600.0
+  genstore_price_variance: 0.05
 - name: AfterMASH The Complete Series
+  tag: -aftermash-complete-series
   artist: Jeijii
   description: A series better left incomplete. But hey, you did it anyway!
   frequency: 0.01
-  tag: -aftermash-complete-series
+  intended_value_atus: 250.0
+  intended_value_gp: 2500.0
+  genstore_sell_to_player_price: 3250.0
+  genstore_buy_from_player_price: 1500.0
+  genstore_price_variance: 0.05
 - name: MASH The Movie
+  tag: -mash-movie
   artist: Jeijii
   description: This film has not aged well. It was a different time.
   frequency: 0.1
-  tag: -mash-movie
+  intended_value_atus: 100.0
+  intended_value_gp: 1000.0
+  genstore_sell_to_player_price: 1300.0
+  genstore_buy_from_player_price: 600.0
+  genstore_price_variance: 0.05
 - name: MASH The Original Novel
+  tag: -mash-book
   artist: Jeijii
   description: An unusual book from an unusual time, with a puzzling number of spin-offs.
   frequency: 0.1
-  tag: -mash-book
+  intended_value_atus: 100.0
+  intended_value_gp: 1000.0
+  genstore_sell_to_player_price: 1300.0
+  genstore_buy_from_player_price: 600.0
+  genstore_price_variance: 0.05
 - name: MASH The Ultimate Collection
+  tag: -mash-ultimate-collection
   artist: Jeijii
   description: Wow. You did it! Alan Alda salutes your efforts. And as you know, he doesn't salute very often.
-  tag: -mash-ultimate-collection
+  frequency: null
+  intended_value_atus: 3000.0
+  intended_value_gp: 30000.0
+  genstore_sell_to_player_price: 39000.0
+  genstore_buy_from_player_price: 18000.0
+  genstore_price_variance: 0.05
 - name: Iron Ore
-  artist: Jeijii
-  description:
-    This stuff will be a lot more useful if you can find a way to refine
-    it.
-  frequency: 0.8
   tag: -iron-ore
+  artist: Jeijii
+  description: This stuff will be a lot more useful if you can find a way to refine it.
+  frequency: 0.8
+  intended_value_atus: 0.8
+  intended_value_gp: 8.0
+  genstore_sell_to_player_price: 10.4
+  genstore_buy_from_player_price: 4.8
+  genstore_price_variance: 0.05
 - name: Gold Ore
+  tag: -gold-ore
   artist: Elena
   description: Somewhere in this lump there's a bunch of shiny expensive yellow stuff.
   frequency: 0.1
-  tag: -gold-ore
+  intended_value_atus: 0.9
+  intended_value_gp: 9.0
+  genstore_sell_to_player_price: 11.7
+  genstore_buy_from_player_price: 5.4
+  genstore_price_variance: 0.05
 - name: Gold
+  tag: -gold
   artist: Elena
   description: Shiny expensive yellow stuff!
   frequency: 0.05
-  tag: -gold
+  intended_value_atus: 2.5
+  intended_value_gp: 25.0
+  genstore_sell_to_player_price: 32.5
+  genstore_buy_from_player_price: 15.0
+  genstore_price_variance: 0.05
 - name: Aluminum Ore
+  tag: -aluminum-ore
   artist: Acon
   description: The technical term is "bauxite", apparently.
   frequency: 0.8
-  tag: -aluminum-ore
+  intended_value_atus: 1.3
+  intended_value_gp: 13.0
+  genstore_sell_to_player_price: 16.9
+  genstore_buy_from_player_price: 7.8
+  genstore_price_variance: 0.05
 - name: Aluminum
+  tag: -aluminum
   artist: Acon
   description: It's light. It's bright. Its oxide is white.
   frequency: 0.4
-  tag: -aluminum
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Bonsai
+  tag: -bonsai
   artist: Jeijii
   description: An itsy-bitsy teeny-weeny woody-growy leafy-greeny.
   frequency: 0.1
-  tag: -bonsai
+  intended_value_atus: 40.0
+  intended_value_gp: 400.0
+  genstore_sell_to_player_price: 520.0
+  genstore_buy_from_player_price: 240.0
+  genstore_price_variance: 0.05
 - name: Kamina's Shades
+  tag: -kamina-shades
   artist: Jeijii
   description: Believe in the Orpheus that believes in you!
   frequency: 0.05
-  tag: -kamina-shades
+  intended_value_atus: 30.0
+  intended_value_gp: 300.0
+  genstore_sell_to_player_price: 390.0
+  genstore_buy_from_player_price: 180.0
+  genstore_price_variance: 0.05
 - name: Diamond Dust
+  tag: -diamond-dust
   artist: Acon
   description: Something expensive was obliterated to create this.
   frequency: 0.1
-  tag: -diamond-dust
+  intended_value_atus: 15.5
+  intended_value_gp: 155.0
+  genstore_sell_to_player_price: 201.5
+  genstore_buy_from_player_price: 93.0
+  genstore_price_variance: 0.05
 - name: Emerald Dust
+  tag: -emerald-dust
   artist: Acon
   description: Nope, still doesn't taste like green apple.
   frequency: 0.12
-  tag: -emerald-dust
+  intended_value_atus: 14.5
+  intended_value_gp: 145.0
+  genstore_sell_to_player_price: 188.5
+  genstore_buy_from_player_price: 87.0
+  genstore_price_variance: 0.05
 - name: Sapphire Dust
+  tag: -sapphire-dust
   artist: Acon
   description: Still aluminum oxide, but in powder form.
   frequency: 0.12
-  tag: -sapphire-dust
+  intended_value_atus: 14.5
+  intended_value_gp: 145.0
+  genstore_sell_to_player_price: 188.5
+  genstore_buy_from_player_price: 87.0
+  genstore_price_variance: 0.05
 - name: Ruby Dust
+  tag: -ruby-dust
   artist: Acon
   description: It's coarse and red and valuable and it gets everywhere.
   frequency: 0.12
-  tag: -ruby-dust
+  intended_value_atus: 14.5
+  intended_value_gp: 145.0
+  genstore_sell_to_player_price: 188.5
+  genstore_buy_from_player_price: 87.0
+  genstore_price_variance: 0.05
 - name: Tanzanite Dust
+  tag: -tanzanite-dust
   artist: Acon
   description: I really hope you didn't smash a cut stone to make this.
   frequency: 0.08
-  tag: -tanzanite-dust
+  intended_value_atus: 21.0
+  intended_value_gp: 210.0
+  genstore_sell_to_player_price: 273.0
+  genstore_buy_from_player_price: 126.0
+  genstore_price_variance: 0.05
 - name: Lapidary Wheel
+  tag: -lapidary-wheel
   artist: Acon
   description: Harness the power of rotation to turn ugly rocks into pretty rocks.
-  tag: -lapidary-wheel
+  frequency: null
+  intended_value_atus: 100.0
+  intended_value_gp: 1000.0
+  genstore_sell_to_player_price: 1300.0
+  genstore_buy_from_player_price: 600.0
+  genstore_price_variance: 0.05
 - name: Glue
+  tag: -glue
   artist: Elena
   description: Ewwww it's all sticky… pretty useful though.
-  tag: -glue
+  frequency: null
+  intended_value_atus: 6.0
+  intended_value_gp: 60.0
+  genstore_sell_to_player_price: 78.0
+  genstore_buy_from_player_price: 36.0
+  genstore_price_variance: 0.05
 - name: Wheel
+  tag: -wheel
   artist: Elena
   description: It seems to be locked in an endless competion with Sliced Bread for the title of Greatest Invention Ever.
-  tag: -wheel
+  frequency: null
+  intended_value_atus: 13.0
+  intended_value_gp: 130.0
+  genstore_sell_to_player_price: 169.0
+  genstore_buy_from_player_price: 78.0
+  genstore_price_variance: 0.05
 - name: Spinning Wheel
+  tag: -spinning-wheel
   artist: Elena
   description: This thing turns 3-dimensional fluff into 1-dimensional fluff.
-  tag: -spinning-wheel
+  frequency: null
+  intended_value_atus: 25.0
+  intended_value_gp: 250.0
+  genstore_sell_to_player_price: 325.0
+  genstore_buy_from_player_price: 150.0
+  genstore_price_variance: 0.05
 - name: Bone
+  tag: -bone
   artist: Jeijii
   description: You already have 206 of these. Do you really need more?
-  tag: -bone
+  frequency: null
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Bone Dust
-  artist: ---
-  description: Just think, this stuff used to be part of a skeleton.
   tag: -bone-dust
+  artist: '---'
+  description: Just think, this stuff used to be part of a skeleton.
+  frequency: null
+  intended_value_atus: 2.5
+  intended_value_gp: 25.0
+  genstore_sell_to_player_price: 32.5
+  genstore_buy_from_player_price: 15.0
+  genstore_price_variance: 0.05
 - name: Pot
+  tag: -pot
   artist: Elena
   description: Just imagine all the boiling you can do with this!!
-  tag: -pot
+  frequency: null
+  intended_value_atus: 4.0
+  intended_value_gp: 40.0
+  genstore_sell_to_player_price: 52.0
+  genstore_buy_from_player_price: 24.0
+  genstore_price_variance: 0.05
 - name: Sand
+  tag: -sand
   artist: Acon
   description: It's coarse and rough and irritating and it gets everywhere.
-  tag: -sand
+  frequency: null
+  intended_value_atus: 1.0
+  intended_value_gp: 10.0
+  genstore_sell_to_player_price: 13.0
+  genstore_buy_from_player_price: 6.0
+  genstore_price_variance: 0.05
 - name: Glass
+  tag: -glass
   artist: Acon
   description: Don't build a house out of this. Except the windows. Those are ok.
-  tag: -glass
+  frequency: null
+  intended_value_atus: 3.5
+  intended_value_gp: 35.0
+  genstore_sell_to_player_price: 45.5
+  genstore_buy_from_player_price: 21.0
+  genstore_price_variance: 0.05
 - name: Chisel
+  tag: -chisel
   artist: Elena
   description: Seriously, don't attempt to enhance your jaw with this thing.
-  tag: -chisel
+  frequency: null
+  intended_value_atus: 8.0
+  intended_value_gp: 80.0
+  genstore_sell_to_player_price: 104.0
+  genstore_buy_from_player_price: 48.0
+  genstore_price_variance: 0.05
 - name: Blahaj
+  tag: -blahaj
   artist: Elena
   description: Duh-dum… duh-dum duh-dum… duhdumduhdumduhdumduhdum
-  tag: -blahaj
+  frequency: null
+  intended_value_atus: 150.0
+  intended_value_gp: 1500.0
+  genstore_sell_to_player_price: 1950.0
+  genstore_buy_from_player_price: 900.0
+  genstore_price_variance: 0.05
 - name: Water
+  tag: -water
   artist: Jeijii
   description: I can't believe how wet this stuff is!
-  tag: -water
+  frequency: null
+  intended_value_atus: 3.5
+  intended_value_gp: 35.0
+  genstore_sell_to_player_price: 45.5
+  genstore_buy_from_player_price: 21.0
+  genstore_price_variance: 0.05
 - name: Bread
+  tag: -bread
   artist: Elena
   description: The best thing since sliced… well… um… hmm.
-  tag: -bread
+  frequency: null
+  intended_value_atus: 7.0
+  intended_value_gp: 70.0
+  genstore_sell_to_player_price: 91.0
+  genstore_buy_from_player_price: 42.0
+  genstore_price_variance: 0.05
 - name: Wheat
+  tag: -wheat
   artist: Elena
   description: Mmmmm, gluten!
-  tag: -wheat
+  frequency: null
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Flour
-  artist: ---
-  description: Surprisingly, it's not actually made from flowers.
   tag: -flour
+  artist: '---'
+  description: Surprisingly, it's not actually made from flowers.
+  frequency: null
+  intended_value_atus: 2.5
+  intended_value_gp: 25.0
+  genstore_sell_to_player_price: 32.5
+  genstore_buy_from_player_price: 15.0
+  genstore_price_variance: 0.05
 - name: Brick
+  tag: -brick
   artist: Jeijii
   description: The natural enemy of windows.
-  tag: -brick
+  frequency: null
+  intended_value_atus: 1.4
+  intended_value_gp: 14.0
+  genstore_sell_to_player_price: 18.2
+  genstore_buy_from_player_price: 8.4
+  genstore_price_variance: 0.05
 - name: Clay
+  tag: -clay
   artist: Elena
   description: Like mud, but better!
-  tag: -clay
+  frequency: null
+  intended_value_atus: 1.0
+  intended_value_gp: 10.0
+  genstore_sell_to_player_price: 13.0
+  genstore_buy_from_player_price: 6.0
+  genstore_price_variance: 0.05
 - name: Range
-  artist: ---
-  description: It didn't make sense to split "Stove" and "Oven" into separate items.
   tag: -range
+  artist: '---'
+  description: It didn't make sense to split "Stove" and "Oven" into separate items.
+  frequency: null
+  intended_value_atus: 15.0
+  intended_value_gp: 150.0
+  genstore_sell_to_player_price: 195.0
+  genstore_buy_from_player_price: 90.0
+  genstore_price_variance: 0.05
 - name: Salt
+  tag: -salt
   artist: Elena
   description: Best to avoid this stuff if you happen to be a slug.
-  tag: -salt
+  frequency: null
+  intended_value_atus: 1.5
+  intended_value_gp: 15.0
+  genstore_sell_to_player_price: 19.5
+  genstore_buy_from_player_price: 9.0
+  genstore_price_variance: 0.05
 - name: Egg
+  tag: -egg
   artist: Elena
   description: An essential ingredient for creating chickens.
-  tag: -egg
+  frequency: null
+  intended_value_atus: 2.5
+  intended_value_gp: 25.0
+  genstore_sell_to_player_price: 32.5
+  genstore_buy_from_player_price: 15.0
+  genstore_price_variance: 0.05
 - name: Sugar
+  tag: -sugar
   artist: Jeijii
   description: Glucose, sucrose, fructose… feelgross.
-  tag: -sugar
+  frequency: null
+  intended_value_atus: 2.5
+  intended_value_gp: 25.0
+  genstore_sell_to_player_price: 32.5
+  genstore_buy_from_player_price: 15.0
+  genstore_price_variance: 0.05
 - name: Firewood
-  artist: ---
-  description: It burns, it burns!! That's a good thing in this case.
   tag: -firewood
+  artist: '---'
+  description: It burns, it burns!! That's a good thing in this case.
+  frequency: null
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Sugarcane
+  tag: -sugarcane
   artist: Elena
   description: Despite the name, it doesn't work great as a cane.
-  tag: -sugarcane
+  frequency: null
+  intended_value_atus: 1.6
+  intended_value_gp: 16.0
+  genstore_sell_to_player_price: 20.8
+  genstore_buy_from_player_price: 9.6
+  genstore_price_variance: 0.05
 - name: Cake
+  tag: -cake
   artist: Elena
   description: Without this, the entire birthday economy would collapse.
-  tag: -cake
+  frequency: null
+  intended_value_atus: 23.0
+  intended_value_gp: 230.0
+  genstore_sell_to_player_price: 299.0
+  genstore_buy_from_player_price: 138.0
+  genstore_price_variance: 0.05
 - name: Cotton
+  tag: -cotton
   artist: Jeijii
   description: The terrestrial cousin of clouds.
-  tag: -cotton
+  frequency: null
+  intended_value_atus: 1.5
+  intended_value_gp: 15.0
+  genstore_sell_to_player_price: 19.5
+  genstore_buy_from_player_price: 9.0
+  genstore_price_variance: 0.05
 - name: Thread
+  tag: -thread
   artist: Elena
   description: A useful material supposedly invented in the far-off land of Reddite.
-  tag: -thread
+  frequency: null
+  intended_value_atus: 2.0
+  intended_value_gp: 20.0
+  genstore_sell_to_player_price: 26.0
+  genstore_buy_from_player_price: 12.0
+  genstore_price_variance: 0.05
 - name: Needle
-  artist: ---
-  description: Its sharpness is matched only by its pokiness.
   tag: -needle
+  artist: '---'
+  description: Its sharpness is matched only by its pokiness.
+  frequency: null
+  intended_value_atus: 5.0
+  intended_value_gp: 50.0
+  genstore_sell_to_player_price: 65.0
+  genstore_buy_from_player_price: 30.0
+  genstore_price_variance: 0.05
 - name: Fishhook
+  tag: -fishhook
   artist: Jeijii
   description: After all these years, you would think the fish would have learned not to fall for these.
-  tag: -fishhook
+  frequency: null
+  intended_value_atus: 6.0
+  intended_value_gp: 60.0
+  genstore_sell_to_player_price: 78.0
+  genstore_buy_from_player_price: 36.0
+  genstore_price_variance: 0.05
 - name: Fishing Rod
+  tag: -fishing-rod
   artist: Elena
   description: Go ye to the river, wave this special wand, and ye shall summon thyself a fishee. Magic!
-  tag: -fishing-rod
+  frequency: null
+  intended_value_atus: 11.0
+  intended_value_gp: 110.0
+  genstore_sell_to_player_price: 143.0
+  genstore_buy_from_player_price: 66.0
+  genstore_price_variance: 0.05
 - name: Pickaxe
+  tag: -pickaxe
   artist: Elena
   description: Great for solving miner problems, not so much for majer ones.
-  tag: -pickaxe
+  frequency: null
+  intended_value_atus: 15.0
+  intended_value_gp: 150.0
+  genstore_sell_to_player_price: 195.0
+  genstore_buy_from_player_price: 90.0
+  genstore_price_variance: 0.05
 - name: Mandrel
-  artist: ---
-  description: It's really just a glorified rod. But sometimes that's what you need.
   tag: -mandrel
+  artist: '---'
+  description: It's really just a glorified rod. But sometimes that's what you need.
+  frequency: null
+  intended_value_atus: 5.0
+  intended_value_gp: 50.0
+  genstore_sell_to_player_price: 65.0
+  genstore_buy_from_player_price: 30.0
+  genstore_price_variance: 0.05
 - name: Carrot Cake
+  tag: -carrot-cake
   artist: Elena
   description: This delicious-looking cake has 0.04% more dietary fiber than regular cake.
-  tag: -carrot-cake
+  frequency: null
+  intended_value_atus: 25.0
+  intended_value_gp: 250.0
+  genstore_sell_to_player_price: 325.0
+  genstore_buy_from_player_price: 150.0
+  genstore_price_variance: 0.05
 - name: Banana Bread
-  artist: ---
-  description: This loaf of banana bread smells like bananas, and also bread. Incredible!
   tag: -banana-bread
+  artist: '---'
+  description: This loaf of banana bread smells like bananas, and also bread. Incredible!
+  frequency: null
+  intended_value_atus: 12.0
+  intended_value_gp: 120.0
+  genstore_sell_to_player_price: 156.0
+  genstore_buy_from_player_price: 72.0
+  genstore_price_variance: 0.05
 - name: Stone Mill
+  tag: -stone-mill
   artist: Elena
   description: You won't believe what you can grind up with this thing! Or maybe you will. It's not like, _that_ surprising.
-  tag: -stone-mill
+  frequency: null
+  intended_value_atus: 10.0
+  intended_value_gp: 100.0
+  genstore_sell_to_player_price: 130.0
+  genstore_buy_from_player_price: 60.0
+  genstore_price_variance: 0.05
 - name: Cloth
+  tag: -cloth
   artist: Jeijii
   description: Literally the fabric of the universe… or at least the parts of the universe made from fabric.
-  tag: -cloth
+  frequency: null
+  intended_value_atus: 7.0
+  intended_value_gp: 70.0
+  genstore_sell_to_player_price: 91.0
+  genstore_buy_from_player_price: 42.0
+  genstore_price_variance: 0.05
 - name: Loom
+  tag: -loom
   artist: Elena
   description: Something something problems looming on the horizon. Also, it makes cloth.
-  tag: -loom
+  frequency: null
+  intended_value_atus: 18.0
+  intended_value_gp: 180.0
+  genstore_sell_to_player_price: 234.0
+  genstore_buy_from_player_price: 108.0
+  genstore_price_variance: 0.05
 - name: Vessel
+  tag: -vessel
   artist: Jeijii
   description: Dissapointingly, this is just the kind of vessel that holds stuff. Not a boat.
-  tag: -vessel
+  frequency: null
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Pottery Wheel
+  tag: -pottery-wheel
   artist: Elena
   description: You spin me right round baby right round, like a vessel baby right round round round.
-  tag: -pottery-wheel
+  frequency: null
+  intended_value_atus: 30.0
+  intended_value_gp: 300.0
+  genstore_sell_to_player_price: 390.0
+  genstore_buy_from_player_price: 180.0
+  genstore_price_variance: 0.05
 - name: Hairball
+  tag: -hairball
   artist: Acon
   description: _cough cough… blllech… bllleeeechhh… rourughROURouughhRUUUGH splat_
-  tag: -hairball
+  frequency: null
+  intended_value_atus: 0.1
+  intended_value_gp: 1.0
+  genstore_sell_to_player_price: 1.3
+  genstore_buy_from_player_price: 0.6
+  genstore_price_variance: 0.05
 - name: Cat Hat
+  tag: -cat-hat
   artist: Jeijii
   description: Meow! /ᐠ｡ꞈ｡ᐟ\
-  tag: -cat-hat
+  frequency: null
+  intended_value_atus: 20.0
+  intended_value_gp: 200.0
+  genstore_sell_to_player_price: 260.0
+  genstore_buy_from_player_price: 120.0
+  genstore_price_variance: 0.05
 - name: Rolling Mill
+  tag: -rolling-mill
   artist: Elena
   description: Great for when your metal is just a little too 3-dimensional.
-  tag: -rolling-mill
+  frequency: null
+  intended_value_atus: 43.0
+  intended_value_gp: 430.0
+  genstore_sell_to_player_price: 559.0
+  genstore_buy_from_player_price: 258.0
+  genstore_price_variance: 0.05
 - name: Iron Wire
+  tag: -iron-wire
   artist: Jeijii
   description: It's iron. It's wire. It's iron wire!
-  tag: -iron-wire
+  frequency: null
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Gold Wire
+  tag: -gold-wire
   artist: Jeijii
   description: For those times when regular wire just isn't fancy enough.
-  tag: -gold-wire
+  frequency: null
+  intended_value_atus: 4.0
+  intended_value_gp: 40.0
+  genstore_sell_to_player_price: 52.0
+  genstore_buy_from_player_price: 24.0
+  genstore_price_variance: 0.05
 - name: Coal Dust
+  tag: -coal-dust
   artist: Acon
   description: Careful, this stuff stains your clothes.
-  tag: -coal-dust
+  frequency: null
+  intended_value_atus: 2.6
+  intended_value_gp: 26.0
+  genstore_sell_to_player_price: 33.8
+  genstore_buy_from_player_price: 15.6
+  genstore_price_variance: 0.05
 - name: Fruit Salad
+  tag: -fruit-salad
   artist: Elena
   description: Yummy yummy.
-  tag: -fruit-salad
+  frequency: null
+  intended_value_atus: 25.0
+  intended_value_gp: 250.0
+  genstore_sell_to_player_price: 325.0
+  genstore_buy_from_player_price: 150.0
+  genstore_price_variance: 0.05
 - name: Shovel
+  tag: -shovel
   artist: Elena
   description: In Australia these are known as diggeridoos.
-  tag: -shovel
+  frequency: null
+  intended_value_atus: 10.0
+  intended_value_gp: 100.0
+  genstore_sell_to_player_price: 130.0
+  genstore_buy_from_player_price: 60.0
+  genstore_price_variance: 0.05
 - name: Scythe
+  tag: -scythe
   artist: Elena
   description: Don't fear the reaper.
-  tag: -scythe
+  frequency: null
+  intended_value_atus: 12.0
+  intended_value_gp: 120.0
+  genstore_sell_to_player_price: 156.0
+  genstore_buy_from_player_price: 72.0
+  genstore_price_variance: 0.05
 - name: Acorn
+  tag: -acorn
   artist: Elena
   description: Their fancy berets make these the most fashionable seeds of all.
-  tag: -acorn
+  frequency: null
+  intended_value_atus: 1.0
+  intended_value_gp: 10.0
+  genstore_sell_to_player_price: 13.0
+  genstore_buy_from_player_price: 6.0
+  genstore_price_variance: 0.05
 - name: Ladder
-  artist: ---
-  description: Remember, always follow the 4:1 rule or the ghost of OSHA will come to haunt you.
   tag: -ladder
+  artist: '---'
+  description: Remember, always follow the 4:1 rule or the ghost of OSHA will come to haunt you.
+  frequency: null
+  intended_value_atus: 17.0
+  intended_value_gp: 170.0
+  genstore_sell_to_player_price: 221.0
+  genstore_buy_from_player_price: 102.0
+  genstore_price_variance: 0.05
 - name: Trowel
-  artist: ---
-  description: A cute lil mini-shovel for digging cute lil mini-holes.
   tag: -trowel
+  artist: '---'
+  description: A cute lil mini-shovel for digging cute lil mini-holes.
+  frequency: null
+  intended_value_atus: 12.0
+  intended_value_gp: 120.0
+  genstore_sell_to_player_price: 156.0
+  genstore_buy_from_player_price: 72.0
+  genstore_price_variance: 0.05
 - name: Potato
+  tag: -potato
   artist: Acon
   description: Wow, a potato. If the internet is to be believed you can take pictures with this thing.
-  tag: -potato
+  frequency: null
+  intended_value_atus: 1.5
+  intended_value_gp: 15.0
+  genstore_sell_to_player_price: 19.5
+  genstore_buy_from_player_price: 9.0
+  genstore_price_variance: 0.05
 - name: Onion
+  tag: -onion
   artist: Acon
   description: The beauty of this foodstuff is enough to bring you to tears. Or maybe it's the sulfur. I don't know.
-  tag: -onion
+  frequency: null
+  intended_value_atus: 1.7
+  intended_value_gp: 17.0
+  genstore_sell_to_player_price: 22.1
+  genstore_buy_from_player_price: 10.2
+  genstore_price_variance: 0.05
 - name: Flax
+  tag: -flax
   artist: Acon
   description: One day, all these fibers will be cloth. But for now they are fibers.
-  tag: -flax
+  frequency: null
+  intended_value_atus: 1.5
+  intended_value_gp: 15.0
+  genstore_sell_to_player_price: 19.5
+  genstore_buy_from_player_price: 9.0
+  genstore_price_variance: 0.05
 - name: File
-  artist: ---
-  description: This thing is covered in angry little teeth that are very good at removing bits of metal.
   tag: -file
+  artist: '---'
+  description: This thing is covered in angry little teeth that are very good at removing bits of metal.
+  frequency: null
+  intended_value_atus: 8.0
+  intended_value_gp: 80.0
+  genstore_sell_to_player_price: 104.0
+  genstore_buy_from_player_price: 48.0
+  genstore_price_variance: 0.05
 - name: Diamond Ring
+  tag: -diamond-ring
   artist: Elena
   description: A gold ring with a big sparkly rock on it. It's a classic.
-  tag: -diamond-ring
+  frequency: null
+  intended_value_atus: 35.0
+  intended_value_gp: 350.0
+  genstore_sell_to_player_price: 455.0
+  genstore_buy_from_player_price: 210.0
+  genstore_price_variance: 0.05
 - name: Emerald Ring
+  tag: -emerald-ring
   artist: Elena
   description: A gold ring with a bright green emerald. Nope, still doesn't taste like granny smith.
-  tag: -emerald-ring
+  frequency: null
+  intended_value_atus: 32.0
+  intended_value_gp: 320.0
+  genstore_sell_to_player_price: 416.0
+  genstore_buy_from_player_price: 192.0
+  genstore_price_variance: 0.05
 - name: Sapphire Ring
+  tag: -sapphire-ring
   artist: Elena
   description: A gold ring with a deep blue sapphire. It's like a tiny piece of the ocean on your finger.
-  tag: -sapphire-ring
+  frequency: null
+  intended_value_atus: 32.0
+  intended_value_gp: 320.0
+  genstore_sell_to_player_price: 416.0
+  genstore_buy_from_player_price: 192.0
+  genstore_price_variance: 0.05
 - name: Ruby Ring
+  tag: -ruby-ring
   artist: Elena
   description: A gold ring with a rich red ruby. It looks beautiful but angry. However tempting, you probably shouldn't date it.
-  tag: -ruby-ring
+  frequency: null
+  intended_value_atus: 32.0
+  intended_value_gp: 320.0
+  genstore_sell_to_player_price: 416.0
+  genstore_buy_from_player_price: 192.0
+  genstore_price_variance: 0.05
 - name: Tanzanite Ring
-  description: A gold ring with a gorgeous tanzanite stone. Wow… it seems to be changing color as you move it around.
-  artist: Grace
   tag: -tanzanite-ring
+  artist: Grace
+  description: A gold ring with a gorgeous tanzanite stone. Wow… it seems to be changing color as you move it around.
+  frequency: null
+  intended_value_atus: 40.0
+  intended_value_gp: 400.0
+  genstore_sell_to_player_price: 520.0
+  genstore_buy_from_player_price: 240.0
+  genstore_price_variance: 0.05
 - name: Stew
+  tag: -stew
   artist: Elena
   description: A hearty-looking stew. It looks yummy. And chunky. And… stewy.
-  tag: -stew
+  frequency: null
+  intended_value_atus: 20.0
+  intended_value_gp: 200.0
+  genstore_sell_to_player_price: 260.0
+  genstore_buy_from_player_price: 120.0
+  genstore_price_variance: 0.05
 - name: Grapes
+  tag: -grapes
   artist: Elena
   description: Ah, grapes. A fruit so nice they named a color after it. Wait… no, that's oranges.
-  tag: -grapes
+  frequency: null
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Rice
-  description: Perfect for those days when you're hungry and want to eat two thousand of something.
-  artist: Grace
   tag: -rice
+  artist: Grace
+  description: Perfect for those days when you're hungry and want to eat two thousand of something.
+  frequency: null
+  intended_value_atus: 1.7
+  intended_value_gp: 17.0
+  genstore_sell_to_player_price: 22.1
+  genstore_buy_from_player_price: 10.2
+  genstore_price_variance: 0.05
 - name: Crab
+  tag: -crab
   artist: Acon
   description: According to Max Wofford, we are all slowly turning into these pinchy little things.
-  tag: -crab
+  frequency: null
+  intended_value_atus: 8.0
+  intended_value_gp: 80.0
+  genstore_sell_to_player_price: 104.0
+  genstore_buy_from_player_price: 48.0
+  genstore_price_variance: 0.05
 - name: Butter
+  tag: -butter
   artist: Acon
   description: Butter. It's like milk, but… butter.
-  tag: -butter
+  frequency: null
+  intended_value_atus: 7.0
+  intended_value_gp: 70.0
+  genstore_sell_to_player_price: 91.0
+  genstore_buy_from_player_price: 42.0
+  genstore_price_variance: 0.05
 - name: String
+  tag: -string
   artist: Acon
   description: What can be said about string? It's long, it's thin, it can be split into an array of characters.
-  tag: -string
+  frequency: null
+  intended_value_atus: 7.0
+  intended_value_gp: 70.0
+  genstore_sell_to_player_price: 91.0
+  genstore_buy_from_player_price: 42.0
+  genstore_price_variance: 0.05
 - name: Rope
+  tag: -rope
   artist: Elena
   description: Oh my god, it's a snake!! …no, wait, it's just rope. Phew.
-  tag: -rope
+  frequency: null
+  intended_value_atus: 30.0
+  intended_value_gp: 300.0
+  genstore_sell_to_player_price: 390.0
+  genstore_buy_from_player_price: 180.0
+  genstore_price_variance: 0.05
 - name: Bowl
+  tag: -bowl
   artist: Elena
   description: A bowl. It's… a bowl. You put stuff in it. What do you put in it? That's up to you.
-  tag: -bowl
+  frequency: null
+  intended_value_atus: 7.0
+  intended_value_gp: 70.0
+  genstore_sell_to_player_price: 91.0
+  genstore_buy_from_player_price: 42.0
+  genstore_price_variance: 0.05
 - name: Milk
+  tag: -milk
   artist: Jeijii
   description: There's a lot of things you can do with milk. Drink it, for example.
-  tag: -milk
+  frequency: null
+  intended_value_atus: 4.0
+  intended_value_gp: 40.0
+  genstore_sell_to_player_price: 52.0
+  genstore_buy_from_player_price: 24.0
+  genstore_price_variance: 0.05
 - name: Clam
+  tag: -clam
   artist: Elena
   description: These things have really nailed the "shell" aspect of carcinization. It's only a matter of time before they figure out claws.
-  tag: -clam
+  frequency: null
+  intended_value_atus: 5.0
+  intended_value_gp: 50.0
+  genstore_sell_to_player_price: 65.0
+  genstore_buy_from_player_price: 30.0
+  genstore_price_variance: 0.05
 - name: Churn
+  tag: -churn
   artist: Elena
   description: This object is the mortal enemy of SaaS companies. Either that or it's a butter-making device.
-  tag: -churn
-- name: Koder Koin
-  artist: Averse
-  description: this item is very rare! you either paid a lot for this, or managed to get a project accepted into @Koder.
-  tag: -koder-koin
-  tradable: false
+  frequency: null
+  intended_value_atus: 17.0
+  intended_value_gp: 170.0
+  genstore_sell_to_player_price: 221.0
+  genstore_buy_from_player_price: 102.0
+  genstore_price_variance: 0.05

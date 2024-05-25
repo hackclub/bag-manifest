@@ -1,348 +1,1088 @@
-- outputs: [Socks]
-  inputs: [Yarn]
-  tools: [Knitting Needles]
+- outputs:
+  - Socks
+  inputs:
+  - Yarn
+  tools:
+  - Knitting Needles
   description: You furiously knit up a storm, and shazam! Socks appear.
-- outputs: [Hammer]
-  inputs: [Stick, Iron]
+  tool_break_chance: 0.526
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Hammer
+  inputs:
+  - Stick
+  - Iron
+  tools: []
   description: You join the iron and stick in holy matrimony to create the ultimate smacking solution.
-- outputs: [Anvil]
-  inputs: [Iron, Iron, Iron, Clay, Coal]
-  tools: [Furnace]
+  tool_break_chance: .inf
+  crafting_time_atus: 6.4
+  crafting_time_seconds: 192.0
+- outputs:
+  - Anvil
+  inputs:
+  - Iron
+  - Iron
+  - Iron
+  - Clay
+  - Coal
+  tools:
+  - Furnace
   description: You melt the iron and pour it into a ceramic mould. An anvil is born. Mazel tov!
-- outputs: [Knife]
-  inputs: [Stick, Iron]
-  tools: [Hammer, Anvil]
+  tool_break_chance: 0.8
+  crafting_time_atus: 8.0
+  crafting_time_seconds: 240.0
+- outputs:
+  - Knife
+  inputs:
+  - Stick
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
   description: You hammer the iron into a blade and fasten it to a wooden handle. Don't cut yourself.
-- outputs: [Coal Dust]
-  inputs: [Coal]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 1.4
+  crafting_time_seconds: 42.0
+- outputs:
+  - Coal Dust
+  inputs:
+  - Coal
+  tools:
+  - Stone Mill
   description: You break the coal down into little specks of dust. Hayao Miyazaki looks on with horror.
-- outputs: [Diamond Dust]
-  inputs: [Raw Diamond]
-  tools: [Stone Mill]
+  tool_break_chance: 0.14
+  crafting_time_atus: 1.4
+  crafting_time_seconds: 42.0
+- outputs:
+  - Diamond Dust
+  inputs:
+  - Raw Diamond
+  tools:
+  - Stone Mill
   description: You smash that expensive rock into a million little pieces. What have you done??
-- outputs: [Diamond Dust]
-  inputs: [Diamond]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Diamond Dust
+  inputs:
+  - Diamond
+  tools:
+  - Stone Mill
   description: You could have used a raw diamond for this… but you do you, boo.
-- outputs: [Sapphire Dust]
-  inputs: [Raw Sapphire]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Sapphire Dust
+  inputs:
+  - Raw Sapphire
+  tools:
+  - Stone Mill
   description: You pulverize the raw sapphire into… uh… pulverized sapphire.
-- outputs: [Sapphire Dust]
-  inputs: [Sapphire]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Sapphire Dust
+  inputs:
+  - Sapphire
+  tools:
+  - Stone Mill
   description: You could have used a raw sapphire for this… but you do you, boo.
-- outputs: [Emerald Dust]
-  inputs: [Raw Emerald]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Emerald Dust
+  inputs:
+  - Raw Emerald
+  tools:
+  - Stone Mill
   description: When the hammer falls, you feel a disturbance… as if millions of villagers cried out at once.
-- outputs: [Emerald Dust]
-  inputs: [Emerald]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Emerald Dust
+  inputs:
+  - Emerald
+  tools:
+  - Stone Mill
   description: You could have used a raw emerald for this… but you do you, boo.
-- outputs: [Ruby Dust]
-  inputs: [Raw Ruby]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Ruby Dust
+  inputs:
+  - Raw Ruby
+  tools:
+  - Stone Mill
   description: When you think about it, it's kind of like now you have millions of teeny-tiny rubies.
-- outputs: [Ruby Dust]
-  inputs: [Ruby]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Ruby Dust
+  inputs:
+  - Ruby
+  tools:
+  - Stone Mill
   description: You could have used a raw ruby for this… but you do you, boo.
-- outputs: [Tanzanite Dust]
-  inputs: [Raw Tanzanite]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Tanzanite Dust
+  inputs:
+  - Raw Tanzanite
+  tools:
+  - Stone Mill
   description: You smash the raw tanzanite. Well, at least you have some cool indigo powder now.
-- outputs: [Tanzanite Dust]
-  inputs: [Tanzanite]
-  tools: [Stone Mill]
+  tool_break_chance: 0.1
+  crafting_time_atus: 1.0
+  crafting_time_seconds: 30.0
+- outputs:
+  - Tanzanite Dust
+  inputs:
+  - Tanzanite
+  tools:
+  - Stone Mill
   description: You could have used a raw tanzanite for this… but you do you, boo.
-- outputs: [Spinning Wheel]
-  inputs: [Lumber, Wheel, Glue]
-  tools: [Saw, Hammer]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Spinning Wheel
+  inputs:
+  - Lumber
+  - Wheel
+  - Glue
+  tools:
+  - Saw
+  - Hammer
   description: After hours of sawing, gluing, and hammering, you give your creation an oh-so-satisfying spin.
-- outputs: [Lapidary Wheel]
-  inputs: [Pottery Wheel, Diamond Dust, Glue]
+  tool_break_chance: 0.12
+  crafting_time_atus: 3.0
+  crafting_time_seconds: 90.0
+- outputs:
+  - Lapidary Wheel
+  inputs:
+  - Pottery Wheel
+  - Diamond Dust
+  - Glue
+  tools: []
   description: You bling out your pottery wheel, giving it a new life as a tool of the jewel.
-- outputs: [Yarn, Yarn]
-  inputs: [Wool]
-  tools: [Spinning Wheel]
+  tool_break_chance: .inf
+  crafting_time_atus: 48.5
+  crafting_time_seconds: 1455.0
+- outputs:
+  - Yarn
+  - Yarn
+  inputs:
+  - Wool
+  tools:
+  - Spinning Wheel
   description: Poof! The floof is now floooooooooooooooof.
-- outputs: [Sapphire]
-  inputs: [Raw Sapphire]
-  tools: [Lapidary Wheel]
+  tool_break_chance: 0.16
+  crafting_time_atus: 4.0
+  crafting_time_seconds: 120.0
+- outputs:
+  - Sapphire
+  inputs:
+  - Raw Sapphire
+  tools:
+  - Lapidary Wheel
   description: You painstakingly grind facets into the raw blue stone until it looks sufficiently expensive.
-- outputs: [Emerald]
-  inputs: [Raw Emerald]
-  tools: [Lapidary Wheel]
+  tool_break_chance: 0.02
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Emerald
+  inputs:
+  - Raw Emerald
+  tools:
+  - Lapidary Wheel
   description: As the wheel does its work, you hear the unmistakable "hmmm" sounds of minecraft villagers outside.
-- outputs: [Ruby]
-  inputs: [Raw Ruby]
-  tools: [Lapidary Wheel]
+  tool_break_chance: 0.02
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Ruby
+  inputs:
+  - Raw Ruby
+  tools:
+  - Lapidary Wheel
   description: You made a ruby! And it's not even Tuesday. Or maybe it is.
-- outputs: [Diamond]
-  inputs: [Raw Diamond]
-  tools: [Lapidary Wheel]
+  tool_break_chance: 0.02
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Diamond
+  inputs:
+  - Raw Diamond
+  tools:
+  - Lapidary Wheel
   description: When the work is done you get a call from DeBeers. They want to talk. They don't sound happy.
-- outputs: [Tanzanite]
-  inputs: [Raw Tanzanite]
-  tools: [Lapidary Wheel]
+  tool_break_chance: 0.05
+  crafting_time_atus: 5.0
+  crafting_time_seconds: 150.0
+- outputs:
+  - Tanzanite
+  inputs:
+  - Raw Tanzanite
+  tools:
+  - Lapidary Wheel
   description: Eons of geology get eaten away to reveal a gorgeous pleochroic stone. Plee-oh-crow-ick. That's a good word.
-- outputs: [Knitting Needles]
-  inputs: [Stick, Stick]
-  tools: [Knife]
+  tool_break_chance: 0.05
+  crafting_time_atus: 5.0
+  crafting_time_seconds: 150.0
+- outputs:
+  - Knitting Needles
+  inputs:
+  - Stick
+  - Stick
+  tools:
+  - Knife
   description: You use those whittling skills you learned at summer camp to turn two sticks into smaller, pointier sticks.
-- outputs: [Iron]
-  inputs: [Iron Ore, Coal]
-  tools: [Furnace]
+  tool_break_chance: 0.36
+  crafting_time_atus: 1.8
+  crafting_time_seconds: 54.0
+- outputs:
+  - Iron
+  inputs:
+  - Iron Ore
+  - Coal
+  tools:
+  - Furnace
   description: You smelt the iron ore into an ingot. And you know what they say, whoever smelt it… nevermind.
-- outputs: [Aluminum]
-  inputs: [Aluminum Ore, Coal]
-  tools: [Furnace]
+  tool_break_chance: 0.06
+  crafting_time_atus: 0.6
+  crafting_time_seconds: 18.0
+- outputs:
+  - Aluminum
+  inputs:
+  - Aluminum Ore
+  - Coal
+  tools:
+  - Furnace
   description: As if by magic, you turn that ore into pure aluminum. Metallurgy is cool!
-- outputs: [Gold]
-  inputs: [Gold Ore, Coal]
-  tools: [Furnace]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Gold
+  inputs:
+  - Gold Ore
+  - Coal
+  tools:
+  - Furnace
   description: You melt down the gold ore into a shiny yellow brick, ready to be sold on infomercials worldwide.
-- outputs: [Lumber]
-  inputs: [Log]
-  tools: [Saw]
+  tool_break_chance: 0.04
+  crafting_time_atus: 0.4
+  crafting_time_seconds: 12.0
+- outputs:
+  - Lumber
+  inputs:
+  - Log
+  tools:
+  - Saw
   description: The sound of sawing logs brings you back to your childhood, before your dad got treatment for sleep apnea.
-- outputs: [Lumber]
-  inputs: [Log]
-  tools: [Saw]
+  tool_break_chance: 0.12
+  crafting_time_atus: 1.8
+  crafting_time_seconds: 54.0
+- outputs:
+  - Lumber
+  inputs:
+  - Log
+  tools:
+  - Saw
   description: The sound of sawing logs brings you back to your childhood, before your dad got treatment for sleep apnea.
-- outputs: [Fashionable Shirt]
-  inputs: [Shirt, Ruby Dust, Glue]
+  tool_break_chance: 0.12
+  crafting_time_atus: 1.8
+  crafting_time_seconds: 54.0
+- outputs:
+  - Fashionable Shirt
+  inputs:
+  - Shirt
+  - Ruby Dust
+  - Glue
+  tools: []
   description: You mix the ruby dust and glue, and smear it onto the shirt in a fashionable way.
-- outputs: [Fancy Pants]
-  inputs: [Pants, Emerald Dust, Glue]
+  tool_break_chance: .inf
+  crafting_time_atus: 1.5
+  crafting_time_seconds: 45.0
+- outputs:
+  - Fancy Pants
+  inputs:
+  - Pants
+  - Emerald Dust
+  - Glue
+  tools: []
   description: You glue the emerald dust all over the pants, upping their fanciness by 200%.
-- outputs: [Cool Shoes]
-  inputs: [Shoes, Sapphire Dust, Glue]
+  tool_break_chance: .inf
+  crafting_time_atus: 4.5
+  crafting_time_seconds: 135.0
+- outputs:
+  - Cool Shoes
+  inputs:
+  - Shoes
+  - Sapphire Dust
+  - Glue
+  tools: []
   description: You roll the shoes in glue and sapphire dust, which makes them cool. Deal with it.
-- outputs: [Axe]
-  inputs: [Stick, Iron]
-  tools: [Hammer, Anvil]
+  tool_break_chance: .inf
+  crafting_time_atus: 4.5
+  crafting_time_seconds: 135.0
+- outputs:
+  - Axe
+  inputs:
+  - Stick
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
   description: You beat the iron into a chonky blade and attach it to a sturdy stick (don't axe me how).
-- outputs: [Shears]
-  inputs: [Knife, Knife]
+  tool_break_chance: 0.229
+  crafting_time_atus: 6.4
+  crafting_time_seconds: 192.0
+- outputs:
+  - Shears
+  inputs:
+  - Knife
+  - Knife
+  tools: []
   description: You reconfigure a pair of knives in a pinchy way.
-- outputs: [Wheel]
-  inputs: [Stick, Stick, Stick, Lumber, Glue]
-  tools: [Saw]
+  tool_break_chance: .inf
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Wheel
+  inputs:
+  - Stick
+  - Stick
+  - Stick
+  - Lumber
+  - Glue
+  tools:
+  - Saw
   description: Look, I don't know how exactly wheels are made, but you make one. Okay?
-- outputs: [Glass]
-  inputs: [Sand, Coal]
-  tools: [Furnace]
+  tool_break_chance: 0.067
+  crafting_time_atus: 1.0
+  crafting_time_seconds: 30.0
+- outputs:
+  - Glass
+  inputs:
+  - Sand
+  - Coal
+  tools:
+  - Furnace
   description: You melt the sand, and… where did it go?? Oh, oh… it's just transparent now.
-- outputs: [Pot]
-  inputs: [Iron]
-  tools: [Hammer, Anvil]
+  tool_break_chance: 0.13
+  crafting_time_atus: 1.3
+  crafting_time_seconds: 39.0
+- outputs:
+  - Pot
+  inputs:
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
   description: Yeah, you show that iron who's boss! It's a pot now.
-- outputs: [Chisel]
-  inputs: [Iron]
-  tools: [Hammer, Anvil]
+  tool_break_chance: 0.05
+  crafting_time_atus: 1.4
+  crafting_time_seconds: 42.0
+- outputs:
+  - Chisel
+  inputs:
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
   description: You hammer the iron into a pointy rod thing. How neat!
-- outputs: [Bread, Vessel]
-  inputs: [Water, Flour, Salt, Firewood]
-  tools: [Range]
+  tool_break_chance: 0.193
+  crafting_time_atus: 5.4
+  crafting_time_seconds: 162.0
+- outputs:
+  - Bread
+  - Vessel
+  inputs:
+  - Water
+  - Flour
+  - Salt
+  - Firewood
+  tools:
+  - Range
   description: Stop loafing around! Ha ha ha _sigh_… you got bread now.
-- outputs: [Banana Bread, Vessel]
-  inputs: [Water, Flour, Salt, Firewood, Banana]
-  tools: [Range]
+  tool_break_chance: 0.033
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Banana Bread
+  - Vessel
+  inputs:
+  - Water
+  - Flour
+  - Salt
+  - Firewood
+  - Banana
+  tools:
+  - Range
   description: You take that mushy old banana and give it a new life as bread. It seems… overjoyed? Bananas can be hard to read.
-- outputs: [Cake, Vessel]
-  inputs: [Water, Flour, Sugar, Salt, Butter, Egg, Firewood]
-  tools: [Range, Bowl]
+  tool_break_chance: 0.167
+  crafting_time_atus: 2.5
+  crafting_time_seconds: 75.0
+- outputs:
+  - Cake
+  - Vessel
+  inputs:
+  - Water
+  - Flour
+  - Sugar
+  - Salt
+  - Butter
+  - Egg
+  - Firewood
+  tools:
+  - Range
+  - Bowl
   description: You bake a delicious cake. Maybe Marie Antoinette had it right all along.
-- outputs: [Carrot Cake, Vessel]
-  inputs: [Water, Flour, Sugar, Salt, Butter, Egg, Firewood, Carrot]
-  tools: [Range, Knife, Bowl]
+  tool_break_chance: 0.205
+  crafting_time_atus: 4.5
+  crafting_time_seconds: 135.0
+- outputs:
+  - Carrot Cake
+  - Vessel
+  inputs:
+  - Water
+  - Flour
+  - Sugar
+  - Salt
+  - Butter
+  - Egg
+  - Firewood
+  - Carrot
+  tools:
+  - Range
+  - Knife
+  - Bowl
   description: You bake a delicious cake and throw in some carrots. That makes it healthy, right?
-- outputs: [Bone Dust]
-  inputs: [Bone]
-  tools: [Hammer]
+  tool_break_chance: 0.167
+  crafting_time_atus: 4.5
+  crafting_time_seconds: 135.0
+- outputs:
+  - Bone Dust
+  inputs:
+  - Bone
+  tools:
+  - Hammer
   description: You pound the bone until that whole "Ashes to ashes, dust to dust" thing starts to make a lot more sense.
-- outputs: [Glue, Vessel]
-  inputs: [Water, Bone Dust, Firewood]
-  tools: [Pot, Range]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Glue
+  - Vessel
+  inputs:
+  - Water
+  - Bone Dust
+  - Firewood
+  tools:
+  - Pot
+  - Range
   description: You extract a sticky paste from the bone dust. This stuff is gross, it better be useful.
-- outputs: [Firewood, Firewood, Firewood]
-  inputs: [Log]
-  tools: [Axe]
+  tool_break_chance: 0.053
+  crafting_time_atus: 1.0
+  crafting_time_seconds: 30.0
+- outputs:
+  - Firewood
+  - Firewood
+  - Firewood
+  inputs:
+  - Log
+  tools:
+  - Axe
   description: You chop the log into little pieces, dreaming of toasted marshmallows.
-- outputs: [Stick, Stick, Stick, Stick]
-  inputs: [Log]
-  tools: [Saw]
+  tool_break_chance: 0.48
+  crafting_time_atus: 4.8
+  crafting_time_seconds: 144.0
+- outputs:
+  - Stick
+  - Stick
+  - Stick
+  - Stick
+  inputs:
+  - Log
+  tools:
+  - Saw
   description: You saw the log up into sticks. Which, when you think about it, are really just little mini-logs.
-- outputs: [Sugar, Vessel]
-  inputs: [Water, Sugarcane]
-  tools: [Pot, Range]
+  tool_break_chance: 0.187
+  crafting_time_atus: 2.8
+  crafting_time_seconds: 84.0
+- outputs:
+  - Sugar
+  - Vessel
+  inputs:
+  - Water
+  - Sugarcane
+  tools:
+  - Pot
+  - Range
   description: You boil the cane down until all you have is raw sugar… how sweet!
-- outputs: [Brick]
-  inputs: [Clay]
-  tools: [Furnace]
+  tool_break_chance: 0.021
+  crafting_time_atus: 0.4
+  crafting_time_seconds: 12.0
+- outputs:
+  - Brick
+  inputs:
+  - Clay
+  tools:
+  - Furnace
   description: The windows around you watch nervously as you fire the clay into the shape of a brick.
-- outputs: [Needle, Needle, Needle, Needle, Needle]
-  inputs: [Iron Wire]
-  tools: [Hammer, Anvil, File]
+  tool_break_chance: 0.04
+  crafting_time_atus: 0.4
+  crafting_time_seconds: 12.0
+- outputs:
+  - Needle
+  - Needle
+  - Needle
+  - Needle
+  - Needle
+  inputs:
+  - Iron Wire
+  tools:
+  - Hammer
+  - Anvil
+  - File
   description: You painstakingly turn the iron wire into tinier, sharper bits of iron wire. All this work better have a point.
-- outputs: [Fishhook]
-  inputs: [Needle]
-  tools: [Hammer, Mandrel]
+  tool_break_chance: 0.611
+  crafting_time_atus: 22.0
+  crafting_time_seconds: 660.0
+- outputs:
+  - Fishhook
+  inputs:
+  - Needle
+  tools:
+  - Hammer
+  - Mandrel
   description: You hammer the end of the needle around the mandrel until it points menacingly back at you. Good thing you're not a fish.
-- outputs: [Fishing Rod]
-  inputs: [Stick, Thread, Fishhook]
+  tool_break_chance: 0.067
+  crafting_time_atus: 1.0
+  crafting_time_seconds: 30.0
+- outputs:
+  - Fishing Rod
+  inputs:
+  - Stick
+  - Thread
+  - Fishhook
+  tools: []
   description: You tie one end of the thread to the stick, and the other to the hook. Beware, fish… there's a new sheriff in town.
-- outputs: [Mandrel]
-  inputs: [Iron]
-  tools: [Hammer, Anvil]
+  tool_break_chance: .inf
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Mandrel
+  inputs:
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
   description: You slowly and carefully shape the iron into a tapered rod. There's no joke on this one… mandrels are useful but not very funny.
-- outputs: [Thread, Thread, Thread, Thread]
-  inputs: [Flax]
-  tools: [Spinning Wheel]
+  tool_break_chance: 0.086
+  crafting_time_atus: 2.4
+  crafting_time_seconds: 72.0
+- outputs:
+  - Thread
+  - Thread
+  - Thread
+  - Thread
+  inputs:
+  - Flax
+  tools:
+  - Spinning Wheel
   description: You carefully spin the flax into thread. Some may call you a threadhead. Not me, but some.
-- outputs: [Pickaxe]
-  inputs: [Stick, Iron]
-  tools: [Hammer, Anvil]
+  tool_break_chance: 0.26
+  crafting_time_atus: 6.5
+  crafting_time_seconds: 195.0
+- outputs:
+  - Pickaxe
+  inputs:
+  - Stick
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
   description: You beat on the iron until it looks like a pickaxe. With the addition of a stick, the illusion is complete.
-- outputs: [Stone Mill]
-  inputs: [Rock, Rock, Lumber]
-  tools: [Hammer, Chisel]
+  tool_break_chance: 0.407
+  crafting_time_atus: 11.4
+  crafting_time_seconds: 342.0
+- outputs:
+  - Stone Mill
+  inputs:
+  - Rock
+  - Rock
+  - Lumber
+  tools:
+  - Hammer
+  - Chisel
   description: You lovingly chisel the rocks into a pair of wheels and give them a lil table to call home. Don't get too comfortable, wheels. Now the grind begins.
-- outputs: [Flour]
-  inputs: [Wheat]
-  tools: [Stone Mill]
+  tool_break_chance: 0.278
+  crafting_time_atus: 5.0
+  crafting_time_seconds: 150.0
+- outputs:
+  - Flour
+  inputs:
+  - Wheat
+  tools:
+  - Stone Mill
   description: You crush the wheat grains beneath the stone wheels of the mill, cackling at their little wheaty screams.
-- outputs: [Bone Dust]
-  inputs: [Bone]
-  tools: [Stone Mill]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Bone Dust
+  inputs:
+  - Bone
+  tools:
+  - Stone Mill
   description: You grind the bones beneath your mighty stone wheels, feeling mildly amused that "stone" rhymes with "bone". Heh.
-- outputs: [Cloth]
-  inputs: [Thread, Thread, Thread]
-  tools: [Loom]
+  tool_break_chance: 0.05
+  crafting_time_atus: 0.5
+  crafting_time_seconds: 15.0
+- outputs:
+  - Cloth
+  inputs:
+  - Thread
+  - Thread
+  - Thread
+  tools:
+  - Loom
   description: You take the thread on a spiritual journey into the second dimension, until eventually it is reborn as cloth.
-- outputs: [Loom]
-  inputs: [Lumber, Stick, Glue]
-  tools: [Saw]
+  tool_break_chance: 0.056
+  crafting_time_atus: 1.0
+  crafting_time_seconds: 30.0
+- outputs:
+  - Loom
+  inputs:
+  - Lumber
+  - Stick
+  - Glue
+  tools:
+  - Saw
   description: Wow, that was simpler than expected. A basic loom is really just a wooden square with a stick, huh?
-- outputs: [Pottery Wheel]
-  inputs: [Wheel, Aluminum, Lumber, Stick, Glue]
-  tools: [Saw, Hammer, Anvil]
+  tool_break_chance: 0.533
+  crafting_time_atus: 8.0
+  crafting_time_seconds: 240.0
+- outputs:
+  - Pottery Wheel
+  inputs:
+  - Wheel
+  - Aluminum
+  - Lumber
+  - Stick
+  - Glue
+  tools:
+  - Saw
+  - Hammer
+  - Anvil
   description: You flatten the aluminum, attach it to the top of the wheel, and put it on a wooden frame. Let's take this baby for a spin!
-- outputs: [Vessel]
-  inputs: [Clay]
-  tools: [Pottery Wheel, Furnace]
+  tool_break_chance: 0.093
+  crafting_time_atus: 4.0
+  crafting_time_seconds: 120.0
+- outputs:
+  - Vessel
+  inputs:
+  - Clay
+  tools:
+  - Pottery Wheel
+  - Furnace
   description: You flatten the aluminum, put it on top of the wheel, and put it on a wooden frame. Let's take this baby for a spin!
-- outputs: [Shirt]
-  inputs: [Cloth, Cloth, Thread]
-  tools: [Shears, Needle]
+  tool_break_chance: 0.05
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Shirt
+  inputs:
+  - Cloth
+  - Cloth
+  - Thread
+  tools:
+  - Shears
+  - Needle
   description: You snip the cloth into a shirty shape and shirt it all up with a needle and thread. Shirt!
-- outputs: [Pants]
-  inputs: [Cloth, Cloth, Cloth, Thread]
-  tools: [Shears, Needle]
+  tool_break_chance: 0.118
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Pants
+  inputs:
+  - Cloth
+  - Cloth
+  - Cloth
+  - Thread
+  tools:
+  - Shears
+  - Needle
   description: You pantsify that cloth with your sicknasty sewing skills.
-- outputs: [Hat]
-  inputs: [Yarn]
-  tools: [Knitting Needles]
+  tool_break_chance: 0.118
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Hat
+  inputs:
+  - Yarn
+  tools:
+  - Knitting Needles
   description: You knit together a neat lil cap for yourself. How satisfying!
-- outputs: [Shurt]
-  inputs: [Cloth, Cloth, Thread, Thread, Yarn, Glue, Tanzanite Dust]
-  tools: [Knitting Needles, Needle]
+  tool_break_chance: 0.789
+  crafting_time_atus: 3.0
+  crafting_time_seconds: 90.0
+- outputs:
+  - Shurt
+  inputs:
+  - Cloth
+  - Cloth
+  - Thread
+  - Thread
+  - Yarn
+  - Glue
+  - Tanzanite Dust
+  tools:
+  - Knitting Needles
+  - Needle
   description: They don't understand your genius. But they'll see… now they'll ALL see… your SHURT!!! HAHAHAHAHA!!!!
-- outputs: [Rolling Mill]
-  inputs: [Iron, Iron, Iron]
-  tools: [Hammer, Anvil, Chisel]
+  tool_break_chance: 0.227
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Rolling Mill
+  inputs:
+  - Iron
+  - Iron
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
+  - Chisel
   description: You forge and chisel two hardened round dies, and put them into a frame. You're ready to roll.
-- outputs: [Iron Wire]
-  inputs: [Iron]
-  tools: [Rolling Mill]
+  tool_break_chance: 0.978
+  crafting_time_atus: 35.2
+  crafting_time_seconds: 1056.0
+- outputs:
+  - Iron Wire
+  inputs:
+  - Iron
+  tools:
+  - Rolling Mill
   description: You roll the iron out into its very best impression of spaghetti. It's trying so hard! Are you proud of it??
-- outputs: [Gold Wire]
-  inputs: [Gold]
-  tools: [Rolling Mill]
+  tool_break_chance: 0.009
+  crafting_time_atus: 0.4
+  crafting_time_seconds: 12.0
+- outputs:
+  - Gold Wire
+  inputs:
+  - Gold
+  tools:
+  - Rolling Mill
   description: You roll the gold out into its very best impression of spaghetti. It's getting a lot closer than iron does. The yellowness helps.
-- outputs: [Top Hat]
-  inputs: [Wool, Tanzanite Dust, Coal Dust, Glue]
-  tools: [Needle]
+  tool_break_chance: 0.035
+  crafting_time_atus: 1.5
+  crafting_time_seconds: 45.0
+- outputs:
+  - Top Hat
+  inputs:
+  - Wool
+  - Tanzanite Dust
+  - Coal Dust
+  - Glue
+  tools:
+  - Needle
   description: You felt the wool into a lovely top hat, with coal and tanzanite dust for color. Fancy!
-- outputs: [Fruit Salad]
-  inputs: [Apple, Banana, Kiwi, Orange, Grapes, Banana, Bowl]
-  tools: [Knife]
+  tool_break_chance: 0.68
+  crafting_time_atus: 3.4
+  crafting_time_seconds: 102.0
+- outputs:
+  - Fruit Salad
+  inputs:
+  - Apple
+  - Banana
+  - Kiwi
+  - Orange
+  - Grapes
+  - Banana
+  - Bowl
+  tools:
+  - Knife
   description: You cut up a bunch of fruit and mix it all together. The Wiggles would be so proud!
-- outputs: [Shovel]
-  inputs: [Stick, Iron]
-  tools: [Hammer, Anvil]
+  tool_break_chance: 0.2
+  crafting_time_atus: 1.0
+  crafting_time_seconds: 30.0
+- outputs:
+  - Shovel
+  inputs:
+  - Stick
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
   description: You flatten the iron into a nice shovel head and put it on a stick. Personally, I dig it.
-- outputs: [Scythe]
-  inputs: [Stick, Knife]
+  tool_break_chance: 0.229
+  crafting_time_atus: 6.4
+  crafting_time_seconds: 192.0
+- outputs:
+  - Scythe
+  inputs:
+  - Stick
+  - Knife
+  tools: []
   description: You put the blade of the knife onto a long stick. It makes a great swishing sound when you wave it around in the air.
-- outputs: [Ladder]
-  inputs: [Lumber, Lumber, Stick, Stick, Stick, Glue]
-  tools: [Saw]
+  tool_break_chance: .inf
+  crafting_time_atus: 6.0
+  crafting_time_seconds: 180.0
+- outputs:
+  - Ladder
+  inputs:
+  - Lumber
+  - Lumber
+  - Stick
+  - Stick
+  - Stick
+  - Glue
+  tools:
+  - Saw
   description: You cut them sticks up into ladder-appropriate lengths and slap 'em together with glue. A ladder is born.
-- outputs: [Saw]
-  inputs: [Lumber, Iron]
-  tools: [Hammer, Anvil, File]
+  tool_break_chance: 0.133
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Saw
+  inputs:
+  - Lumber
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
+  - File
   description: You flatten the iron into a blade, file out some pointy teeth, and put it on a wooden handle. Watch out trees, this hacker is ready to cut a birch.
-- outputs: [File]
-  inputs: [Iron]
-  tools: [Hammer, Anvil, Chisel]
+  tool_break_chance: 0.261
+  crafting_time_atus: 9.4
+  crafting_time_seconds: 282.0
+- outputs:
+  - File
+  inputs:
+  - Iron
+  tools:
+  - Hammer
+  - Anvil
+  - Chisel
   description: You forge a flat blank and painstakingly cut the teeth using your chisel. File this one under… eh… there's not a great joke here but you have a file now.
-- outputs: [Furnace]
-  inputs: [Rock, Rock, Rock, Rock, Rock, Rock, Rock, Rock]
+  tool_break_chance: 0.15
+  crafting_time_atus: 5.4
+  crafting_time_seconds: 162.0
+- outputs:
+  - Furnace
+  inputs:
+  - Rock
+  - Rock
+  - Rock
+  - Rock
+  - Rock
+  - Rock
+  - Rock
+  - Rock
+  tools: []
   description: You stack rocks together to make a chamber capable of reaching high temperatures. Fire in the hole!
-- outputs: [Range]
-  inputs: [Brick, Brick, Brick, Brick, Brick, Brick, Brick, Brick, Iron]
+  tool_break_chance: .inf
+  crafting_time_atus: 2.0
+  crafting_time_seconds: 60.0
+- outputs:
+  - Range
+  inputs:
+  - Brick
+  - Brick
+  - Brick
+  - Brick
+  - Brick
+  - Brick
+  - Brick
+  - Brick
+  - Iron
+  tools: []
   description: You carefully arrange the bricks to make an oven with a nice lil stove spot on top. Your cookware is quivering with excitement!!
-- outputs: [Tanzanite Ring]
-  inputs: [Gold Wire, Tanzanite]
-  tools: [Mandrel, Hammer, File]
+  tool_break_chance: .inf
+  crafting_time_atus: 1.2
+  crafting_time_seconds: 36.0
+- outputs:
+  - Tanzanite Ring
+  inputs:
+  - Gold Wire
+  - Tanzanite
+  tools:
+  - Mandrel
+  - Hammer
+  - File
   description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes tanzanite!
-- outputs: [Emerald Ring]
-  inputs: [Gold Wire, Emerald]
-  tools: [Mandrel, Hammer, File]
+  tool_break_chance: 0.478
+  crafting_time_atus: 11.0
+  crafting_time_seconds: 330.0
+- outputs:
+  - Emerald Ring
+  inputs:
+  - Gold Wire
+  - Emerald
+  tools:
+  - Mandrel
+  - Hammer
+  - File
   description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes emeralds!
-- outputs: [Ruby Ring]
-  inputs: [Gold Wire, Ruby]
-  tools: [Mandrel, Hammer, File]
+  tool_break_chance: 0.522
+  crafting_time_atus: 12.0
+  crafting_time_seconds: 360.0
+- outputs:
+  - Ruby Ring
+  inputs:
+  - Gold Wire
+  - Ruby
+  tools:
+  - Mandrel
+  - Hammer
+  - File
   description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes rubies!
-- outputs: [Sapphire Ring]
-  inputs: [Gold Wire, Sapphire]
-  tools: [Mandrel, Hammer, File]
+  tool_break_chance: 0.522
+  crafting_time_atus: 12.0
+  crafting_time_seconds: 360.0
+- outputs:
+  - Sapphire Ring
+  inputs:
+  - Gold Wire
+  - Sapphire
+  tools:
+  - Mandrel
+  - Hammer
+  - File
   description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes sapphires!
-- outputs: [Diamond Ring]
-  inputs: [Gold Wire, Diamond]
-  tools: [Mandrel, Hammer, File]
+  tool_break_chance: 0.522
+  crafting_time_atus: 12.0
+  crafting_time_seconds: 360.0
+- outputs:
+  - Diamond Ring
+  inputs:
+  - Gold Wire
+  - Diamond
+  tools:
+  - Mandrel
+  - Hammer
+  - File
   description: You file and hammer your way to a beautiful gold ring and set the stone. You're ready to propose to someone who likes diamonds!
-- outputs: [Butter, Vessel]
-  inputs: [Milk]
-  tools: [Churn]
+  tool_break_chance: 0.478
+  crafting_time_atus: 11.0
+  crafting_time_seconds: 330.0
+- outputs:
+  - Butter
+  - Vessel
+  inputs:
+  - Milk
+  tools:
+  - Churn
   description: You churn the milk until it turns into butter. It's like magic, but with dairy.
-- outputs: [Rope]
-  inputs: [String, String, String]
+  tool_break_chance: 0.353
+  crafting_time_atus: 6.0
+  crafting_time_seconds: 180.0
+- outputs:
+  - Rope
+  inputs:
+  - String
+  - String
+  - String
+  tools: []
   description: You braid the string together until it's strong enough to hold a boat to a dock. Or a person to a chair. Or a… you know what, let's just stick with the boat thing.
-- outputs: [String]
-  inputs: [Thread, Thread, Thread]
+  tool_break_chance: .inf
+  crafting_time_atus: 9.0
+  crafting_time_seconds: 270.0
+- outputs:
+  - String
+  inputs:
+  - Thread
+  - Thread
+  - Thread
+  tools: []
   description: You braid the thread into a nice sturdy string. Just remember, if it ever gets tangled, there's always regex.
-- outputs: [Stew, Vessel]
-  inputs: [Water, Carrot, Potato, Onion, Mushroom, Firewood, Salt, Bowl]
-  tools: [Pot, Range, Knife]
+  tool_break_chance: .inf
+  crafting_time_atus: 1.0
+  crafting_time_seconds: 30.0
+- outputs:
+  - Stew
+  - Vessel
+  inputs:
+  - Water
+  - Carrot
+  - Potato
+  - Onion
+  - Mushroom
+  - Firewood
+  - Salt
+  - Bowl
+  tools:
+  - Pot
+  - Range
+  - Knife
   description: You cook up a nice hearty stew. Mmmmm, stew… like a hug for your insides.
-- outputs: [Shoes]
-  inputs: [Cloth, Thread, String, Glue]
-  tools: [Needle, Shears]
+  tool_break_chance: 0.104
+  crafting_time_atus: 2.5
+  crafting_time_seconds: 75.0
+- outputs:
+  - Shoes
+  inputs:
+  - Cloth
+  - Thread
+  - String
+  - Glue
+  tools:
+  - Needle
+  - Shears
   description: You sew the cloth into a pair of shoes and lace them up with string. You're ready to walk a mile in these babies.
-- outputs: [Churn]
-  inputs: [Lumber, Stick, Glue]
-  tools: [Saw, Hammer]
+  tool_break_chance: 0.176
+  crafting_time_atus: 3.0
+  crafting_time_seconds: 90.0
+- outputs:
+  - Churn
+  inputs:
+  - Lumber
+  - Stick
+  - Glue
+  tools:
+  - Saw
+  - Hammer
   description: You saw and hammer and glue until you have a churn. Quick, someone get a cow!
-- outputs: [Trowel]
-  inputs: [Stick, Aluminum]
-  tools: [Hammer, Anvil]
+  tool_break_chance: 0.28
+  crafting_time_atus: 7.0
+  crafting_time_seconds: 210.0
+- outputs:
+  - Trowel
+  inputs:
+  - Stick
+  - Aluminum
+  tools:
+  - Hammer
+  - Anvil
   description: You beat the aluminum into a flat trowely blade and attach it to a handle. Don't trowel me, bro.
-- outputs: [Cement]
-  inputs: [Clay, Aluminum Ore, Iron Ore, Coal, Limestone]
-  tools: [Stone Mill, Furnace]
+  tool_break_chance: 0.286
+  crafting_time_atus: 8.0
+  crafting_time_seconds: 240.0
+- outputs:
+  - Cement
+  inputs:
+  - Clay
+  - Aluminum Ore
+  - Iron Ore
+  - Coal
+  - Limestone
+  tools:
+  - Stone Mill
+  - Furnace
   description: You crush all the ingredients into a powder with the mill, burn the crap out of it with the furnace, and crush it up all over again. Voila! Cement.
+  tool_break_chance: 0.17
+  crafting_time_atus: 3.4
+  crafting_time_seconds: 102.0
