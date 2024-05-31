@@ -53,7 +53,7 @@ import { parse } from 'yaml'
               reaction: `:${item.tag}:`,
               description: `${item.description} - Drawn by ${item.artist.trim() === '---' ? 'Unknown' : item.artist
                 }`,
-              tradable: item.tradable ? item.tradable : undefined,
+              tradable: item.tradable === undefined ? true : item.tradable,
               metadata: JSON.stringify({
                 rarity: item.frequency,
                 ...metadata(item)
@@ -67,7 +67,7 @@ import { parse } from 'yaml'
               reaction: `:${item.tag}:`,
               description: `${item.description} - Drawn by ${item.artist.trim() === '---' ? 'Unknown' : item.artist
                 }`,
-              tradable: item.tradable ? item.tradable : undefined,
+              tradable: item.tradable === undefined ? true : item.tradable,
               metadata: JSON.stringify({
                 rarity: item.frequency,
                 ...metadata(item)
