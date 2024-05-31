@@ -1,3 +1,13 @@
+- name: Koder Koin
+  artist: Averse
+  description: this item is very rare! you either paid a lot for this, or managed to get a project accepted into @Koder.
+  tag: -koder-koin
+  tradable: false
+  intended_value_atus: 3.0
+  intended_value_gp: 30.0
+  genstore_sell_to_player_price: 39.0
+  genstore_buy_from_player_price: 18.0
+  genstore_price_variance: 0.05
 - name: Cheese
   tag: -cheese
   artist: Acon
