@@ -25,3 +25,4 @@ jobs:
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_KEY: ${{ secrets.APP_KEY }}
+          BASE_URL: ${{ vars.BASE_URL }}
