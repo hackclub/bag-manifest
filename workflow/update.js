@@ -165,6 +165,7 @@ import { parse } from 'yaml'
         }
       })
       if (search.length) {
+        console.log(`Updating recipe ${search[0].id} (making ${recipe.outputs[0]}). time: ${recipe.crafting_time_seconds} seconds`)
         // Update recipe if it already exists
         await app.updateRecipe({
           recipeId: search[0].id,
@@ -172,17 +173,20 @@ import { parse } from 'yaml'
             inputs,
             outputs,
             tools,
-            description: recipe.description
+            description: recipe.description,
+            time: recipe.crafting_time_seconds * 1000
           }
         })
       } else {
         console.log(inputs)
+        console.log(`Creating recipe for ${recipe.outputs[0]}. time: ${recipe.crafting_time_seconds} seconds`)
         await app.createRecipe({
           recipe: {
             inputs,
             outputs,
             tools,
-            description: recipe.description
+            description: recipe.description,
+            time: recipe.crafting_time_seconds * 1000
           }
         })
       }
