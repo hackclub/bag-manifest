@@ -205,7 +205,7 @@
   - Raw Emerald
   tools:
   - Lapidary Wheel
-  description: As the wheel does its work, you hear the unmistakable "hmmm" sounds of minecraft villagers outside.
+  description: As the wheel does its work, you hear the unmistakable "hrmmm" sounds of minecraft villagers outside.
   tool_break_chance: 0.02
   crafting_time_atus: 2.0
   crafting_time_seconds: 60.0
