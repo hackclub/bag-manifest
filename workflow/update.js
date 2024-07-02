@@ -92,7 +92,7 @@ import { parse } from 'yaml'
             tools: action.tools.map(tool => tool.toLowerCase())
           }
         })
-        console.log(`found ${exists} existing actions in ${action.locations} using ${ action.tools.map(tool => tool.toLowerCase())}`);
+        console.log(`found ${exists.length} existing actions in ${action.locations} using ${ action.tools.map(tool => tool.toLowerCase())}`);
         if (exists.actions) {
           // Update action if it already exists
           const id = exists.actions[0].id
