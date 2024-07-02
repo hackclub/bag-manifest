@@ -93,9 +93,9 @@ import { parse } from 'yaml'
           }
         })
         console.log(`found ${exists.length} existing actions in ${action.locations} using ${ action.tools.map(tool => tool.toLowerCase())}`);
-        if (exists.actions) {
+        if (exists.length > 0) {
           // Update action if it already exists
-          const id = exists.actions[0].id
+          const id = exists[0].id
           await app.updateAction({
             actionId: id,
             new: {
