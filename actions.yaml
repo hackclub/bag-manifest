@@ -302,24 +302,18 @@
               frequency: 2
               outputs: [Mushroom]
               loop: true
-            - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease.
+            - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease. You get the axe dislodged from the wood, wipe the sweat from your brow, and get back to work.
               frequency: 3
-              branch:
-                - description: You finally get the axe dislodged from the wood, wipe the sweat from your brow, and get back to work.
-                  frequency: 20
-                  gotoChildren: tree-split
-                - description: You pull hard on the axe handle, but instead of dislodging it snaps… what a shame. I guess axes can't last forever.
-                  frequency: 1
-                  losses: [Axe]
-        - description: You land a hard strike into the trunk of the tree, but now you can't seem to get the axe out!
-          frequency: 10
-          branch:
-            - description: After much pulling and prying, the axe comes loose. Phew! Now you can get back to chopping.
-              frequency: 20
-              gotoChildren: tree-find
-            - description: You yank on the axe to pull it out, but instead the handle just snaps with the head still embedded in the tree. Dang. Now you need a new axe.
-              frequency: 1
+              loop: true
+            - description: While attempting to split the trunk, your axe gets stuck. Ugh. This is going to take some elbow grease. You pull hard on the axe handle, but instead of dislodging it snaps… what a shame. I guess axes can't last forever.
+              frequency: 0.15
               losses: [Axe]
+        - description: You land a hard strike into the trunk of the tree, but now you can't seem to get the axe out! After much pulling and prying, the axe comes loose. Phew! Now you can get back to chopping.
+          frequency: 10
+          loop: true
+        - description:  You land a hard strike into the trunk of the tree, but now you can't seem to get the axe out! You yank on the axe, but the handle just snaps with the head still embedded in the tree. Dang. Now you need a new axe.
+          frequency: 0.5
+          losses: [Axe]
     - description: You find a solid-looking tree in the woods. You swing your axe backward, but it slips out of your hands and flies off into a huge thicket of poison ivy. You're not getting that back.
       frequency: 1
       losses: [Axe]
